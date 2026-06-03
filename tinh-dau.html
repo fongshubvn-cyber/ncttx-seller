@@ -1,0 +1,3258 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tinh Dầu Thảo Mộc Đà Lạt Nguyên Chất | Nến, Nước Hoa — NCTTX</title>
+<meta name="description" content="Tinh dầu thảo mộc nguyên chất từ Đà Lạt, chưng cất bởi người Điếc. 13 hương từ 10.000đ. Nến sáp dừa, xà bông handmade, nước hoa cao nguyên. 1.170+ đánh giá 5★.">
+<meta property="og:title" content="Tinh Dầu Thảo Mộc Đà Lạt Nguyên Chất — Nhà Của Thời Thanh Xuân">
+<meta property="og:description" content="13 hương thảo mộc Đà Lạt, từ 10.000đ. Nến sáp dừa, xà bông handmade, nước hoa. 1.170+ đánh giá 5★.">
+<meta property="og:image" content="assets/img-bottles-collection.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/logo TTX-01.png">
+<link rel="apple-touch-icon" href="assets/logo TTX-01.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --forest:#2B5240;
+  --forest-mid:#3D7060;
+  --forest-dark:#1A3428;
+  --forest-light:#5A9A7A;
+  --bg:#F8F3EB;
+  --bg-warm:#F0E9DD;
+  --bg-aged:#E8DFD0;
+  --off-white:#FEFCF8;
+  --gold:#B87A28;
+  --gold-light:#C9963A;
+  --gold-pale:#F5EDD8;
+  --cream:#FEFAE0;
+  --text:#251C0E;
+  --text-muted:#7A6852;
+  --border:#D8CCBA;
+  --white:#FFFFFF;
+  /* compat aliases */
+  --amber:var(--gold);
+  --amber-light:var(--gold-light);
+  --amber-pale:var(--gold-pale);
+  --cream-mid:var(--bg-warm);
+  --cream-dark:var(--border);
+  --sage:var(--forest-light);
+}
+
+html{scroll-behavior:smooth;scroll-padding-top:148px}
+
+/* ── TYPOGRAPHY SYSTEM ── */
+/* Headers: Montserrat ALL CAPS — bold geometric */
+h1,h2,h3,h4,h5,h6{
+  font-family:'Montserrat','Be Vietnam Pro',sans-serif;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  font-style:normal;
+}
+h1{letter-spacing:.05em;font-weight:800}
+h2{letter-spacing:.06em;font-weight:700}
+h3,h4{letter-spacing:.07em;font-weight:600}
+
+/* Section labels stay uppercase — slightly smaller tracking than h */
+.section-label,
+.hero-tag,.hero-eyebrow,.hero-slide-label,
+.ws-hero-tag,.ws-intro-label,.ws-includes-label,.ws-contact-label,
+.phub-tab,/* Body: Courier New — typewriter vintage */
+body{font-family:'Courier New','Courier',monospace;color:var(--text);line-height:1.8;letter-spacing:-0.07em;font-size:.95rem;text-shadow:0 0 0.5px currentColor;-webkit-font-smoothing:antialiased}
+
+/* ── BOXED LAYOUT ── */
+.page-wrap{
+  max-width:1660px;margin:0 auto;
+  background:var(--bg);
+  position:relative;
+  box-shadow:0 0 0 1px rgba(37,28,14,.06),0 8px 60px rgba(37,28,14,.14);
+  min-height:100vh;
+}
+/* Fixed elements phải căn theo page-wrap */
+nav,
+.sticky-bar,
+.welcome-strip{
+  right:auto !important;
+  left:50% !important;
+  transform:translateX(-50%) !important;
+  width:100% !important;
+  max-width:1660px !important;
+}
+/* Cat-nav: sticky, nằm trong page-wrap → tự follow box, không cần left/transform */
+/* Floating Zalo: trên màn > 1660px thì ghim theo edge page-wrap */
+@media(min-width:1660px){
+  .floating-zalo{right:calc((100vw - 1660px)/2 + 18px)}
+}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:center;position:relative;padding:0 52px;height:92px;background:rgba(248,243,235,0.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(184,122,40,.18);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
+.nav-brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.nav-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;flex-shrink:0}
+.nav-right{display:flex;align-items:center;gap:10px;margin-left:auto;flex-shrink:0}
+.nav-center a{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border-radius:4px;transition:all .2s;white-space:nowrap}
+.nav-center a:hover{color:var(--gold);background:rgba(184,122,40,.07)}
+.nav-center a.nav-active{color:var(--gold);background:rgba(184,122,40,.1)}
+.nav-sep{color:var(--border);font-size:.65rem;user-select:none;padding:0 2px}
+.nav-zalo{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid rgba(184,122,40,.25);padding:8px 14px;border-radius:4px;transition:all .2s;white-space:nowrap}
+.nav-zalo:hover{background:rgba(184,122,40,.06);color:var(--gold);border-color:rgba(184,122,40,.45)}
+.nav-cta{background:var(--gold);color:var(--text);padding:10px 22px;border-radius:4px;font-family:'Montserrat',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:all .2s;white-space:nowrap}
+.nav-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
+
+/* ── WELCOME STRIP ── */
+.welcome-strip{
+  display:none;
+  background:var(--amber-pale);
+  border-bottom:2px solid rgba(201,168,76,.4);
+  padding:13px 48px;
+  position:fixed;top:68px;left:0;right:0;z-index:200;
+  transform:translateY(-110%);
+  transition:transform .4s cubic-bezier(.4,0,.2,1);
+}
+.welcome-strip.show{display:block;transform:translateY(0)}
+.welcome-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+.welcome-text{font-size:.85rem;color:var(--amber)}
+.welcome-text strong{color:var(--text);font-weight:700}
+.welcome-actions{display:flex;align-items:center;gap:10px}
+.welcome-cta{
+  background:var(--gold);color:var(--off-white);
+  padding:8px 18px;border-radius:100px;text-decoration:none;
+  font-size:.8rem;font-weight:600;transition:background .2s;
+}
+.welcome-cta:hover{background:var(--text)}
+.welcome-close{
+  background:none;border:none;cursor:pointer;
+  color:var(--amber);font-size:1.1rem;padding:4px;line-height:1;
+  transition:color .2s;
+}
+.welcome-close:hover{color:var(--text)}
+
+/* ── HERO SLIDESHOW ── */
+.hero{
+  height:88vh;min-height:560px;max-height:960px;
+  position:relative;overflow:hidden;
+  background:#2C1E0E;
+}
+
+/* Slides — background photos */
+.hero-slides{position:absolute;inset:0}
+.hero-slide{
+  position:absolute;inset:0;
+  opacity:0;transition:opacity 1.4s ease;
+}
+.hero-slide.active{opacity:1}
+.hero-slide-bg{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center;
+  display:block;
+  transform:scale(1.06);
+  transition:transform 7s ease;
+}
+.hero-slide.active .hero-slide-bg{transform:scale(1)}
+
+/* Overlay — dark gradient left-heavy */
+.hero-slide::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(
+    105deg,
+    rgba(37,28,14,.86) 0%,
+    rgba(58,42,22,.66) 40%,
+    rgba(58,42,22,.28) 72%,
+    rgba(0,0,0,.04) 100%
+  );
+}
+
+/* Content fixed above slides */
+.hero-content{
+  position:absolute;inset:0;z-index:10;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:80px 72px 96px;
+  max-width:760px;
+}
+.hero-slide-label{
+  font-family:'Montserrat',sans-serif;
+  font-size:.6rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  color:rgba(184,122,40,.85);
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:18px;
+  opacity:0;transform:translateY(10px);
+  transition:opacity .5s .1s,transform .5s .1s;
+}
+.hero-slide-label::before{
+  content:'';width:36px;height:1px;
+  background:rgba(184,122,40,.5);flex-shrink:0;
+}
+.hero-content h1{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(2rem,4.2vw,4.6rem);
+  color:var(--cream);line-height:1.08;
+  font-weight:800;font-style:normal;
+  letter-spacing:.06em;
+  margin-bottom:20px;
+  opacity:0;transform:translateY(20px);
+  transition:opacity .7s .25s,transform .7s .25s;
+}
+.hero-content h1 em{
+  color:var(--gold-light);font-style:normal;
+  border-bottom:2px solid rgba(201,150,58,.4);
+  padding-bottom:2px;
+}
+.hero-content .hero-sub{
+  font-family:'Courier New',monospace;
+  color:rgba(253,251,247,.65);
+  font-size:.88rem;line-height:1.75;
+  letter-spacing:-0.07em;
+  max-width:480px;margin-bottom:36px;
+  opacity:0;transform:translateY(10px);
+  transition:opacity .6s .42s,transform .6s .42s;
+}
+.hero-ctas{
+  display:flex;gap:10px;flex-wrap:wrap;
+  opacity:0;transform:translateY(8px);
+  transition:opacity .55s .58s,transform .55s .58s;
+}
+/* Animate in when text-in class applied */
+.hero-content.text-in .hero-slide-label,
+.hero-content.text-in h1,
+.hero-content.text-in .hero-sub,
+.hero-content.text-in .hero-ctas{
+  opacity:1;transform:translateY(0);
+}
+
+/* Slide progress dots */
+.hero-dots{
+  position:absolute;bottom:32px;left:64px;
+  z-index:10;display:flex;gap:10px;align-items:center;
+}
+.hero-dot{
+  height:3px;width:24px;border-radius:2px;
+  background:rgba(255,255,255,.3);
+  cursor:pointer;transition:width .3s,background .3s;
+  position:relative;overflow:hidden;
+}
+.hero-dot.active{background:rgba(184,122,40,.35);width:44px}
+.hero-dot.active::after{
+  content:'';
+  position:absolute;top:0;left:0;height:100%;width:0%;
+  background:var(--gold-light);border-radius:2px;
+  animation:dotProgress 5s linear forwards;
+}
+@keyframes dotProgress{to{width:100%}}
+
+/* Scroll hint */
+.hero-scroll-hint{
+  position:absolute;bottom:32px;right:64px;z-index:10;
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  color:rgba(253,251,247,.35);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+}
+.hero-scroll-line{
+  width:1px;height:36px;
+  background:linear-gradient(to bottom,rgba(255,255,255,.25),transparent);
+  animation:scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse{0%,100%{opacity:.3}50%{opacity:.8}}
+
+/* Buttons */
+.btn-primary{
+  background:var(--gold-light);color:var(--text);
+  padding:13px 28px;border-radius:4px;text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  font-weight:700;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+  transition:all .22s;display:inline-flex;align-items:center;gap:8px;
+  position:relative;overflow:hidden;white-space:nowrap;
+}
+.btn-primary::before{
+  content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);
+  animation:beam 2.8s ease-in-out infinite;
+}
+.btn-primary:hover{background:var(--gold);color:var(--off-white);transform:translateY(-1px);box-shadow:0 6px 20px rgba(184,122,40,.35)}
+.btn-outline{
+  background:transparent;color:var(--cream);
+  padding:13px 28px;border-radius:4px;
+  border:1.5px solid rgba(255,255,255,.35);
+  font-family:'Montserrat',sans-serif;
+  font-weight:600;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+  text-decoration:none;transition:all .2s;white-space:nowrap;
+}
+.btn-outline:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6)}
+
+/* Mobile */
+.hero-stats{display:none}
+.hero-mobile-img{display:none}
+.hero-left,.hero-right,.hero-right-img,.hero-tag{display:none}
+
+/* ── TRUST BAR ── */
+.trust-bar{
+  background:var(--off-white);
+  border-bottom:1px solid var(--border);
+  padding:18px 48px;
+  display:flex;align-items:center;justify-content:center;
+  gap:44px;flex-wrap:wrap;
+}
+.trust-item{
+  display:flex;align-items:center;gap:9px;
+  font-size:.82rem;color:var(--text-muted);font-weight:500;
+}
+.trust-item-icon{font-size:1.05rem}
+.trust-item strong{color:var(--text)}
+
+/* ── SECTIONS COMMON ── */
+.section{padding:88px 48px}
+.container{max-width:1200px;margin:0 auto}
+.section-label{
+  font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:10px;
+  display:flex;align-items:center;gap:10px;
+}
+.section-label::before{content:'';width:24px;height:1.5px;background:rgba(184,122,40,.4);flex-shrink:0}
+.section-title{
+  font-family:'Montserrat','Be Vietnam Pro',sans-serif;
+  font-size:clamp(1.9rem,3vw,2.7rem);
+  color:var(--text);line-height:1.2;margin-bottom:16px;
+}
+.section-desc{color:var(--text-muted);max-width:560px;font-size:.975rem;line-height:1.78}
+
+/* ── BRAND STORY ── */
+.story{background:var(--off-white)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.story-text-block{margin-top:24px}
+.story-text-block p{
+  color:var(--text-muted);line-height:1.87;margin-bottom:20px;font-size:.975rem;
+}
+.story-text-block p:last-child{margin-bottom:0}
+.story-values{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.story-value-tag{
+  background:rgba(184,122,40,.08);border:1px solid rgba(184,122,40,.18);
+  color:var(--gold);padding:7px 15px;border-radius:100px;
+  font-size:.78rem;font-weight:600;
+}
+.story-visual-card{
+  background:#2C1E0E;border-radius:20px;overflow:hidden;
+}
+.story-visual-card img{width:100%;display:block}
+.story-stats{padding:32px 36px;display:flex;flex-direction:column;gap:22px}
+.story-stat{
+  display:flex;align-items:center;gap:18px;
+  padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.09);
+}
+.story-stat:last-child{border-bottom:none;padding-bottom:0}
+.story-stat-num{
+  font-family:'Montserrat',sans-serif;
+  font-size:2.2rem;color:var(--amber-light);min-width:80px;line-height:1;flex-shrink:0;
+}
+.story-stat-info strong{color:var(--cream);display:block;font-size:.9rem;margin-bottom:2px;font-weight:600}
+.story-stat-info span{color:rgba(253,251,247,.5);font-size:.78rem}
+
+/* ── CATALOG ── */
+.catalog{background:var(--bg-warm)}
+.catalog-header{margin-bottom:16px}
+
+/* ── SCENT GROUPS BY PURPOSE ── */
+.scent-strip{margin:36px 0 52px}
+.scent-strip-label{
+  font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-muted);display:block;margin-bottom:16px;
+}
+.scent-groups{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+}
+.scent-group{
+  background:var(--off-white);border:1.5px solid var(--border);
+  border-radius:16px;padding:18px 16px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.scent-group:hover{border-color:rgba(184,122,40,.28);box-shadow:0 4px 18px rgba(37,28,14,.06)}
+.scent-group-header{
+  display:flex;align-items:flex-start;gap:9px;
+  margin-bottom:12px;padding-bottom:12px;
+  border-bottom:1px solid var(--border);
+}
+.scent-group-icon{font-size:1.15rem;flex-shrink:0;margin-top:1px}
+.scent-group-name{font-size:.82rem;font-weight:700;color:var(--text);line-height:1.25}
+.scent-group-sub{font-size:.71rem;color:var(--text-muted);margin-top:3px;line-height:1.4}
+
+/* Each scent row */
+.scent-item{
+  display:flex;align-items:center;gap:9px;
+  padding:7px 0;
+  border-bottom:1px solid rgba(37,28,14,.05);
+  position:relative;cursor:default;
+}
+.scent-item:last-child{border-bottom:none;padding-bottom:2px}
+.scent-item-dot{
+  width:12px;height:12px;border-radius:50%;
+  background:var(--dc);flex-shrink:0;
+  transition:transform .18s;
+}
+.scent-item:hover .scent-item-dot{transform:scale(1.35)}
+.scent-item-name{
+  font-size:.78rem;font-weight:500;color:var(--text);flex:1;line-height:1.3;
+  transition:color .18s;
+}
+.scent-item:hover .scent-item-name{color:var(--gold)}
+.scent-item-new{
+  font-size:.58rem;font-weight:800;letter-spacing:.04em;
+  color:var(--gold);background:var(--gold-pale);
+  border-radius:4px;padding:1px 5px;flex-shrink:0;
+}
+
+/* Hover product card */
+.scent-card{
+  display:none;
+  position:absolute;
+  left:calc(100% + 12px);top:50%;transform:translateY(-50%);
+  z-index:400;width:220px;
+  background:var(--white);
+  border:1.5px solid var(--border);
+  border-radius:14px;
+  box-shadow:0 8px 32px rgba(37,28,14,.15);
+  padding:14px 15px;
+  pointer-events:none;
+}
+.scent-card::before{
+  content:'';position:absolute;
+  right:100%;top:50%;transform:translateY(-50%);
+  border:6px solid transparent;
+  border-right-color:var(--border);
+}
+.scent-card::after{
+  content:'';position:absolute;
+  right:calc(100% - 1px);top:50%;transform:translateY(-50%);
+  border:5px solid transparent;
+  border-right-color:var(--white);
+  z-index:1;
+}
+.scent-item:hover .scent-card{display:block}
+/* Last group — card appears left */
+.scent-group:last-child .scent-card,
+.scent-group:nth-last-child(2) .scent-card{
+  left:auto;right:calc(100% + 12px);
+}
+.scent-group:last-child .scent-card::before,
+.scent-group:nth-last-child(2) .scent-card::before{
+  right:auto;left:100%;
+  border-right-color:transparent;border-left-color:var(--border);
+}
+.scent-group:last-child .scent-card::after,
+.scent-group:nth-last-child(2) .scent-card::after{
+  right:auto;left:calc(100% - 1px);
+  border-right-color:transparent;border-left-color:var(--white);
+}
+
+.sc-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.sc-circle{width:22px;height:22px;border-radius:50%;background:var(--dc);flex-shrink:0}
+.sc-name{font-size:.88rem;font-weight:700;color:var(--text)}
+.sc-desc{font-size:.75rem;color:var(--text-muted);line-height:1.55;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.sc-product-label{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px}
+.sc-product-row{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  background:var(--bg-warm);border-radius:8px;padding:7px 10px;
+}
+.sc-product-name{font-size:.74rem;font-weight:600;color:var(--text);line-height:1.3}
+.sc-price{font-size:.68rem;color:var(--text-muted);margin-top:1px}
+.sc-btn{
+  font-size:.69rem;font-weight:700;color:var(--gold);
+  text-decoration:none;white-space:nowrap;flex-shrink:0;
+}
+.sc-btn:hover{text-decoration:underline}
+
+@media(max-width:1100px){.scent-groups{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){
+  .scent-groups{grid-template-columns:1fr}
+  .scent-card{left:0;right:auto;top:calc(100% + 8px);transform:none;width:210px}
+  .scent-card::before,.scent-card::after{display:none}
+  .scent-group:last-child .scent-card,.scent-group:nth-last-child(2) .scent-card{left:0;right:auto}
+}
+
+.volume-groups{display:flex;flex-direction:column;gap:48px}
+.volume-group{
+  background:var(--off-white);border-radius:20px;padding:36px;
+  border:1px solid var(--border);
+  transition:box-shadow .3s,border-color .3s;
+  scroll-margin-top:88px;
+}
+.volume-group:hover{box-shadow:0 8px 48px rgba(37,28,14,.09);border-color:rgba(184,122,40,.22)}
+
+.vg-header{display:flex;align-items:flex-start;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.vg-badge{
+  min-width:72px;height:72px;background:#2C1E0E;border-radius:14px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.vg-badge.amber{background:var(--amber)}
+.vg-badge-num{
+  font-family:'Montserrat',sans-serif;font-size:1.6rem;
+  color:var(--amber-light);line-height:1;
+}
+.vg-badge.amber .vg-badge-num{color:var(--cream)}
+.vg-badge-unit{font-size:.62rem;color:rgba(253,251,247,.55);margin-top:2px;letter-spacing:.05em}
+.vg-info{flex:1}
+.vg-info h3{font-family:'Montserrat',sans-serif;font-size:1.25rem;color:var(--text);margin-bottom:5px}
+.vg-info p{font-size:.85rem;color:var(--text-muted);margin-bottom:6px}
+.vg-price{font-weight:700;color:var(--gold)}
+.vg-tags{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;margin-top:6px}
+.vg-tag{
+  display:inline-block;background:var(--cream-mid);
+  color:var(--text-muted);padding:4px 12px;border-radius:100px;
+  font-size:.72rem;font-weight:600;
+  flex:none;white-space:nowrap;
+}
+.vg-tag.b2b{
+  background:rgba(201,150,58,0.12);
+  border:1.5px solid rgba(201,150,58,0.38);
+  color:#8A6018;
+  font-weight:700;
+}
+
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.product-card{
+  background:var(--off-white);border-radius:14px;padding:24px;
+  border:1.5px solid var(--cream-dark);
+  transition:all .25s;display:flex;flex-direction:column;
+}
+.product-card:hover{
+  transform:translateY(-4px);border-color:var(--gold-light);
+  box-shadow:0 10px 32px rgba(184,122,40,.12);
+}
+.pc-scents{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
+.pc-scent{
+  background:var(--cream-dark);color:var(--text-muted);
+  padding:3px 9px;border-radius:100px;font-size:.7rem;font-weight:500;
+}
+.pc-scent.new{background:var(--amber-pale);color:var(--amber);border:1px solid rgba(201,168,76,.3)}
+
+/* Color dots for 1ml card */
+.pc-color-dots{
+  display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px;
+}
+.pc-color-dot{
+  width:14px;height:14px;border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.5);
+  box-shadow:0 0 0 1px rgba(0,0,0,.06);
+  transition:transform .15s;
+  cursor:default;
+}
+.pc-color-dot:hover{transform:scale(1.3)}
+
+.pc-name{
+  font-family:'Montserrat',sans-serif;font-size:1.05rem;
+  color:var(--text);margin-bottom:8px;
+}
+.pc-desc{font-size:.82rem;color:var(--text-muted);line-height:1.67;margin-bottom:18px;flex:1}
+.pc-
+.pc-price{font-weight:700;color:var(--gold);font-size:.95rem}
+.btn-shopee{
+  background:var(--gold);color:var(--off-white);
+  padding:9px 18px;border-radius:4px;text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  transition:all .2s;white-space:nowrap;
+}
+.btn-shopee:hover{background:var(--text);transform:translateY(-1px)}
+.btn-shopee.amber{background:var(--gold-light)}
+.btn-shopee.amber:hover{background:var(--gold)}
+
+/* ── HOW TO CHOOSE ── */
+.how-choose{background:var(--bg-warm)}
+.choose-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:20px;margin-top:48px;
+}
+.choose-card{
+  background:var(--cream-mid);border-radius:16px;padding:28px 22px;
+  border:1px solid var(--cream-dark);
+  transition:border-color .2s,box-shadow .2s;
+}
+.choose-card:hover{border-color:var(--gold-light);box-shadow:0 6px 24px rgba(184,122,40,.09)}
+.choose-num{
+  font-family:'Montserrat',sans-serif;font-size:2rem;
+  color:var(--amber-light);opacity:.45;display:block;line-height:1;margin-bottom:12px;
+}
+.choose-card h4{font-size:.95rem;color:var(--text);margin-bottom:8px;font-weight:700}
+.choose-card p{font-size:.82rem;color:var(--text-muted);line-height:1.65}
+.choose-sizes{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.choose-size{
+  background:var(--white);border:1.5px solid var(--border);
+  padding:4px 10px;border-radius:6px;font-size:.72rem;
+  color:var(--gold);font-weight:700;
+}
+
+/* ── B2B ── */
+.b2b{background:#2C1E0E;padding:88px 48px}
+.b2b-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.b2b .section-label{color:var(--amber-light)}
+.b2b .section-title{color:var(--cream)}
+.b2b .section-desc{color:rgba(253,251,247,.66);max-width:100%}
+.b2b-list{display:flex;flex-direction:column;gap:14px;margin-top:32px}
+.b2b-item{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);
+  border-radius:14px;padding:18px 20px;
+  display:flex;align-items:center;gap:16px;
+  transition:background .2s;
+}
+.b2b-item:hover{background:rgba(255,255,255,.1)}
+.b2b-item-icon{font-size:1.7rem;flex-shrink:0}
+.b2b-item-body strong{color:var(--cream);display:block;font-size:.9rem;margin-bottom:2px;font-weight:600}
+.b2b-item-body span{color:rgba(253,251,247,.55);font-size:.78rem}
+.b2b-cards{display:flex;flex-direction:column;gap:18px}
+.b2b-card{
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;padding:24px;
+  transition:background .2s;
+}
+.b2b-card:hover{background:rgba(255,255,255,.09)}
+.b2b-card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
+.b2b-card-title{font-family:'Montserrat',sans-serif;font-size:1.1rem;color:var(--cream)}
+.b2b-card-badge{
+  font-size:.72rem;color:var(--amber-light);font-weight:600;
+  background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.25);
+  padding:3px 9px;border-radius:6px;white-space:nowrap;
+}
+.b2b-card p{font-size:.82rem;color:rgba(253,251,247,.58);line-height:1.67;margin-bottom:16px}
+.btn-b2b{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--gold-light);color:var(--text);
+  padding:11px 22px;border-radius:4px;text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  transition:all .2s;
+}
+.btn-b2b:hover{background:var(--gold);color:var(--off-white)}
+
+/* ── TESTIMONIALS ── */
+.testimonials{background:var(--bg-warm)}
+.testimonials-summary{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  margin-top:8px;margin-bottom:48px;
+}
+.testimonials-stars{color:var(--amber-light);font-size:1.3rem;letter-spacing:2px}
+.testimonials-count{font-size:.88rem;color:var(--text-muted)}
+.testimonials-count strong{color:var(--text)}
+.testimonials-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.testimonial-card{
+  background:var(--off-white);border-radius:18px;padding:28px;
+  border:1px solid var(--cream-dark);
+  transition:border-color .2s,box-shadow .2s;
+}
+.testimonial-card:hover{border-color:var(--gold-light);box-shadow:0 8px 28px rgba(184,122,40,.1)}
+.testimonial-stars{display:flex;gap:2px;margin-bottom:14px}
+.star{color:var(--amber-light);font-size:1rem}
+.testimonial-text{
+  font-size:.88rem;color:var(--text);line-height:1.75;
+  margin-bottom:20px;font-style:italic;
+}
+.testimonial-author{
+  display:flex;align-items:center;gap:12px;
+  padding-top:16px;border-top:1px solid var(--cream-dark);
+}
+.testimonial-avatar{
+  width:38px;height:38px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--white);font-size:.88rem;font-weight:700;
+  font-family:'Montserrat',sans-serif;flex-shrink:0;
+}
+.testimonial-name{font-size:.84rem;font-weight:700;color:var(--text)}
+.testimonial-role{font-size:.73rem;color:var(--text-muted)}
+
+/* ── FINAL CTA ── */
+.final-cta{
+  background:var(--gold-pale);text-align:center;
+  padding:100px 48px;
+}
+.final-cta .section-label{justify-content:center}
+.final-cta .section-title{margin:0 auto 16px;max-width:560px}
+.final-cta .section-desc{margin:0 auto 32px}
+.final-cta-image{
+  width:100%;max-width:520px;margin:0 auto 32px;
+  border-radius:20px;display:block;
+  box-shadow:0 20px 60px rgba(37,28,14,.14);
+  opacity:.92;
+}
+.final-note{margin-top:18px;font-size:.8rem;color:var(--text-muted)}
+
+/* ── FINAL CTA — 2 CTA NGANG NHAU ── */
+.final-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  max-width: 660px;
+  margin: 0 auto 28px;
+}
+.final-cta-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 22px;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.28s cubic-bezier(0.25,1,0.5,1);
+  position: relative;
+  overflow: hidden;
+}
+.final-cta-shopee {
+  background: var(--amber);
+  box-shadow: 0 6px 20px rgba(201,150,58,0.3);
+}
+.final-cta-shopee::before {
+  content: '';
+  position: absolute; top: 0; left: -100%;
+  width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent);
+  animation: beam 2.8s ease-in-out infinite;
+}
+.final-cta-shopee:hover {
+  background: var(--amber-light);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(201,150,58,0.45);
+}
+.final-cta-zalo {
+  background: #2C1E0E;
+  box-shadow: 0 6px 20px rgba(37,28,14,0.2);
+  border: 1px solid rgba(184,122,40,0.18);
+}
+.final-cta-zalo:hover {
+  background: var(--text);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(37,28,14,0.3);
+}
+.fcc-icon { font-size: 1.5rem; flex-shrink: 0; line-height: 1; }
+.fcc-body { flex: 1; display: flex; flex-direction: column; gap: 2px; text-align: left; }
+.fcc-label { font-family:'Montserrat',sans-serif;font-size: 0.58rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; display: block; }
+.final-cta-shopee .fcc-label { color: rgba(37,28,14,0.5); }
+.final-cta-zalo .fcc-label { color: rgba(254,250,224,0.45); }
+.fcc-title { font-family:'Montserrat',sans-serif;font-size: 0.82rem; font-weight: 700;letter-spacing:.04em; display: block; }
+.final-cta-shopee .fcc-title { color: var(--text); }
+.final-cta-zalo .fcc-title { color: var(--cream); }
+.fcc-desc { font-size: 0.71rem; line-height: 1.4; margin-top: 1px; }
+.final-cta-shopee .fcc-desc { color: rgba(37,28,14,0.5); }
+.final-cta-zalo .fcc-desc { color: rgba(254,250,224,0.5); }
+.fcc-arrow { font-size: 1rem; flex-shrink: 0; opacity: 0.55; }
+.final-cta-shopee .fcc-arrow { color: var(--text); }
+.final-cta-zalo .fcc-arrow { color: var(--cream); }
+
+/* Zalo button trong sticky bar */
+.sticky-bar-zalo {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,.07);
+  border: 1.5px solid rgba(201,150,58,.4);
+  color: var(--cream);
+  padding: 13px 24px; border-radius: 4px;
+  font-family:'Montserrat',sans-serif;
+  text-decoration: none; font-size: .68rem; font-weight: 700;
+  letter-spacing:.12em; text-transform:uppercase;
+  white-space: nowrap; transition: all .2s; flex-shrink: 0;
+}
+.sticky-bar-zalo:hover { background: rgba(201,150,58,.15); border-color: rgba(201,150,58,.7); color: var(--gold-light); }
+
+@media (max-width: 560px) {
+  .final-cta-grid { grid-template-columns: 1fr; }
+  .final-cta-card { padding: 16px 18px; }
+  .sticky-bar-zalo { display: none; }
+}
+
+/* ── NẾN THƠM ── */
+.nen-thom{background:var(--bg-warm)}
+.candle-feature-strip{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  margin:20px 0 36px;padding:14px 20px;
+  background:var(--white);border-radius:12px;border:1px solid var(--border);
+}
+.candle-feature-item{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:.76rem;color:var(--text-muted);font-weight:500;
+}
+.candle-feature-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--gold-light);flex-shrink:0;
+}
+.candle-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:16px;margin-top:0;
+}
+.candle-combo-card{
+  grid-column:1/-1;
+  background:linear-gradient(135deg,#2C1E0E,#3D2A14);
+  border-radius:14px;padding:24px 28px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;
+}
+.candle-combo-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.15rem;color:var(--cream);margin-bottom:4px;
+}
+.candle-combo-desc{font-size:.8rem;color:rgba(253,251,247,.6)}
+.candle-combo-price{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.6rem;color:var(--amber-light);white-space:nowrap;
+}
+
+/* ── XÀ BÔNG HANDMADE ── */
+.xa-bong{background:var(--bg-warm)}
+.soap-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(110px,1fr));
+  gap:10px;margin:32px 0;
+}
+.soap-card{
+  background:var(--white);border-radius:14px;
+  padding:16px 10px;text-align:center;
+  border:1.5px solid var(--border);
+  transition:all .2s;cursor:default;
+}
+.soap-card:hover{
+  transform:translateY(-3px);
+  border-color:var(--gold-light);
+  box-shadow:0 6px 20px rgba(184,122,40,.1);
+}
+.soap-swatch{
+  width:40px;height:40px;border-radius:50%;
+  margin:0 auto 8px;
+}
+.soap-name{
+  font-size:.73rem;font-weight:600;
+  color:var(--text);line-height:1.3;margin-bottom:3px;
+}
+.soap-price{font-size:.68rem;color:var(--gold);font-weight:700}
+.soap-cta-strip{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;
+  background:var(--white);border:1px solid var(--border);
+  border-radius:14px;padding:18px 24px;
+}
+.soap-cta-text{font-size:.86rem;color:var(--text-muted)}
+.soap-cta-text strong{color:var(--text)}
+.product-divider{border:none;border-top:1px solid var(--border);margin:52px 0}
+.sub-section-title{
+  font-family:'Montserrat','Be Vietnam Pro',sans-serif;
+  font-size:clamp(1.5rem,2.5vw,2.1rem);
+  color:var(--text);line-height:1.2;margin-bottom:12px;
+}
+
+/* ── NƯỚC HOA ── */
+.nuoc-hoa{background:#2C1E0E;padding:88px 48px}
+.nuoc-hoa .section-label{color:var(--amber-light)}
+.nuoc-hoa .section-title{color:var(--cream)}
+.nuoc-hoa .section-desc{color:rgba(253,251,247,.65);max-width:580px}
+.perfume-collections{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:20px;margin-top:44px;
+}
+.perfume-collection{
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:20px;padding:32px 28px;
+  transition:background .2s;
+}
+.perfume-collection:hover{background:rgba(255,255,255,.09)}
+.perfume-collection-label{
+  font-size:.65rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--amber-light);
+  margin-bottom:8px;display:block;
+}
+.perfume-collection-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.45rem;color:var(--cream);
+  font-style:italic;margin-bottom:16px;line-height:1.25;
+}
+.perfume-scents{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.perfume-scent-tag{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.12);
+  color:rgba(253,251,247,.75);
+  padding:4px 12px;border-radius:100px;
+  font-size:.72rem;font-weight:500;
+}
+.perfume-sizes{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.perfume-size{
+  background:rgba(201,168,76,.12);
+  border:1px solid rgba(201,168,76,.25);
+  border-radius:10px;padding:8px 14px;text-align:center;
+}
+.perfume-size-vol{font-size:.66rem;color:rgba(253,251,247,.5);display:block}
+.perfume-size-price{font-size:.84rem;font-weight:700;color:var(--amber-light);display:block;margin-top:2px}
+
+/* ── DƯỠNG DA ── */
+.duong-da{background:var(--bg-warm)}
+.skincare-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:16px;margin-top:40px;
+}
+
+/* Responsive new sections */
+@media(max-width:900px){
+  .perfume-collections{grid-template-columns:1fr}
+  .nuoc-hoa{padding:64px 24px}
+  .skincare-grid{grid-template-columns:1fr}
+  /* reset img-left order flip — image always below text on mobile */
+  .section-intro-split.img-left .intro-img-wrap{order:0}
+  .candle-feature-strip{margin:16px 0 20px;padding:12px 16px}
+}
+@media(max-width:600px){
+  .soap-grid{grid-template-columns:repeat(3,1fr)}
+  .candle-combo-card{flex-direction:column;align-items:flex-start}
+  .skincare-grid{grid-template-columns:1fr}
+  .candle-grid{grid-template-columns:1fr}
+  .cat-nav-emoji{font-size:.8rem}
+  .product-divider{margin:32px 0}
+  .nuoc-hoa{padding:56px 20px}
+}
+@media(max-width:375px){
+  .nuoc-hoa{padding:48px 16px}
+  .candle-grid{gap:12px}
+  .soap-grid{gap:8px}
+}
+
+/* ── IMAGE ENHANCEMENTS ── */
+.process-banner-img{
+  width:100%;height:300px;
+  object-fit:cover;object-position:center 35%;
+  border-radius:20px;display:block;
+  margin-bottom:52px;
+  box-shadow:0 8px 32px rgba(37,28,14,.12);
+}
+.gmlat-lifestyle-img{
+  width:100%;height:220px;
+  object-fit:cover;object-position:center 20%;
+  border-radius:18px;display:block;margin-bottom:16px;
+  box-shadow:0 10px 30px rgba(37,28,14,.13);
+}
+.candle-mood-banner{
+  background:linear-gradient(135deg,#1E1208 0%,#2C1E0E 60%,#180E06 100%);
+  border-radius:20px;padding:48px 40px;
+  text-align:center;margin-bottom:36px;
+  position:relative;overflow:hidden;
+}
+.candle-mood-banner::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  background:radial-gradient(ellipse at 50% -10%,rgba(201,150,58,.18) 0%,transparent 65%);
+  pointer-events:none;
+}
+.candle-mood-flames{
+  display:flex;justify-content:center;align-items:flex-end;gap:28px;
+  margin-bottom:22px;position:relative;z-index:1;
+}
+.candle-mood-flame-item{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+}
+.candle-mood-flame-emoji{
+  filter:drop-shadow(0 0 10px rgba(201,150,58,.55));
+  animation:candleFlicker 3.5s ease-in-out infinite;
+}
+.candle-mood-flame-item:nth-child(1) .candle-mood-flame-emoji{font-size:2.4rem}
+.candle-mood-flame-item:nth-child(2) .candle-mood-flame-emoji{font-size:3.2rem;animation-delay:.9s}
+.candle-mood-flame-item:nth-child(3) .candle-mood-flame-emoji{font-size:2.4rem;animation-delay:1.8s}
+@keyframes candleFlicker{
+  0%,100%{transform:scale(1) rotate(-1deg)}
+  50%{transform:scale(1.06) rotate(1.2deg)}
+}
+.candle-mood-size{
+  font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(201,150,58,.55);
+}
+.candle-mood-quote{
+  font-family:'Montserrat','Be Vietnam Pro',sans-serif;
+  font-size:clamp(1.25rem,2.2vw,1.65rem);
+  color:var(--cream);font-style:italic;line-height:1.45;
+  position:relative;z-index:1;max-width:480px;margin:0 auto;
+}
+.photo-band{
+  width:100%;height:280px;
+  object-fit:cover;object-position:center;
+  border-radius:20px;display:block;
+  margin:0 0 52px;
+  box-shadow:0 12px 40px rgba(37,28,14,.11);
+}
+.vol-1ml-img{
+  width:100%;height:180px;
+  object-fit:cover;object-position:center top;
+  border-radius:14px;display:block;margin-bottom:20px;
+}
+@media(max-width:900px){
+  .process-banner-img{height:220px;margin-bottom:36px}
+  .gmlat-lifestyle-img{height:200px}
+  .candle-mood-banner{padding:36px 24px}
+  .photo-band{height:200px}
+}
+@media(max-width:600px){
+  .process-banner-img{height:180px;border-radius:14px}
+  .gmlat-lifestyle-img{height:180px}
+  .photo-band{height:160px}
+}
+
+/* ── SECTION INTRO SPLIT (text left · image right) ── */
+.section-intro-split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:52px;
+  align-items:center;
+  margin-bottom:52px;
+}
+.intro-text{display:flex;flex-direction:column;gap:0}
+.section-intro-split.img-left .intro-img-wrap{order:-1}
+.intro-img-wrap{
+  border-radius:20px;overflow:hidden;
+  box-shadow:0 12px 40px rgba(37,28,14,.13);
+  flex-shrink:0;
+}
+.intro-img-wrap img{
+  width:100%;aspect-ratio:4/3;
+  object-fit:cover;object-position:center;
+  display:block;
+}
+.intro-img-wrap img.portrait{aspect-ratio:3/4}
+.intro-img-wrap img.wide{aspect-ratio:16/9}
+
+/* perfume keeps full-width cinematic banner */
+.perfume-banner-img{
+  width:100%;aspect-ratio:21/9;
+  object-fit:cover;object-position:center 30%;
+  border-radius:20px;display:block;
+  margin-bottom:44px;
+  box-shadow:0 10px 36px rgba(0,0,0,.28);
+}
+/* b2b wide banner */
+.b2b-banner-wrap{max-width:1200px;margin:0 auto;padding:0 48px}
+.b2b-banner-img{
+  width:100%;aspect-ratio:16/9;
+  object-fit:cover;object-position:center 40%;
+  border-radius:20px;display:block;
+  margin-bottom:52px;
+  box-shadow:0 10px 36px rgba(0,0,0,.3);
+}
+
+@media(max-width:900px){
+  .section-intro-split{grid-template-columns:1fr;gap:28px}
+  .intro-img-wrap img{aspect-ratio:16/9}
+  .intro-img-wrap img.portrait{aspect-ratio:4/3}
+  .perfume-banner-img{aspect-ratio:16/9}
+  .b2b-banner-img{aspect-ratio:16/9}
+}
+@media(max-width:600px){
+  .section-intro-split{gap:20px;margin-bottom:32px}
+  .intro-img-wrap{border-radius:14px}
+  .intro-img-wrap img{aspect-ratio:4/3}
+  .intro-img-wrap img.portrait{aspect-ratio:4/3}
+  .perfume-banner-img,.b2b-banner-img{border-radius:14px;aspect-ratio:4/3}
+}
+@media(max-width:375px){
+  .section-intro-split{gap:16px;margin-bottom:24px}
+  .intro-img-wrap img,.intro-img-wrap img.portrait{aspect-ratio:3/2}
+}
+
+
+@media(max-width:900px){
+  .footer-copy-bar{padding:14px 24px}
+}
+@media(max-width:600px){
+  .footer-btn-ghost,
+}
+
+/* ── PROMO VIDEO SECTION ── */
+.promo-video-section{
+  background:var(--bg-aged);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:0;overflow:hidden;
+}
+.promo-video-inner{
+  max-width:1660px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;
+  min-height:480px;
+}
+/* Video side */
+.promo-video-wrap{
+  position:relative;overflow:hidden;
+  background:#1a1208;
+}
+.promo-video{
+  width:100%;height:100%;
+  object-fit:cover;display:block;
+  transition:opacity .4s;
+}
+.promo-video-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to right,transparent 70%,var(--bg-aged) 100%);
+  pointer-events:none;
+}
+.promo-vol-btn{
+  position:absolute;bottom:16px;left:16px;z-index:10;
+  background:rgba(37,28,14,.65);
+  border:1.5px solid rgba(255,255,255,.2);
+  border-radius:50%;width:42px;height:42px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:1.1rem;transition:all .2s;
+  backdrop-filter:blur(8px);
+}
+.promo-vol-btn:hover{background:rgba(37,28,14,.85);border-color:rgba(201,150,58,.5)}
+/* Content side */
+.promo-video-content{
+  padding:60px 52px 60px 48px;
+  display:flex;flex-direction:column;justify-content:center;gap:16px;
+  background:var(--bg-aged);
+}
+.promo-video-tag{
+  font-family:'Montserrat',sans-serif;
+  font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);display:flex;align-items:center;gap:8px;
+}
+.promo-video-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(2rem,3.5vw,3.2rem);font-weight:800;
+  text-transform:uppercase;letter-spacing:.04em;
+  color:var(--text);line-height:1.08;margin:0;
+}
+.promo-video-gift{
+  display:flex;align-items:flex-start;gap:14px;
+  background:var(--gold-pale);border:1.5px solid rgba(184,122,40,.3);
+  border-radius:12px;padding:16px 18px;
+}
+.promo-gift-icon{font-size:1.8rem;flex-shrink:0;line-height:1}
+.promo-gift-label{
+  font-family:'Montserrat',sans-serif;
+  font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:4px;
+}
+.promo-gift-name{
+  font-family:'Montserrat',sans-serif;
+  font-size:.92rem;font-weight:800;color:var(--text);
+  line-height:1.3;letter-spacing:.02em;text-transform:uppercase;
+}
+.promo-video-desc{
+  font-family:'Courier New',monospace;
+  font-size:.84rem;color:var(--text-muted);
+  line-height:1.75;letter-spacing:-0.05em;max-width:420px;
+}
+.promo-video-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.promo-video-btn-primary{
+  background:var(--gold);color:var(--text);text-decoration:none;
+  font-family:'Montserrat',sans-serif;font-size:.68rem;font-weight:800;
+  letter-spacing:.12em;text-transform:uppercase;
+  padding:13px 28px;border-radius:4px;transition:all .2s;white-space:nowrap;
+}
+.promo-video-btn-primary:hover{background:var(--gold-light);transform:translateY(-1px)}
+.promo-video-btn-ghost{
+  color:var(--text-muted);text-decoration:none;
+  font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  border:1.5px solid var(--border);
+  padding:12px 20px;border-radius:4px;transition:all .2s;white-space:nowrap;
+}
+.promo-video-btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.promo-video-note{
+  font-family:'Courier New',monospace;
+  font-size:.72rem;color:var(--text-muted);
+  letter-spacing:-0.04em;font-style:italic;
+}
+@media(max-width:900px){
+  .promo-video-inner{grid-template-columns:1fr;min-height:auto}
+  .promo-video-wrap{height:260px}
+  .promo-video-overlay{background:linear-gradient(to bottom,transparent 70%,var(--bg-aged) 100%)}
+  .promo-video-content{padding:36px 24px 44px}
+}
+@media(max-width:600px){
+  .promo-video-wrap{height:220px}
+  .promo-video-content{padding:28px 20px 36px}
+  .promo-video-ctas{flex-direction:column}
+}
+
+/* ── ANIMATIONS ── */
+@keyframes beam{
+  0%{left:-100%}100%{left:200%}
+}
+@keyframes floatBottles{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+.fade-up{
+  opacity:0;transform:translateY(24px);
+  transition:opacity .65s ease,transform .65s ease;
+}
+.fade-up.in{opacity:1;transform:translateY(0)}
+.fade-up.d1{transition-delay:.1s}
+.fade-up.d2{transition-delay:.2s}
+.fade-up.d3{transition-delay:.3s}
+
+
+/* ── HERO PRODUCT IMAGE ── */
+.hero-product-wrap{position:relative;text-align:center}
+
+/* ── MARQUEE ── */
+.marquee-strip{
+  background:#3D2A14;padding:13px 0;
+  overflow:hidden;position:relative;
+}
+.marquee-track{
+  display:flex;
+  animation:marqueeScroll 34s linear infinite;
+  width:max-content;
+}
+.marquee-track:hover{animation-play-state:paused}
+.marquee-item{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:0 30px;
+  font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(253,251,247,.7);white-space:nowrap;flex-shrink:0;
+}
+.marquee-item-dot{
+  width:5px;height:5px;border-radius:50%;
+  background:var(--gold);flex-shrink:0;opacity:.65;
+}
+@keyframes marqueeScroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
+/* ── PROCESS STRIP ── */
+.process{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.process .section-label,.process .section-title{text-align:center;justify-content:center}
+.process-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  margin-top:52px;position:relative;
+}
+.process-step{
+  padding:44px 36px;text-align:center;position:relative;
+}
+.process-step::after{
+  content:'';position:absolute;top:30%;right:0;
+  height:40%;width:1px;background:var(--border);
+}
+.process-step:last-child::after{display:none}
+.process-icon{
+  width:60px;height:60px;border-radius:50%;background:var(--bg-aged);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;font-size:1.4rem;
+}
+.process-num{
+  font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);display:block;margin-bottom:8px;
+}
+.process-step h3{font-size:.98rem;color:var(--text);margin-bottom:8px;font-weight:700}
+.process-step p{font-size:.81rem;color:var(--text-muted);line-height:1.67}
+
+/* ── MOOD SELECTOR ── */
+.mood{background:var(--bg)}
+.mood-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:36px 0 40px}
+.mood-tab{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 20px;border-radius:4px;
+  background:var(--bg-warm);border:1.5px solid var(--border);
+  font-family:'Montserrat',sans-serif;
+  font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-muted);
+  cursor:pointer;transition:all .2s;user-select:none;
+}
+.mood-tab:hover{border-color:var(--gold-light);color:var(--gold)}
+.mood-tab.active{background:var(--gold);border-color:var(--gold);color:var(--off-white)}
+.mood-tab-emoji{font-size:.95rem}
+.mood-results{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
+  min-height:200px;
+}
+.mood-scent-card{
+  background:var(--off-white);border-radius:16px;padding:22px 18px;
+  border:1.5px solid var(--border);
+  display:flex;flex-direction:column;gap:10px;
+  transition:all .22s;
+}
+.mood-scent-card:hover{transform:translateY(-3px);border-color:var(--gold-light);box-shadow:0 8px 24px rgba(184,122,40,.1)}
+.mood-scent-swatch{
+  width:44px;height:44px;border-radius:12px;flex-shrink:0;opacity:.85;
+}
+.mood-scent-info{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}
+.mood-scent-name{font-family:'Montserrat',sans-serif;font-size:1.05rem;color:var(--text);font-weight:600}
+.mood-scent-why{font-size:.78rem;color:var(--text-muted);line-height:1.58}
+.mood-scent-new{
+  display:inline-block;background:var(--gold-pale);color:var(--gold);
+  border:1px solid rgba(201,150,58,.3);
+  font-size:.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 7px;border-radius:4px;margin-left:6px;vertical-align:middle;
+}
+.mood-shopee-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  background:var(--gold);color:var(--off-white);
+  padding:8px 16px;border-radius:100px;text-decoration:none;
+  font-size:.75rem;font-weight:700;transition:all .2s;margin-top:4px;width:fit-content;
+}
+.mood-shopee-btn:hover{background:var(--text);transform:translateY(-1px)}
+
+/* ── FAQ ── */
+.faq{background:var(--off-white)}
+.faq-list{margin-top:44px;display:flex;flex-direction:column;gap:4px}
+.faq-item{
+  background:var(--off-white);border-radius:12px;
+  border:1px solid var(--border);overflow:hidden;
+  transition:border-color .2s;
+}
+.faq-item.open{border-color:rgba(184,122,40,.28)}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;cursor:pointer;
+  padding:22px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.faq-q-text{font-size:.95rem;font-weight:600;color:var(--text);text-align:left;line-height:1.4}
+.faq-chevron{
+  flex-shrink:0;width:22px;height:22px;border-radius:50%;
+  border:1.5px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.65rem;color:var(--text-muted);
+  transition:transform .25s,background .2s,border-color .2s;
+}
+.faq-item.open .faq-chevron{
+  transform:rotate(180deg);
+  background:var(--gold);border-color:var(--gold);color:var(--off-white);
+}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1)}
+.faq-a-inner{
+  padding:18px 28px 22px;border-top:1px solid var(--border);
+  font-size:.88rem;color:var(--text-muted);line-height:1.78;
+}
+
+/* ── STICKY BAR ── */
+.sticky-bar{
+  position:fixed;bottom:0;left:0;right:0;z-index:400;
+  background:#2C1E0E;
+  border-top:2px solid rgba(184,122,40,.5);
+  padding:16px 40px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  transform:translateY(110%);
+  transition:transform .4s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 -8px 32px rgba(37,28,14,.45);
+}
+.sticky-bar.show{transform:translateY(0)}
+.sticky-bar-left{display:flex;align-items:center;gap:20px;flex:1;min-width:0}
+.sticky-bar-text{font-size:.78rem;color:rgba(253,251,247,.5);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sticky-bar-text strong{color:rgba(253,251,247,.85);font-weight:600}
+.sticky-bar-price{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.6rem;font-weight:800;
+  color:var(--gold-light);line-height:1;letter-spacing:.02em;white-space:nowrap;flex-shrink:0;
+}
+.sticky-bar-cta{
+  background:var(--gold);color:var(--text);
+  padding:15px 36px;border-radius:4px;text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  white-space:nowrap;transition:all .2s;flex-shrink:0;
+  box-shadow:0 4px 16px rgba(184,122,40,.45);
+}
+.sticky-bar-cta:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,122,40,.55)}
+
+/* ── GIVE ME A LITTLE TIME ── */
+.gmlat{
+  background:var(--bg-warm);
+  padding:96px 48px;
+  position:relative;overflow:hidden;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.gmlat-bg{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  font-family:'Montserrat','Be Vietnam Pro',sans-serif;
+  font-size:clamp(4rem,11vw,9.5rem);
+  color:rgba(184,122,40,.05);font-weight:700;
+  white-space:nowrap;pointer-events:none;line-height:1;
+  letter-spacing:-.03em;
+}
+.gmlat-inner{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:72px;align-items:center;
+  position:relative;z-index:1;
+}
+.gmlat-left .section-label{color:var(--gold)}
+.gmlat-title{
+  font-family:'Montserrat','Be Vietnam Pro',sans-serif;
+  font-size:clamp(2rem,3.5vw,3rem);
+  color:var(--text);line-height:1.15;font-weight:800;
+  margin-bottom:16px;letter-spacing:.04em;
+}
+.gmlat-title em{color:var(--gold);font-style:normal}
+.gmlat-desc{
+  color:var(--text-muted);font-size:.97rem;line-height:1.85;
+  margin-bottom:28px;max-width:440px;
+}
+.gmlat-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--gold);color:var(--off-white);
+  padding:13px 28px;border-radius:4px;text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  font-weight:700;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+  transition:all .25s;
+}
+.gmlat-cta:hover{background:var(--text);transform:translateY(-1px);box-shadow:0 6px 20px rgba(37,28,14,.2)}
+.gmlat-right{display:flex;flex-direction:column;gap:16px}
+.gmlat-card{
+  background:var(--off-white);border-radius:18px;
+  border:1.5px solid var(--border);
+  padding:24px 26px;
+  transition:border-color .22s,transform .22s;
+}
+.gmlat-card:hover{border-color:var(--gold);transform:translateX(4px)}
+.gmlat-card-num{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.1rem;color:var(--border);font-weight:600;
+  display:block;margin-bottom:8px;
+}
+.gmlat-card h4{font-size:.92rem;font-weight:700;color:var(--text);margin-bottom:5px}
+.gmlat-card p{font-size:.8rem;color:var(--text-muted);line-height:1.6}
+@media(max-width:900px){
+  .gmlat{padding:72px 24px}
+  .gmlat-inner{grid-template-columns:1fr;gap:40px}
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .choose-grid{grid-template-columns:repeat(2,1fr)}
+  .story-grid{gap:48px}
+}
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-center{display:none}
+  .nav-brand-name{font-size:.88rem}
+  .hero{height:80vh;min-height:500px}
+  .hero-content{padding:88px 24px 72px;max-width:100%}
+  .hero-slide-label{justify-content:center}
+  .hero-slide-label::before{display:none}
+  .hero-content h1{font-size:clamp(2.2rem,7vw,3.2rem);text-align:center}
+  .hero-content .hero-sub{max-width:100%;text-align:center}
+  .hero-ctas{justify-content:center}
+  .hero-dots{left:50%;transform:translateX(-50%);bottom:24px}
+  .hero-scroll-hint{display:none}
+  .trust-bar{padding:14px 20px;gap:14px}
+  .section{padding:64px 24px}
+  .b2b{padding:64px 24px}
+  .story-grid,.b2b-inner{grid-template-columns:1fr;gap:40px}
+  .product-grid{grid-template-columns:1fr 1fr}
+  .testimonials-grid{grid-template-columns:1fr}
+  .choose-grid{grid-template-columns:1fr 1fr}
+  .final-cta{padding:72px 24px}
+  .welcome-strip{padding:12px 20px}
+  .process-grid{grid-template-columns:1fr}
+  .process-step::after{display:none}
+  .process-step{padding:36px 28px}
+  .mood-results{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  nav{height:60px}
+  .welcome-strip{top:60px}
+  .nav-link-1ml{display:none}
+  .hero{height:75vh;min-height:480px}
+  .hero-content{padding:80px 20px 64px}
+  .hero-ctas{flex-direction:column;align-items:stretch;width:100%;max-width:320px;margin:0 auto}
+  .btn-primary,.btn-outline{text-align:center;justify-content:center;width:100%}
+  .product-grid{grid-template-columns:1fr}
+  .choose-grid{grid-template-columns:1fr}
+  .testimonials-grid{grid-template-columns:1fr}
+  .b2b-inner{grid-template-columns:1fr}
+  .shelf-grid{grid-template-columns:repeat(3,1fr)}
+  .sticky-bar{padding:10px 16px}
+  .sticky-bar-text{display:none}
+  .process-grid{grid-template-columns:1fr}
+  .process-step{padding:20px 16px}
+  .process-icon{width:44px;height:44px;font-size:1.2rem}
+  .mood-results{grid-template-columns:1fr}
+  .mood-scent-card{flex-direction:row;align-items:center;padding:14px 16px;gap:12px}
+  .mood-scent-swatch{width:38px;height:38px;flex-shrink:0;border-radius:10px}
+  .mood-scent-info{flex:1;min-width:0;gap:2px}
+  .mood-scent-name{font-size:.92rem}
+  .mood-scent-why{font-size:.74rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .mood-shopee-btn{flex-shrink:0;white-space:nowrap;margin-top:0;font-size:.71rem;padding:7px 11px}
+}
+@media(max-width:375px){
+  nav{padding:0 12px}
+  .hero{padding:84px 16px 52px}
+  .hero h1{font-size:2rem}
+  .hero-stat-num{font-size:1.5rem}
+  .section{padding:52px 16px}
+  .b2b{padding:52px 16px}
+  .final-cta{padding:56px 16px}
+  .shelf-grid{grid-template-columns:repeat(2,1fr)}
+  .choose-card{padding:20px 16px}
+  .process-grid{grid-template-columns:1fr}
+  .process-step{padding:16px 14px}
+  .trust-bar{gap:10px;padding:12px 16px}
+  .mood-results{grid-template-columns:1fr}
+  .sticky-bar{padding:8px 14px}
+}
+
+/* ── SCENT TOOLTIP ── */
+.scent-dot{position:relative;cursor:pointer;transition:transform .15s}
+.scent-dot:hover{transform:translateY(-2px)}
+.scent-dot::after{
+  content:attr(data-desc);
+  position:absolute;bottom:calc(100% + 10px);left:50%;
+  transform:translateX(-50%);
+  background:#2C1E0E;color:var(--cream);
+  font-size:.72rem;line-height:1.45;
+  padding:7px 12px;border-radius:10px;
+  white-space:nowrap;max-width:220px;white-space:normal;
+  text-align:center;z-index:200;pointer-events:none;
+  opacity:0;transition:opacity .18s;
+  box-shadow:0 4px 16px rgba(0,0,0,.2);
+}
+.scent-dot:hover::after,.scent-dot.active::after{opacity:1}
+@media(max-width:600px){.scent-dot::after{font-size:.68rem;max-width:180px}}
+
+/* ── HOW-TO-USE SECTION ── */
+.how-use{background:var(--off-white)}
+.how-use-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:16px;margin-top:40px;
+}
+.how-use-card{
+  background:var(--off-white);border:1px solid var(--border);
+  border-radius:16px;padding:22px 18px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.how-use-icon{font-size:2rem;line-height:1}
+.how-use-title{font-size:.92rem;font-weight:700;color:var(--text)}
+.how-use-desc{font-size:.82rem;color:var(--text-muted);line-height:1.65;flex:1}
+.how-use-tip{
+  font-size:.75rem;color:var(--text-muted);font-weight:600;
+  background:var(--gold-pale);border-radius:8px;
+  padding:6px 10px;margin-top:4px;
+}
+@media(max-width:900px){.how-use-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.how-use-grid{grid-template-columns:1fr;gap:12px}.how-use-card{padding:18px 16px}}
+
+/* ── CRO COMPONENTS ── */
+
+/* Product card image — real photo */
+.pc-img-real{
+  display:block;
+  width:calc(100% + 40px);height:220px;
+  object-fit:cover;object-position:center center;
+  border-radius:12px 12px 0 0;
+  margin:-20px -20px 16px;
+}
+/* Product card image mockup (SVG fallback) */
+.pc-img-wrap{
+  display:flex;justify-content:center;align-items:flex-end;
+  padding:20px 0 8px;
+  background:linear-gradient(180deg,rgba(184,122,40,.06) 0%,transparent 100%);
+  border-radius:12px 12px 0 0;margin:-20px -20px 16px;
+}
+.pc-bottle-svg{width:72px;height:auto;display:block;filter:drop-shadow(0 6px 14px rgba(37,28,14,.2))}
+
+/* Bestseller / new badge */
+.pc-badge{
+  display:inline-flex;align-items:center;gap:4px;
+  background:rgba(201,150,58,.1);border:1px solid rgba(201,150,58,.28);
+  color:var(--gold);font-size:.67rem;font-weight:700;
+  padding:3px 9px;border-radius:100px;letter-spacing:.04em;margin-bottom:8px;
+}
+.pc-badge.hot{background:rgba(220,70,50,.08);border-color:rgba(220,70,50,.25);color:#C04030}
+
+/* Price per ml note */
+.pc-price-note{
+  font-size:.73rem;color:var(--text-muted);margin-top:3px;
+  font-style:italic;line-height:1.4;
+}
+.pc-price-note strong{color:var(--gold);font-style:normal;font-weight:600}
+
+/* Dual CTA footer */
+.pc-footer-dual{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:14px;border-top:1px solid var(--border)}
+.pc-footer-dual .pc-price{margin:0}
+
+/* Small Zalo button */
+.btn-zalo-sm{
+  display:inline-flex;align-items:center;gap:4px;
+  color:var(--text);font-size:.75rem;font-weight:600;
+  border:1.5px solid rgba(37,28,14,.22);
+  padding:7px 12px;border-radius:100px;
+  text-decoration:none;transition:all .2s;white-space:nowrap;flex-shrink:0;
+}
+.btn-zalo-sm:hover{background:rgba(37,28,14,.06);border-color:var(--text)}
+
+/* Candle scent list */
+.pc-scent-list{font-size:.76rem;color:var(--text-muted);margin-top:6px;line-height:1.6}
+.pc-scent-list strong{color:var(--gold);font-weight:600}
+
+/* Shipping promise strip */
+.shipping-bar{
+  display:flex;align-items:center;justify-content:center;
+  gap:24px;flex-wrap:wrap;
+  background:rgba(184,122,40,.07);border-top:1px solid rgba(184,122,40,.16);border-bottom:1px solid rgba(184,122,40,.16);
+  padding:10px 24px;font-size:.8rem;color:var(--text-muted);
+}
+.shipping-bar-item{display:flex;align-items:center;gap:6px}
+.shipping-bar-item strong{color:var(--text);font-weight:600}
+
+/* Floating buttons group */
+.floating-zalo{
+  position:fixed;bottom:88px;right:18px;z-index:450;
+  width:50px;height:50px;border-radius:50%;
+  background:#0068FF;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 18px rgba(0,104,255,.38);
+  text-decoration:none;transition:transform .2s,box-shadow .2s;
+}
+.floating-zalo:hover{transform:scale(1.08);box-shadow:0 6px 26px rgba(0,104,255,.5)}
+.floating-zalo-icon{font-size:1.5rem;line-height:1}
+.floating-zalo-pulse{
+  position:absolute;inset:0;border-radius:50%;
+  background:rgba(0,104,255,.22);
+  animation:zpulse 2.2s ease-out infinite;
+}
+@keyframes zpulse{
+  0%{transform:scale(1);opacity:.8}
+  100%{transform:scale(2.1);opacity:0}
+}
+/* Floating Messenger */
+.floating-messenger{
+  position:fixed;bottom:148px;right:18px;z-index:450;
+  width:50px;height:50px;border-radius:50%;
+  background:linear-gradient(135deg,#0099FF 0%,#A033FF 100%);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 18px rgba(160,51,255,.35);
+  text-decoration:none;transition:transform .2s,box-shadow .2s;
+}
+.floating-messenger:hover{transform:scale(1.08);box-shadow:0 6px 26px rgba(160,51,255,.5)}
+.floating-messenger-icon{font-size:1.4rem;line-height:1}
+@media(max-width:600px){
+  .floating-messenger{bottom:130px;right:14px;width:46px;height:46px}
+  .floating-messenger-icon{font-size:1.2rem}
+}
+@media(max-width:600px){
+  .floating-zalo{bottom:76px;right:14px !important;width:46px;height:46px}
+  .floating-zalo-icon{font-size:1.3rem}
+  .shipping-bar{gap:14px;padding:8px 16px;font-size:.75rem}
+}
+
+/* ── PRODUCT HUB ── */
+.products-hub{background:var(--bg)}
+.phub-tabs{
+  display:flex;gap:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+  border-bottom:1px solid var(--border);margin:32px 0 0;
+}
+.phub-tabs::-webkit-scrollbar{display:none}
+.phub-tab{
+  padding:12px 22px;font-size:.84rem;font-weight:600;
+  color:var(--text-muted);background:none;border:none;
+  border-bottom:2.5px solid transparent;cursor:pointer;
+  white-space:nowrap;transition:all .2s;flex-shrink:0;
+  margin-bottom:-1px;
+}
+.phub-tab:hover{color:var(--text)}
+.phub-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+.phub-panel{display:none}
+.phub-panel.active{display:block}
+.phub-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:16px;margin-top:28px;
+}
+.phub-card{
+  background:var(--off-white);border:1px solid var(--border);
+  border-radius:18px;overflow:hidden;cursor:pointer;
+  transition:box-shadow .2s,transform .2s,border-color .2s;
+}
+.phub-card:hover{box-shadow:0 6px 24px rgba(37,28,14,.1);transform:translateY(-2px);border-color:rgba(184,122,40,.22)}
+.phub-card.open{border-color:var(--gold-light);box-shadow:0 8px 28px rgba(184,122,40,.14)}
+.phub-card-img{width:100%;height:200px;object-fit:cover;object-position:center;display:block}
+.phub-card-brief{padding:16px 18px 14px}
+.phub-card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.phub-card-name{font-size:.95rem;font-weight:700;color:var(--text);line-height:1.3}
+.phub-card-price{font-size:.82rem;font-weight:700;color:var(--gold);white-space:nowrap;flex-shrink:0}
+.phub-card-summary{font-size:.8rem;color:var(--text-muted);margin-top:5px;line-height:1.5}
+.phub-card-badge{
+  display:inline-flex;align-items:center;font-size:.67rem;font-weight:700;
+  padding:2px 8px;border-radius:100px;
+  background:rgba(201,150,58,.1);border:1px solid rgba(201,150,58,.28);color:var(--gold);
+  margin-top:6px;
+}
+.phub-card-toggle{
+  font-size:.76rem;color:var(--gold);font-weight:600;margin-top:10px;
+  display:flex;align-items:center;gap:4px;
+}
+.phub-card-detail{max-height:0;overflow:hidden;transition:max-height .38s ease}
+.phub-card.open .phub-card-detail{max-height:700px}
+.phub-card-detail-inner{padding:14px 18px 20px;border-top:1px solid var(--border)}
+.phub-detail-desc{font-size:.84rem;color:var(--text-muted);line-height:1.65;margin-bottom:10px}
+.phub-detail-scents{font-size:.76rem;color:var(--text-muted);margin-bottom:12px;line-height:1.7}
+.phub-detail-scents strong{color:var(--gold)}
+.phub-detail-tip{
+  font-size:.76rem;color:var(--text-muted);font-weight:600;
+  background:var(--gold-pale);border-radius:8px;padding:8px 12px;margin-bottom:14px;
+}
+.phub-detail-ctas{display:flex;gap:8px;flex-wrap:wrap}
+.phub-panel .scent-strip{margin-top:36px;padding:14px 0 4px;border-top:1px solid var(--border)}
+@media(max-width:900px){.phub-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){
+  .phub-grid{grid-template-columns:1fr;gap:12px}
+  .phub-tab{padding:10px 14px;font-size:.78rem}
+  .phub-card-img{height:180px}
+}
+
+/* ══════════════════════════════════════
+   MOBILE COMPLETE — authoritative overrides
+   Áp dụng SAU tất cả các block trên
+   ══════════════════════════════════════ */
+@media(max-width:900px){
+  /* b2b banner wrapper */
+  .b2b-banner-wrap{padding:0 24px}
+  /* gmlat */
+  .gmlat{padding:72px 24px}
+  .gmlat-inner{grid-template-columns:1fr;gap:36px}
+  /* nuoc-hoa */
+  .nuoc-hoa{padding:64px 24px}
+  /* section-intro-split */
+  .section-intro-split{grid-template-columns:1fr;gap:24px;margin-bottom:32px}
+  .section-intro-split.img-left .intro-img-wrap{order:0}
+  .intro-img-wrap img,.intro-img-wrap img.portrait{aspect-ratio:16/9}
+  /* b2b inner */
+  .b2b-inner{grid-template-columns:1fr;gap:40px}
+}
+
+@media(max-width:600px){
+  /* ── NAV ── */
+  nav{height:60px;padding:0 16px}
+  .nav-link-1ml{display:none}
+  html{scroll-padding-top:130px}
+  .cat-nav-emoji{font-size:.78rem}
+
+  /* ── SECTION PADDING ── */
+  .section{padding:52px 20px}
+  .gmlat{padding:52px 20px}
+  .nuoc-hoa{padding:52px 20px}
+  .b2b{padding:52px 20px}
+  .final-cta{padding:52px 20px}
+
+  /* ── HERO ── */
+  .hero{grid-template-columns:1fr;padding:88px 20px 52px;gap:0}
+  .hero-right{display:none}
+  .hero h1{font-size:2.2rem}
+  .hero-mobile-img{display:block;width:180px;margin:20px auto 8px}
+  .hero-ctas{flex-direction:column;gap:10px}
+  .btn-primary,.btn-outline{width:100%;text-align:center;justify-content:center}
+  .hero-stats{flex-wrap:wrap;gap:8px 0}
+  .hero-stat{min-width:45%;border-right:none;padding:0;margin-bottom:8px}
+
+  /* ── TRUST BAR ── */
+  .trust-bar{padding:12px 20px;gap:12px;flex-wrap:wrap}
+
+  /* ── TYPOGRAPHY ── */
+  .section-title{font-size:clamp(1.55rem,5vw,2rem)}
+  .sub-section-title{font-size:clamp(1.25rem,4.5vw,1.6rem)}
+  .section-desc{font-size:.88rem;line-height:1.7}
+
+  /* ── SECTION INTRO SPLIT ── */
+  .section-intro-split{grid-template-columns:1fr;gap:20px;margin-bottom:28px}
+  .section-intro-split.img-left .intro-img-wrap{order:0}
+  .intro-img-wrap{border-radius:14px}
+  .intro-img-wrap img,.intro-img-wrap img.portrait{aspect-ratio:4/3}
+
+  /* ── STORY ── */
+  .story-grid{grid-template-columns:1fr;gap:32px}
+
+  /* ── CATALOG ── */
+  .catalog-header{text-align:left}
+  .scent-strip{padding:10px 14px;gap:8px;font-size:.78rem}
+  .volume-group{padding:20px 18px}
+  .vg-badge{width:48px;height:48px;min-width:48px}
+  .vg-badge-num{font-size:1.5rem}
+  .product-grid{grid-template-columns:1fr;gap:12px}
+
+  /* ── CANDLE ── */
+  .candle-feature-strip{
+    flex-direction:column;align-items:flex-start;
+    padding:12px 14px;margin:12px 0 18px;gap:7px
+  }
+  .candle-feature-item{font-size:.82rem}
+  .candle-grid{grid-template-columns:1fr;gap:12px}
+  .candle-combo-card{flex-direction:column;align-items:flex-start;gap:12px}
+
+  /* ── SOAP & SPRAY ── */
+  .soap-grid{grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}
+  .product-divider{margin:28px 0}
+  .soap-cta-strip{flex-direction:column;align-items:flex-start;gap:10px}
+
+  /* ── PROCESS ── */
+  .process-grid{grid-template-columns:1fr;gap:0}
+  .process-step{padding:18px 16px}
+  .process-step::after{display:none}
+  .process-icon{width:44px;height:44px;font-size:1.1rem}
+
+  /* ── GMLAT ── */
+  .gmlat-inner{grid-template-columns:1fr;gap:28px}
+  .gmlat-title{font-size:clamp(1.5rem,5vw,2rem)}
+  .gmlat-lifestyle-img{height:auto;aspect-ratio:4/3;margin-bottom:16px}
+  .gmlat-card{padding:16px 18px}
+
+  /* ── NƯỚC HOA ── */
+  .perfume-collections{grid-template-columns:1fr;gap:12px;margin-top:24px}
+  .perfume-collection{padding:20px 18px}
+  .perfume-sizes{flex-wrap:wrap;gap:8px}
+  .perfume-banner-img{aspect-ratio:4/3;border-radius:14px;margin-bottom:28px}
+
+  /* ── B2B ── */
+  .b2b-banner-wrap{padding:0}
+  .b2b-banner-img{aspect-ratio:4/3;border-radius:14px;margin-bottom:32px}
+  .b2b-inner{grid-template-columns:1fr;gap:28px;padding:0}
+
+  /* ── MOOD ── */
+  .mood-tabs{gap:6px;flex-wrap:wrap}
+  .mood-tab{padding:8px 12px;font-size:.78rem}
+  .mood-results{grid-template-columns:1fr;gap:10px}
+  .mood-scent-card{flex-direction:row;align-items:center;padding:12px 14px;gap:10px}
+  .mood-scent-swatch{width:36px;height:36px;flex-shrink:0;border-radius:10px}
+  .mood-scent-name{font-size:.9rem}
+  .mood-scent-why{font-size:.74rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .mood-shopee-btn{flex-shrink:0;white-space:nowrap;margin-top:0;font-size:.71rem;padding:7px 11px}
+
+  /* ── CHOOSE ── */
+  .choose-grid{grid-template-columns:1fr;gap:10px}
+  .choose-card{padding:18px 16px}
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-grid{grid-template-columns:1fr;gap:12px}
+
+  /* ── FINAL CTA ── */
+  .final-cta-grid{grid-template-columns:1fr;max-width:100%;gap:10px}
+  .final-cta-card{padding:16px 18px}
+  .sticky-bar-zalo{display:none}
+
+  /* ── STICKY BAR ── */
+  .sticky-bar{padding:10px 16px}
+  .sticky-bar-text{display:none}
+
+  /* ── FOOTER ── */
+  .footer-inner{flex-direction:column;gap:20px}
+
+  /* ── SHELF ── */
+  .shelf-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+@media(max-width:375px){
+  nav{padding:0 12px}
+  .section{padding:44px 16px}
+  .gmlat{padding:44px 16px}
+  .nuoc-hoa{padding:44px 16px}
+  .b2b{padding:44px 16px}
+  .final-cta{padding:44px 16px}
+  .hero{padding:80px 16px 48px}
+  .hero h1{font-size:1.95rem}
+  .hero-stat-num{font-size:1.5rem}
+  .section-intro-split{gap:16px;margin-bottom:20px}
+  .intro-img-wrap img,.intro-img-wrap img.portrait{aspect-ratio:3/2}
+  .soap-grid{grid-template-columns:repeat(2,1fr)}
+  .shelf-grid{grid-template-columns:repeat(2,1fr)}
+  .choose-card{padding:16px 14px}
+  .process-step{padding:14px 12px}
+  .trust-bar{gap:10px;padding:10px 14px}
+  .sticky-bar{padding:8px 14px}
+  .b2b-inner{padding:0}
+  .candle-grid{gap:10px}
+}
+/* ── FOOTER ── */
+@media(max-width:900px){
+  }
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="tinh-dau.html" class="nav-brand">
+    <img src="assets/logo TTX-01.png" alt="Nhà Của Thời Thanh Xuân" style="height:80px;width:auto;object-fit:contain;mix-blend-mode:multiply;">
+  </a>
+  <div class="nav-center">
+    <a href="tinh-dau.html" class="nav-active">Sản Phẩm</a>
+    <span class="nav-sep">·</span>
+    <a href="tinh-dau-1ml.html">Tinh Dầu 1ml</a>
+    <span class="nav-sep">·</span>
+    <a href="workshop.html">Workshop</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://zalo.me/0914142850" target="_blank" class="nav-zalo">💬 Zalo</a>
+    <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="nav-cta">Mua Ngay →</a>
+  </div>
+</nav>
+
+<!-- WELCOME STRIP (từ trang 1ml) -->
+<div class="welcome-strip" id="welcomeStrip">
+  <div class="welcome-inner">
+    <span class="welcome-text">✓ Bạn vừa khám phá <strong>tinh dầu 1ml</strong> — Bước tiếp theo: chọn dung tích phù hợp để dùng lâu dài.</span>
+    <div class="welcome-actions">
+      <a href="#catalog" class="welcome-cta">Chọn dung tích ↓</a>
+      <button class="welcome-close" id="welcomeClose" aria-label="Đóng">✕</button>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <!-- Background slides (JS renders .hero-slide elements here) -->
+  <div class="hero-slides" aria-hidden="true"></div>
+
+  <!-- Fixed content layer -->
+  <div class="hero-content">
+    <div class="hero-slide-label"><span id="heroLabel">Tinh Dầu Thảo Mộc · Đà Lạt</span></div>
+    <h1 id="heroTitle">Thuần Tự Nhiên<br>Từ <em>Cao Nguyên</em></h1>
+    <p class="hero-sub" id="heroSub">Chưng cất bởi người Điếc tại Đà Lạt. Không hóa chất tổng hợp. 1.170+ đánh giá 5★.</p>
+    <div class="hero-ctas">
+      <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="btn-primary">Mua Ngay →</a>
+      <a href="tinh-dau-1ml.html" class="btn-outline">Thử 1ml — chỉ 10k</a>
+    </div>
+  </div>
+
+  <!-- Dot indicators -->
+  <div class="hero-dots" role="tablist" aria-label="Slide navigation"></div>
+
+  <!-- Scroll hint -->
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span>Cuộn xuống</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">🌿 <span>Thảo mộc Đà Lạt · không hóa chất</span></div>
+  <div class="trust-item">🤝 <span>Sản xuất bởi <strong>người Điếc</strong> tại Đà Lạt</span></div>
+  <div class="trust-item">🏔️ <span>Vườn thảo mộc cao nguyên <strong>từ 2013</strong></span></div>
+  <div class="trust-item">⭐ <span><strong>1.170+</strong> đánh giá · 100% đề xuất</span></div>
+  <div class="trust-item">🚚 <span>Giao toàn quốc <strong>2–5 ngày</strong> · Thẳng từ Đà Lạt</span></div>
+</div>
+<!-- SHIPPING BAR -->
+<div class="shipping-bar">
+  <div class="shipping-bar-item">📦 <span>Đóng gói cẩn thận · <strong>Giao 2–5 ngày</strong></span></div>
+  <div class="shipping-bar-item">↩️ <span><strong>Đổi trả 7 ngày</strong> nếu lỗi sản phẩm</span></div>
+  <div class="shipping-bar-item">💬 <span>Tư vấn hương miễn phí qua <strong>Zalo</strong></span></div>
+</div>
+
+<!-- PROMO VIDEO SECTION -->
+<section class="promo-video-section">
+  <div class="promo-video-inner">
+
+    <!-- LEFT: Video -->
+    <div class="promo-video-wrap">
+      <video
+        id="promoVideo"
+        class="promo-video"
+        muted
+        playsinline
+        loop
+        preload="metadata"
+        poster="assets/img-candle-lifestyle.png">
+        <!-- Thay src bằng file video thực tế -->
+        <source src="assets/promo-video.mp4" type="video/mp4">
+      </video>
+      <div class="promo-video-overlay" aria-hidden="true"></div>
+      <button class="promo-vol-btn" id="promoVolBtn" aria-label="Bật/tắt âm thanh">
+        <span class="vol-icon-muted">🔇</span>
+        <span class="vol-icon-on" style="display:none">🔊</span>
+      </button>
+    </div>
+
+    <!-- RIGHT: Promo info -->
+    <div class="promo-video-content">
+      <div class="promo-video-tag">✦ Ưu Đãi Đặc Biệt</div>
+      <h2 class="promo-video-title">Mua 1<br>Tinh Dầu 5ml</h2>
+      <div class="promo-video-gift">
+        <span class="promo-gift-icon">🎁</span>
+        <div>
+          <div class="promo-gift-label">Tặng kèm miễn phí</div>
+          <div class="promo-gift-name">1 Quả Trứng Thông<br>Tỏa Hương Thơm Ngát</div>
+        </div>
+      </div>
+      <p class="promo-video-desc">Quả trứng thông handmade từ Đà Lạt — khuếch tán tinh dầu tự nhiên, trang trí không gian sống. Áp dụng khi mua bất kỳ chai tinh dầu 5ml nào.</p>
+      <div class="promo-video-ctas">
+        <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="promo-video-btn-primary">Mua Ngay →</a>
+        <a href="https://zalo.me/0914142850" target="_blank" class="promo-video-btn-ghost">💬 Hỏi Zalo</a>
+      </div>
+      <div class="promo-video-note">* Áp dụng đến hết chương trình · Số lượng có hạn</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<!-- PRODUCT HUB -->
+<section class="section products-hub" id="catalog">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Tất cả sản phẩm</div>
+      <h2 class="section-title">Chọn Sản Phẩm<br>Phù Hợp Với Bạn</h2>
+      <p class="section-desc">Nhấn vào từng sản phẩm để xem chi tiết — mô tả, mùi hương, hướng dẫn và giá.</p>
+    </div>
+    <div class="phub-tabs fade-up d1">
+      <button class="phub-tab active" data-tab="tinh-dau">🌿 Tinh Dầu</button>
+      <button class="phub-tab" data-tab="nen-thom">🕯️ Nến Thơm</button>
+      <button class="phub-tab" data-tab="xa-bong">🧼 Xà Bông & Xịt</button>
+      <button class="phub-tab" data-tab="nuoc-hoa">🌸 Nước Hoa</button>
+      <button class="phub-tab" data-tab="b2b">🏨 Doanh Nghiệp</button>
+    </div>
+    <div id="phubPanels" class="fade-up d2"></div>
+  </div>
+</section>
+
+
+<!-- CÁCH DÙNG -->
+<section class="section how-use">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Hướng dẫn sử dụng</div>
+      <h2 class="section-title">Không Cần Máy<br>Vẫn Dùng Được</h2>
+      <p class="section-desc">Tinh dầu NCTTX dùng được theo 4 cách — chọn cách phù hợp với không gian và thói quen của bạn.</p>
+    </div>
+    <div class="how-use-grid">
+      <div class="how-use-card fade-up d1">
+        <div class="how-use-icon">💨</div>
+        <div class="how-use-title">Máy Khuếch Tán Siêu Âm</div>
+        <div class="how-use-desc">Nhỏ 3–5 giọt vào bình nước của máy. Bật 30–60 phút rồi nghỉ 30 phút để tránh bão hòa mùi. Phù hợp phòng ngủ, phòng khách.</div>
+        <div class="how-use-tip">→ Dùng chai 5ml hoặc 10ml</div>
+      </div>
+      <div class="how-use-card fade-up d2">
+        <div class="how-use-icon">🕯️</div>
+        <div class="how-use-title">Bếp Đốt Nến Tea Light</div>
+        <div class="how-use-desc">Nhỏ 3–5 giọt vào đĩa nước trên bếp đèn cồn. Mùi tỏa nhẹ và ấm trong khoảng 1–2 giờ. Không cần điện, phù hợp bàn làm việc và bàn ăn.</div>
+        <div class="how-use-tip">→ Dùng chai 5ml hoặc 10ml</div>
+      </div>
+      <div class="how-use-card fade-up d3">
+        <div class="how-use-icon">🌸</div>
+        <div class="how-use-title">Bông Tẩy Trang / Khăn</div>
+        <div class="how-use-desc">Nhỏ 1–2 giọt lên bông tẩy trang hoặc góc khăn. Đặt trong xe hơi, ngăn kéo, tủ quần áo, hoặc gần gối ngủ. Mùi kéo dài 3–8 giờ.</div>
+        <div class="how-use-tip">→ Dùng lọ 1ml thử trước</div>
+      </div>
+      <div class="how-use-card fade-up d1">
+        <div class="how-use-icon">🌿</div>
+        <div class="how-use-title">Khuếch Tán Que Tự Nhiên</div>
+        <div class="how-use-desc">Cắm que tre vào lọ tinh dầu, để tự tỏa hương liên tục 1–4 tháng. Lật ngược que khi muốn mùi đậm hơn. Không cần điện, không cần làm gì.</div>
+        <div class="how-use-tip">→ Dùng bộ que 50ml hoặc 100ml</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOOD SELECTOR -->
+<section class="section mood" id="mood">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Gợi ý theo tâm trạng</div>
+      <h2 class="section-title">Hôm Nay Bạn<br>Cần Mùi Gì?</h2>
+      <p class="section-desc">Không biết chọn hương nào? Chọn trạng thái của bạn — mình sẽ gợi ý hương phù hợp.</p>
+    </div>
+    <div class="mood-tabs fade-up d1" id="moodTabs">
+      <button class="mood-tab active" data-mood="relax"><span class="mood-tab-emoji">🌙</span> Thư Giãn</button>
+      <button class="mood-tab" data-mood="focus"><span class="mood-tab-emoji">🎯</span> Tập Trung</button>
+      <button class="mood-tab" data-mood="energy"><span class="mood-tab-emoji">⚡</span> Năng Lượng</button>
+      <button class="mood-tab" data-mood="sleep"><span class="mood-tab-emoji">😴</span> Ngủ Ngon</button>
+      <button class="mood-tab" data-mood="cozy"><span class="mood-tab-emoji">🔥</span> Ấm Cúng</button>
+    </div>
+    <div class="mood-results" id="moodResults"></div>
+  </div>
+</section>
+
+<!-- BRAND STORY -->
+<section class="section story" id="story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="fade-up">
+        <div class="section-label">Câu chuyện thương hiệu</div>
+        <h2 class="section-title">Hàng Thật.<br>Người Thật.<br>Việc Thật.</h2>
+        <div class="story-text-block">
+          <p>Từ năm 2013, những vườn thảo mộc đầu tiên được gieo trồng trên cao nguyên Đà Lạt. Năm 2017, Nhà Của Thời Thanh Xuân ra đời — không chỉ là thương hiệu tinh dầu, mà là ngôi nhà của những người Điếc tìm thấy việc làm từ chính đôi tay mình.</p>
+          <p>Chúng tôi không đánh bóng. Không dùng câu chuyện khuyết tật để bán hàng thương hại. Chúng tôi xây dựng một tiêu chuẩn: khi mùi hương đủ thật, người mua sẽ quay lại — không cần PR hoa mỹ.</p>
+        </div>
+        <div class="story-values">
+          <span class="story-value-tag">Hàng Thật</span>
+          <span class="story-value-tag">Người Thật</span>
+          <span class="story-value-tag">Việc Thật</span>
+          <span class="story-value-tag">Không thương hại</span>
+        </div>
+      </div>
+      <div class="story-visual-card fade-up d1">
+        <img src="assets/img-workshop-story.png"
+             alt="Xưởng chưng cất thủ công tinh dầu NCTTX tại Đà Lạt"
+             style="border-radius:20px 20px 0 0">
+        <div class="story-stats">
+          <div class="story-stat">
+            <span class="story-stat-num">2013</span>
+            <div class="story-stat-info">
+              <strong>Vườn thảo mộc đầu tiên</strong>
+              <span>Cao nguyên Đà Lạt, từ hạt giống đến chưng cất</span>
+            </div>
+          </div>
+          <div class="story-stat">
+            <span class="story-stat-num">2017</span>
+            <div class="story-stat-info">
+              <strong>Ra đời NCTTX</strong>
+              <span>Mô hình doanh nghiệp xã hội tại Đà Lạt</span>
+            </div>
+          </div>
+          <div class="story-stat">
+            <span class="story-stat-num">50K+</span>
+            <div class="story-stat-info">
+              <strong>Người theo dõi Fanpage</strong>
+              <span>100% đề xuất · 1.170+ reviews thật</span>
+            </div>
+          </div>
+          <div class="story-stat">
+            <span class="story-stat-num">2027</span>
+            <div class="story-stat-info">
+              <strong>Tầm nhìn 100 cửa hàng</strong>
+              <span>Nhượng quyền toàn quốc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS STRIP -->
+<section class="section process">
+  <div class="container">
+    <div class="section-intro-split">
+      <div class="intro-text fade-up">
+        <div class="section-label">Quy trình</div>
+        <h2 class="section-title">Từ Vườn Thảo Mộc<br>Đến Lọ Của Bạn</h2>
+        <p class="section-desc" style="margin-top:14px">Từ vườn thảo mộc cao nguyên, qua đôi tay người Điếc, đến lọ tinh dầu trong suốt của bạn — mỗi bước đều thủ công và nguyên bản.</p>
+      </div>
+      <div class="intro-img-wrap fade-up d1">
+        <img src="assets/img-distillation-process.png"
+             alt="Chưng cất tinh dầu thảo mộc tại xưởng Nhà Của Thời Thanh Xuân, Đà Lạt">
+      </div>
+    </div>
+    <div class="process-grid">
+      <div class="process-step fade-up d1">
+        <div class="process-icon">🌿</div>
+        <span class="process-num">Bước 01</span>
+        <h3>Vườn Cao Nguyên Đà Lạt</h3>
+        <p>Trồng, chăm sóc và thu hái thủ công từ vườn thảo mộc tại Đà Lạt — không phân bón hóa học, không chất bảo quản tổng hợp.</p>
+      </div>
+      <div class="process-step fade-up d2">
+        <div class="process-icon">⚗️</div>
+        <span class="process-num">Bước 02</span>
+        <h3>Chưng Cất Bởi Người Điếc</h3>
+        <p>Bàn tay người Điếc tại xưởng NCTTX — kỹ thuật chưng cất hơi nước, giữ nguyên hợp chất thơm từ thảo mộc tươi.</p>
+      </div>
+      <div class="process-step fade-up d3">
+        <div class="process-icon">📦</div>
+        <span class="process-num">Bước 03</span>
+        <h3>Đóng Chai · Giao Tận Tay</h3>
+        <p>Đóng chai thủy tinh tại Đà Lạt, dán nhãn thủ công. Giao hàng toàn quốc — từ lọ 1ml thử hương đến can 500ml B2B.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HÀNH TRÌNH TỪ LỌ NHỎ -->
+<section class="gmlat">
+  <div class="gmlat-inner">
+
+    <div class="gmlat-left fade-up">
+      <div class="section-label">Nhà Của Thời Thanh Xuân · 1ml</div>
+      <h2 class="gmlat-title">
+        Một Lọ Nhỏ.<br>
+        Một Khoảnh Khắc<br>
+        <em>Cho Chính Mình.</em>
+      </h2>
+      <p class="gmlat-desc">
+        Giữa ngày bận rộn, đôi khi chỉ cần một mùi hương đúng lúc — một chút thời gian thật sự cho mình. Đó là lý do NCTTX bắt đầu từ lọ nhỏ nhất: để bất kỳ ai cũng có thể thử, không cần phải chắc chắn trước.
+      </p>
+      <a href="1ml-qr(2).html" class="gmlat-cta">
+        Khám phá từ lọ 1ml →
+      </a>
+    </div>
+
+    <div class="gmlat-right fade-up d1">
+        <img src="assets/1ml-lifestyle-cam-tay.png"
+             alt="Cầm lọ tinh dầu 1ml Nhà Của Thời Thanh Xuân"
+             class="gmlat-lifestyle-img">
+      <div class="gmlat-card">
+        <span class="gmlat-card-num">01</span>
+        <h4>Lọ 1ml — Bước Đầu Không Rủi Ro</h4>
+        <p>Thử hương trước khi cam kết. 10.000đ để biết mình thật sự thích gì — rẻ hơn bất kỳ quyết định mua nhầm nào.</p>
+      </div>
+      <div class="gmlat-card">
+        <span class="gmlat-card-num">02</span>
+        <h4>QR Trên Bao Bì — Câu Chuyện Tiếp Tục</h4>
+        <p>Mỗi lọ 1ml có một mã QR. Quét vào — không phải trang bán hàng, mà là câu chuyện về người đã làm ra nó.</p>
+      </div>
+      <div class="gmlat-card">
+        <span class="gmlat-card-num">03</span>
+        <h4>Hành Trình Từ 1ml Đến Thói Quen</h4>
+        <p>Từ lọ thử hương đến chai dùng hàng ngày — mỗi người có nhịp độ của mình. NCTTX ở đây khi bạn sẵn sàng.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Các section sản phẩm đã được chuyển vào Product Hub -->
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Khách hàng nói gì</div>
+      <h2 class="section-title">1.170+ Đánh Giá<br>Từ Khách Hàng Thật</h2>
+    </div>
+    <div class="testimonials-summary fade-up d1">
+      <span class="testimonials-stars">★★★★★</span>
+      <span class="testimonials-count"><strong>1.170+</strong> đánh giá · <strong>100%</strong> đề xuất</span>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up d1">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Mùi thật sự đúng như tên — thơm tự nhiên, không như mấy loại trên thị trường pha đủ thứ. Mua lọ 1ml thử trước, thích quá đặt luôn 50ml Oải Hương. Lần sau sẽ mua thêm Hương Thảo."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#B09CC4">N</div>
+          <div>
+            <div class="testimonial-name">Nguyễn Minh T.</div>
+            <div class="testimonial-role">Khách hàng · Oải Hương 50ml</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up d2">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Dùng cho spa của mình, khách hàng hỏi mua về rất nhiều. Tinh dầu không quá nồng, tỏa hương vừa phải và lâu phai. Đặt sỉ 500ml rất ổn, giao nhanh."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#9CAF88">T</div>
+          <div>
+            <div class="testimonial-name">Trần Hoa L.</div>
+            <div class="testimonial-role">Chủ Spa · TP.HCM · Mua sỉ</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up d3">
+        <div class="testimonial-stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Thích nhất là câu chuyện sau thương hiệu. Biết sản phẩm do các bạn Điếc làm ra thì dùng có cảm giác khác hẳn. Quế và Hương Thảo là đặc biệt nhất."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" style="background:#C4875A">P</div>
+          <div>
+            <div class="testimonial-name">Phương A.</div>
+            <div class="testimonial-role">Khách hàng thân thiết · Đà Lạt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO BAND -->
+<div style="padding:0 48px;background:var(--bg-warm)">
+  <div style="max-width:1200px;margin:0 auto;padding:0 0 56px">
+    <img src="assets/img-1ml-story.png"
+         alt="Câu chuyện Nhà Của Thời Thanh Xuân — Đà Lạt"
+         class="photo-band">
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Câu hỏi thường gặp</div>
+      <h2 class="section-title">Bạn Đang Thắc Mắc<br>Điều Gì?</h2>
+    </div>
+    <div class="faq-list fade-up d1">
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Tinh dầu NCTTX có thật sự khác gì so với hàng trên thị trường?</span>
+          <span class="faq-chevron">▾</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Hầu hết tinh dầu giá rẻ trên thị trường pha với dầu nền hoặc hương tổng hợp. NCTTX chưng cất hơi nước từ thảo mộc trồng tại Đà Lạt — không pha loãng, không thêm hương nhân tạo. Bạn có thể thử lọ 1ml với 10.000đ để so sánh trực tiếp trước khi quyết định chai lớn hơn.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Người Điếc làm tinh dầu thì chất lượng có đảm bảo không?</span>
+          <span class="faq-chevron">▾</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Người Điếc tại NCTTX không phải "đối tượng được hỗ trợ" — họ là người thợ được đào tạo bài bản về quy trình chưng cất thảo mộc. Thiếu một giác quan khiến các giác quan còn lại nhạy hơn — nhiều thợ Điếc của mình có khứu giác kiểm phẩm rất tốt. 1.170+ đánh giá là bằng chứng chất lượng thực tế.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Tinh dầu dùng được bao lâu? Bảo quản thế nào?</span>
+          <span class="faq-chevron">▾</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Tinh dầu thảo mộc bảo quản tốt từ 1–3 năm nếu đậy kín, tránh ánh sáng trực tiếp và nhiệt độ cao. Nên để ở nơi khô ráo, mát mẻ — tủ quần áo hay ngăn kéo bàn làm việc là lý tưởng. Sau khi mở chai, dùng trong vòng 12 tháng để đảm bảo hương tươi nhất.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Mình không biết chọn hương nào — bắt đầu từ đâu?</span>
+          <span class="faq-chevron">▾</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Bắt đầu với lọ 1ml thử hương — chỉ 10.000đ/lọ, bạn có thể thử từng hương trước khi đầu tư chai lớn. Hoặc dùng phần "Hôm Nay Bạn Cần Mùi Gì?" bên trên để lọc theo tâm trạng. Hương được đề xuất nhiều nhất cho người mới: Oải Hương (thư giãn), Sả Chanh (tươi mát), Hương Thảo (trung tính dễ dùng).</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Tinh dầu NCTTX có dùng trực tiếp lên da được không?</span>
+          <span class="faq-chevron">▾</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Tinh dầu đậm đặc KHÔNG dùng trực tiếp lên da — cần pha loãng với dầu nền (dầu dừa, dầu hạnh nhân) tỷ lệ 2–3%. Nếu muốn lăn trực tiếp, NCTTX có sản phẩm Tinh Dầu Bi Lăn 10ml đã pha sẵn tỷ lệ an toàn — lăn thái dương, cổ tay, không gây kích ứng.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">Đặt sỉ cho doanh nghiệp thì liên hệ thế nào?</span>
+          <span class="faq-chevron">▾</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Mình tư vấn theo concept không gian: Spa, Khách sạn, Homestay, Xe VIP đều có gợi ý hương riêng. Đặt hàng qua website hoặc liên hệ fanpage Nhà Của Thời Thanh Xuân để được báo giá sỉ can 500ml. Đơn từ 5 can trở lên có giá ưu đãi và hỗ trợ tư vấn mùi hương miễn phí.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="section-label">Bắt đầu ngay hôm nay</div>
+    <h2 class="section-title">Thử Một Lọ.<br>Cảm Nhận Sự Khác Biệt.</h2>
+    <p class="section-desc">Bắt đầu với lọ 1ml — 10.000đ để thử bất kỳ hương nào. Không rủi ro. Không hối tiếc.</p>
+    <img src="assets/img-bottles-collection.png"
+         class="final-cta-image fade-up"
+         alt="Bộ tinh dầu thảo mộc NCTTX từ Đà Lạt">
+    <div class="final-cta-grid">
+      <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="final-cta-card final-cta-shopee">
+        <span class="fcc-icon">🛒</span>
+        <span class="fcc-body">
+          <span class="fcc-label">Mua ngay</span>
+          <strong class="fcc-title">Mua Ngay</strong>
+          <span class="fcc-desc">1.170+ đánh giá · Giao toàn quốc · Từ 10k</span>
+        </span>
+        <span class="fcc-arrow">→</span>
+      </a>
+      <a href="https://zalo.me/0914142850" target="_blank" class="final-cta-card final-cta-zalo">
+        <span class="fcc-icon">💬</span>
+        <span class="fcc-body">
+          <span class="fcc-label">Tư vấn miễn phí</span>
+          <strong class="fcc-title">Nhắn Nhà qua Zalo</strong>
+          <span class="fcc-desc">Chưa biết chọn hương? Nhà tư vấn ngay</span>
+        </span>
+        <span class="fcc-arrow">→</span>
+      </a>
+    </div>
+    <p class="final-note">Giao hàng toàn quốc · Hỗ trợ tư vấn hương · Giao thẳng từ Đà Lạt</p>
+  </div>
+</section>
+
+<!-- FLOATING MESSENGER -->
+<a href="https://m.me/418293931859105" target="_blank" class="floating-messenger" aria-label="Nhắn Facebook Messenger">
+  <img src="assets/icon/Facebook_Messenger_logo_2025.svg" alt="Messenger" style="width:28px;height:28px;object-fit:contain">
+</a>
+
+<!-- FLOATING ZALO -->
+<a href="https://zalo.me/0914142850" target="_blank" class="floating-zalo" aria-label="Nhắn Zalo tư vấn">
+  <div class="floating-zalo-pulse"></div>
+  <img src="assets/icon/Icon_of_Zalo.svg.png" alt="Zalo" style="width:30px;height:30px;object-fit:contain">
+</a>
+
+
+
+<script>
+// ── HERO SLIDESHOW ──
+const heroSlides = [
+  {
+    img: 'assets/img-1ml-story.png',
+    label: 'Tinh Dầu Thảo Mộc · Đà Lạt',
+    title: 'Thuần Tự Nhiên<br>Từ <em>Cao Nguyên</em>',
+    sub: 'Chưng cất bởi người Điếc tại Đà Lạt. Không hóa chất tổng hợp. 1.170+ đánh giá 5★.',
+  },
+  {
+    img: 'assets/img-candle-lifestyle.png',
+    label: 'Nến Sáp Dừa · Handmade',
+    title: 'Cháy Sạch.<br><em>Tỏa Hương</em> Tự Nhiên.',
+    sub: 'Sáp dừa 100% + tinh dầu nguyên chất. Không parafin, không hóa chất tổng hợp.',
+  },
+  {
+    img: 'assets/img-distillation-process.png',
+    label: 'Câu Chuyện · Từ 2013',
+    title: 'Hàng Thật.<br><em>Người Thật.</em>',
+    sub: 'Từ 2013, người Điếc tại xưởng Đà Lạt tự tay làm ra từng lọ — không thương hại, chỉ chất lượng.',
+  },
+  {
+    img: 'assets/img-soap-collection.jpg',
+    label: 'Xà Bông & Xịt Thơm Phòng',
+    title: 'Thiên Nhiên<br><em>Trong Từng Bánh</em>',
+    sub: '9 hương xà bông handmade. Nặn và cắt thủ công tại xưởng Đà Lạt. Không chất bảo quản.',
+  },
+];
+
+let heroCurrentSlide = 0;
+let heroTimer = null;
+
+function heroGoTo(n, restart) {
+  const slidesEl = document.querySelector('.hero-slides');
+  const dotsEl = document.querySelector('.hero-dots');
+  const content = document.querySelector('.hero-content');
+  if (!slidesEl || !content) return;
+
+  const prevSlide = slidesEl.children[heroCurrentSlide];
+  const prevDot = dotsEl.children[heroCurrentSlide];
+  if (prevSlide) prevSlide.classList.remove('active');
+  if (prevDot) prevDot.classList.remove('active');
+
+  heroCurrentSlide = ((n % heroSlides.length) + heroSlides.length) % heroSlides.length;
+  const data = heroSlides[heroCurrentSlide];
+
+  // Update content
+  content.classList.remove('text-in');
+  document.getElementById('heroLabel').textContent = data.label;
+  document.getElementById('heroTitle').innerHTML = data.title;
+  document.getElementById('heroSub').textContent = data.sub;
+
+  const newSlide = slidesEl.children[heroCurrentSlide];
+  const newDot = dotsEl.children[heroCurrentSlide];
+  if (newSlide) newSlide.classList.add('active');
+  if (newDot) newDot.classList.add('active');
+
+  // Trigger text-in animation
+  requestAnimationFrame(() => requestAnimationFrame(() => content.classList.add('text-in')));
+
+  if (restart) {
+    clearInterval(heroTimer);
+    heroTimer = setInterval(() => heroGoTo(heroCurrentSlide + 1, false), 5000);
+  }
+}
+
+function initHeroSlideshow() {
+  const slidesEl = document.querySelector('.hero-slides');
+  const dotsEl = document.querySelector('.hero-dots');
+  if (!slidesEl) return;
+
+  heroSlides.forEach((slide, i) => {
+    const el = document.createElement('div');
+    el.className = 'hero-slide';
+    const img = document.createElement('img');
+    img.className = 'hero-slide-bg';
+    img.src = slide.img;
+    img.alt = '';
+    img.loading = i === 0 ? 'eager' : 'lazy';
+    el.appendChild(img);
+    slidesEl.appendChild(el);
+
+    const dot = document.createElement('div');
+    dot.className = 'hero-dot';
+    dot.setAttribute('role', 'tab');
+    dot.addEventListener('click', () => heroGoTo(i, true));
+    dotsEl.appendChild(dot);
+  });
+
+  // Activate first slide
+  heroGoTo(0, false);
+  heroTimer = setInterval(() => heroGoTo(heroCurrentSlide + 1, false), 5000);
+}
+
+initHeroSlideshow();
+
+// ── SCENT GROUPS BY PURPOSE ──
+const scentGroupDefs = [
+  {
+    icon:'🌙', name:'Thư Giãn & Ngủ Ngon', sub:'Giảm căng thẳng, dễ đi vào giấc ngủ',
+    members:[
+      {name:'Oải Hương', product:'Tinh Dầu · Nến Thơm', price:'120k – 200k'},
+      {name:'Phong Lữ',  product:'Tinh Dầu 5ml',        price:'120k – 200k'},
+      {name:'Trắc Bách Diệp', product:'Tinh Dầu 5ml',   price:'120k – 200k'},
+      {name:'Cây Lá Bạc', product:'Tinh Dầu 5ml',        price:'120k – 200k'},
+    ]
+  },
+  {
+    icon:'🎯', name:'Tập Trung & Tỉnh Táo', sub:'Kích thích não bộ, xua tan mệt mỏi',
+    members:[
+      {name:'Hương Thảo', product:'Tinh Dầu · Nến Thơm', price:'120k – 200k'},
+      {name:'Bạc Hà',     product:'Tinh Dầu · Bi Lăn',   price:'75k – 200k'},
+      {name:'Sả Java',    product:'Tinh Dầu 5ml',         price:'120k – 200k'},
+      {name:'Khuynh Diệp',product:'Tinh Dầu 5ml',         price:'120k – 200k'},
+    ]
+  },
+  {
+    icon:'⚡', name:'Năng Lượng & Vui Tươi', sub:'Nâng tinh thần, tươi mát buổi sáng',
+    members:[
+      {name:'Sả Chanh', product:'Tinh Dầu · Xịt Phòng', price:'120k – 150k'},
+      {name:'Cam',      product:'Tinh Dầu · Xịt Phòng', price:'120k – 150k'},
+      {name:'Quýt',     product:'Tinh Dầu 5ml · Mới',   price:'120k – 200k'},
+    ]
+  },
+  {
+    icon:'🔥', name:'Ấm Cúng & Bản Sắc', sub:'Không gian riêng, mùi khó quên',
+    members:[
+      {name:'Quế',    product:'Tinh Dầu · Nến · Xịt', price:'120k – 150k'},
+      {name:'Lá Xông',product:'Tinh Dầu 5ml',          price:'120k – 200k'},
+    ]
+  },
+];
+
+function renderScentGroups(container, shopeeUrl){
+  const lbl = document.createElement('span');
+  lbl.className = 'scent-strip-label';
+  lbl.textContent = '13 hương — phân theo công dụng · Hover để xem sản phẩm';
+  container.appendChild(lbl);
+
+  const groups = document.createElement('div');
+  groups.className = 'scent-groups';
+
+  scentGroupDefs.forEach(g => {
+    const grp = document.createElement('div');
+    grp.className = 'scent-group';
+    grp.innerHTML = `
+      <div class="scent-group-header">
+        <span class="scent-group-icon">${g.icon}</span>
+        <div><div class="scent-group-name">${g.name}</div><div class="scent-group-sub">${g.sub}</div></div>
+      </div>`;
+
+    g.members.forEach(m => {
+      const scentData = scents.find(s => s.name === m.name) || {};
+      const fill = scentData.fill || '#9CAF88';
+      const desc = scentData.desc || '';
+      const isNew = scentData.isNew || false;
+
+      const item = document.createElement('div');
+      item.className = 'scent-item';
+      item.style.setProperty('--dc', fill);
+      item.innerHTML = `
+        <div class="scent-item-dot"></div>
+        <div class="scent-item-name">${m.name}</div>
+        ${isNew ? '<span class="scent-item-new">Mới</span>' : ''}
+        <div class="scent-card">
+          <div class="sc-top">
+            <div class="sc-circle" style="background:${fill}"></div>
+            <div class="sc-name">${m.name}</div>
+          </div>
+          <div class="sc-desc">${desc}</div>
+          <div class="sc-product-label">Gợi ý sản phẩm</div>
+          <div class="sc-product-row">
+            <div>
+              <div class="sc-product-name">${m.product}</div>
+              <div class="sc-price">${m.price}</div>
+            </div>
+            <a href="${shopeeUrl}" target="_blank" class="sc-btn" onclick="event.stopPropagation()">Mua →</a>
+          </div>
+        </div>`;
+      grp.appendChild(item);
+    });
+    groups.appendChild(grp);
+  });
+  container.appendChild(groups);
+}
+
+// ── SCENT DATA — 13 hương ──
+const scents = [
+  { name:'Hương Thảo',     fill:'#9CAF88', isNew:false, desc:'Thảo mộc tươi, kích thích tư duy — mùi học bài và làm việc số 1' },
+  { name:'Sả Java',        fill:'#C9C46A', isNew:false, desc:'Sả mạnh, làm sạch không khí, đuổi côn trùng tự nhiên hiệu quả' },
+  { name:'Khuynh Diệp',    fill:'#6BAF8F', isNew:false, desc:'The mát, thông mũi, xử lý ẩm mốc phòng — dùng nhiều cho phòng tắm' },
+  { name:'Lá Xông',        fill:'#8FAA6B', isNew:false, desc:'Hương xông hơi truyền thống Tây Nguyên, ấm và sâu lắng' },
+  { name:'Phong Lữ',       fill:'#C48E9A', isNew:false, desc:'Hoa nhẹ dịu như hồng — cân bằng cảm xúc, giảm lo âu nhẹ nhàng' },
+  { name:'Cam',            fill:'#E0A04A', isNew:false, desc:'Cam ngọt tươi, vui tươi, nâng tinh thần — lý tưởng buổi sáng' },
+  { name:'Sả Chanh',       fill:'#D4C86A', isNew:false, desc:'Chanh sả tươi mát, phổ biến nhất cho không gian sống và phòng bếp' },
+  { name:'Bạc Hà',         fill:'#7ABFB0', isNew:false, desc:'Lạnh the, tỉnh táo tức thì — giảm đau đầu và buồn ngủ' },
+  { name:'Oải Hương',      fill:'#B09CC4', isNew:false, desc:'Hoa nhẹ ngọt, giảm stress, dễ ngủ — mùi phòng ngủ kinh điển nhất' },
+  { name:'Quế',            fill:'#C4875A', isNew:false, desc:'Cay ấm nồng, ấm cúng đêm lạnh — mùi Tết và mùa đông Đà Lạt' },
+  { name:'Trắc Bách Diệp', fill:'#7A9A6B', isNew:false, desc:'Gỗ xanh trầm lắng — thiền định, tĩnh tâm, an tĩnh tuyệt đối' },
+  { name:'Cây Lá Bạc',     fill:'#A0B8A0', isNew:false, desc:'Bạc nhẹ tinh tế, trung tính — dễ dùng mọi không gian, không gây ngộp' },
+  { name:'Quýt',           fill:'#E8973A', isNew:true,  desc:'Cam quýt Đà Lạt ngọt tươi nhẹ — hương mới nhất, dễ chịu cả ngày' },
+];
+
+// Render pharmacy shelf in hero
+const shelfGrid = document.getElementById('shelfGrid');
+if(shelfGrid){
+  scents.forEach(s => {
+    const el = document.createElement('div');
+    el.className = 'shelf-vial' + (s.isNew ? ' is-new' : '');
+    el.style.setProperty('--vc', s.fill);
+    el.innerHTML = `<div class="shelf-vial-dot"></div><div class="shelf-vial-name">${s.name}</div>`;
+    shelfGrid.appendChild(el);
+  });
+}
+
+// Render 13-color dots in 1ml product card
+const pcColorDots = document.getElementById('pcColorDots');
+if(pcColorDots){
+  scents.forEach(s => {
+    const d = document.createElement('div');
+    d.className = 'pc-color-dot';
+    d.style.background = s.fill;
+    d.title = s.name;
+    pcColorDots.appendChild(d);
+  });
+}
+
+// Render scent groups (catalog page — id="scentStrip")
+const scentStrip = document.getElementById('scentStrip');
+if(scentStrip){
+  renderScentGroups(scentStrip, 'https://nhacuathoithanhxuan.com/');
+}
+
+// Welcome strip — hiện khi đến từ trang 1ml
+const params = new URLSearchParams(window.location.search);
+if(params.get('from') === '1ml'){
+  const strip = document.getElementById('welcomeStrip');
+  strip.style.display = 'block';
+  // Trigger animation after display
+  requestAnimationFrame(() => requestAnimationFrame(() => strip.classList.add('show')));
+  document.getElementById('welcomeClose').addEventListener('click', () => {
+    strip.classList.remove('show');
+    setTimeout(() => { strip.style.display = 'none' }, 400);
+  });
+  // Auto-scroll to catalog sau 1000ms
+  setTimeout(() => {
+    const cat = document.getElementById('catalog');
+    if(cat) cat.scrollIntoView({ behavior:'smooth', block:'start' });
+  }, 1000);
+}
+
+// Nav scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+
+// ── PROMO VIDEO AUTOPLAY + VOLUME ──
+(function(){
+  const video = document.getElementById('promoVideo');
+  const volBtn = document.getElementById('promoVolBtn');
+  if(!video) return;
+
+  // Autoplay on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting && entry.intersectionRatio >= 0.4){
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.4 });
+  observer.observe(video);
+
+  // Volume toggle
+  if(volBtn){
+    volBtn.addEventListener('click', () => {
+      video.muted = !video.muted;
+      volBtn.querySelector('.vol-icon-muted').style.display = video.muted ? '' : 'none';
+      volBtn.querySelector('.vol-icon-on').style.display = video.muted ? 'none' : '';
+    });
+  }
+})();
+
+// Fade-up via IntersectionObserver
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') });
+}, { threshold: 0.09, rootMargin: '0px 0px -36px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+// Smooth scroll anchors
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if(t){ e.preventDefault(); t.scrollIntoView({ behavior:'smooth', block:'start' }) }
+  });
+});
+
+// ── MARQUEE ──
+const marqueeTrack = document.getElementById('marqueeTrack');
+if(marqueeTrack){
+  const items = [...scents, ...scents]; // duplicate for seamless loop
+  items.forEach(s => {
+    const el = document.createElement('div');
+    el.className = 'marquee-item';
+    el.innerHTML = `<span class="marquee-item-dot"></span>${s.name}`;
+    marqueeTrack.appendChild(el);
+  });
+}
+
+// ── MOOD SELECTOR ──
+const moodData = {
+  relax: [
+    { name:'Oải Hương',      fill:'#B09CC4', why:'Giảm căng thẳng, thư giãn sau ngày dài — mùi phòng ngủ kinh điển', isNew:false },
+    { name:'Phong Lữ',       fill:'#C48E9A', why:'Cân bằng cảm xúc, làm dịu lo lắng nhẹ một cách tự nhiên', isNew:false },
+    { name:'Hương Thảo',     fill:'#9CAF88', why:'Tĩnh tâm, thích hợp cho thiền định và đọc sách buổi tối', isNew:false },
+    { name:'Trắc Bách Diệp', fill:'#7A9A6B', why:'Mùi gỗ ấm trầm — an tĩnh và sâu lắng', isNew:false },
+  ],
+  focus: [
+    { name:'Bạc Hà',         fill:'#7ABFB0', why:'Kích thích tỉnh táo, tăng khả năng tập trung hiệu quả', isNew:false },
+    { name:'Sả Java',        fill:'#C9C46A', why:'Xua đuổi mệt mỏi, giữ đầu óc sáng suốt khi làm việc', isNew:false },
+    { name:'Hương Thảo',     fill:'#9CAF88', why:'Nghiên cứu cho thấy tăng trí nhớ ngắn hạn khi học bài', isNew:false },
+    { name:'Khuynh Diệp',    fill:'#6BAF8F', why:'Thông thoáng không khí, giảm ngột ngạt phòng kín', isNew:false },
+  ],
+  energy: [
+    { name:'Sả Chanh',       fill:'#D4C86A', why:'Mùi tươi mát kích thích tinh thần buổi sáng', isNew:false },
+    { name:'Cam',            fill:'#E0A04A', why:'Vui tươi, nâng cao tâm trạng ngay lập tức', isNew:false },
+    { name:'Quýt',           fill:'#E8973A', why:'Hương cam quýt Đà Lạt tươi và năng động nhất', isNew:true  },
+    { name:'Sả Java',        fill:'#C9C46A', why:'Cường độ cao, thích hợp trước khi tập luyện hay họp', isNew:false },
+  ],
+  sleep: [
+    { name:'Oải Hương',      fill:'#B09CC4', why:'Giảm lo âu, dễ đi vào giấc ngủ sâu hơn', isNew:false },
+    { name:'Phong Lữ',       fill:'#C48E9A', why:'Làm dịu giác quan, thư giãn trước khi ngủ', isNew:false },
+    { name:'Trắc Bách Diệp', fill:'#7A9A6B', why:'Mùi gỗ thông trầm lặng — an tĩnh tuyệt đối', isNew:false },
+    { name:'Cây Lá Bạc',     fill:'#A0B8A0', why:'Nhẹ nhàng, tinh tế — dễ ngủ không gây ngộp', isNew:false },
+  ],
+  cozy: [
+    { name:'Quế',            fill:'#C4875A', why:'Ấm nồng, gợi không khí đêm lạnh Đà Lạt mùa mưa', isNew:false },
+    { name:'Cam',            fill:'#E0A04A', why:'Ngọt và ấm như buổi chiều nhà bếp Đà Lạt', isNew:false },
+    { name:'Lá Xông',        fill:'#8FAA6B', why:'Hương thảo mộc đặc trưng Tây Nguyên, truyền thống', isNew:false },
+    { name:'Hương Thảo',     fill:'#9CAF88', why:'Dịu nhẹ và đất, thích hợp buổi tối cuối tuần', isNew:false },
+  ],
+};
+
+function renderMood(mood){
+  const grid = document.getElementById('moodResults');
+  if(!grid) return;
+  grid.innerHTML = '';
+  (moodData[mood] || []).forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'mood-scent-card';
+    card.innerHTML = `
+      <div class="mood-scent-swatch" style="background:${s.fill}"></div>
+      <div class="mood-scent-info">
+        <div class="mood-scent-name">${s.name}${s.isNew ? '<span class="mood-scent-new">Mới</span>' : ''}</div>
+        <div class="mood-scent-why">${s.why}</div>
+      </div>
+      <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="mood-shopee-btn">Mua Ngay →</a>`;
+    grid.appendChild(card);
+  });
+}
+
+document.querySelectorAll('.mood-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.mood-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    renderMood(tab.dataset.mood);
+  });
+});
+renderMood('relax');
+
+// ── FAQ ACCORDION ──
+document.querySelectorAll('.faq-item').forEach(item => {
+  const btn = item.querySelector('.faq-q');
+  const answer = item.querySelector('.faq-a');
+  const inner = item.querySelector('.faq-a-inner');
+  btn.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-a').style.maxHeight = '0';
+    });
+    if(!isOpen){
+      item.classList.add('open');
+      answer.style.maxHeight = inner.scrollHeight + 'px';
+    }
+  });
+});
+
+// ── STICKY BAR ── (ẩn khi footer vào viewport)
+const stickyBar = document.getElementById('stickyBar');
+if(stickyBar){
+  const heroSection = document.querySelector('.hero');
+  const footerEl = document.querySelector('footer');
+  window.addEventListener('scroll', () => {
+    if(!heroSection) return;
+    const heroGone = heroSection.getBoundingClientRect().bottom < 0;
+    const footerTop = footerEl ? footerEl.getBoundingClientRect().top : Infinity;
+    const footerNear = footerTop < window.innerHeight + 80;
+    stickyBar.classList.toggle('show', heroGone && !footerNear);
+  }, { passive:true });
+}
+
+// ── PRODUCT HUB ──
+const SHOPEE_URL = 'https://nhacuathoithanhxuan.com/';
+const ZALO_URL = 'https://zalo.me/0914142850';
+
+const phubData = {
+  'tinh-dau': [
+    {
+      img:'assets/img-1ml-herov1.png',name:'Lọ Thử Hương 1ml',
+      price:'10.000đ / lọ',summary:'Thử hương trước khi quyết định — không rủi ro',
+      badge:null,
+      desc:'13 hương tinh dầu thảo mộc — mới nhất: Quýt Đà Lạt. Lọ thủy tinh nhỏ gọn, dễ mang theo mọi nơi. Thử từng hương trước khi đầu tư chai lớn.',
+      scents:'🌿 13 hương: Oải Hương · Sả Chanh · Hương Thảo · Quế · Cam · Bạc Hà · Phong Lữ · Khuynh Diệp · Sả Java · Cây Lá Bạc · Trắc Bách Diệp · Lá Xông · Quýt (Mới)',
+      tip:'Gợi ý người mới: Oải Hương (thư giãn) · Sả Chanh (tươi mát) · Hương Thảo (tập trung)',
+      ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'},{label:'Xem đủ 13 hương',href:'tinh-dau-1ml.html',type:'outline'}]
+    },
+    {
+      img:'assets/img-5ml-bottle.png',name:'Tinh Dầu Thảo Mộc 5ml',
+      price:'120.000 – 200.000đ',summary:'Dùng hằng ngày — máy khuếch tán, xe hơi',
+      badge:'⭐ Được mua nhiều nhất',
+      desc:'Chai nhỏ gọn cho máy khuếch tán siêu âm, bếp than, bông tẩy trang. Nhỏ 3–5 giọt vào máy, chạy 30–60 phút.',
+      scents:'🌿 Gợi ý phổ biến nhất: Oải Hương · Sả Chanh · Hương Thảo',
+      tip:'→ Nhỏ 3–5 giọt vào máy, chạy 30–60 phút rồi nghỉ',
+      ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-5ml-wood-cap.png',name:'Tinh Dầu Treo Nắp Gỗ 5ml',
+      price:'120.000 – 180.000đ',summary:'Treo xe, tủ quần áo — không cần điện',
+      badge:null,
+      desc:'Khuếch tán tự nhiên qua nắp gỗ sồi. Treo xe hơi, phòng ngủ, tủ quần áo. Không cần điện, khuếch tán liên tục. Combo 9 loại giảm giá.',
+      scents:'🌿 Có đủ 13 hương để chọn',
+      tip:'→ Lật ngược nắp gỗ khi muốn mùi đậm hơn',
+      ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-10ml-bottle.png',name:'Tinh Dầu Thảo Mộc 10ml',
+      price:'180.000 – 270.000đ',summary:'Dùng thường xuyên — tiết kiệm hơn 5ml',
+      badge:null,
+      desc:'Chai lớn hơn cho dùng thường xuyên tại nhà, văn phòng. Phù hợp tất cả thiết bị khuếch tán. Đủ 13 hương.',
+      scents:'🌿 Đủ 13 hương · Dùng khoảng 2–3 tháng nếu nhỏ hằng ngày',
+      tip:'→ Nhỏ 3–5 giọt vào máy, chạy 30–60 phút',
+      ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-10ml-roller.png',name:'Tinh Dầu Bi Lăn 10ml',
+      price:'75.000 – 150.000đ',summary:'Lăn trực tiếp lên da — pha sẵn, an toàn',
+      badge:'✔ Dùng trực tiếp lên da',
+      desc:'Pha sẵn tỷ lệ chuẩn với dầu nền an toàn. Lăn thái dương, cổ, cổ tay. Tiếp xúc trực tiếp da, không gây kích ứng.',
+      scents:'🌿 Các hương phổ biến: Oải Hương · Bạc Hà · Sả Chanh · Quế · Cam',
+      tip:'→ Bộ 5 loại tiết kiệm hơn mua lẻ',
+      ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-50ml-bottle.png',name:'Tinh Dầu Thảo Mộc 50ml',
+      price:'225.000 – 720.000đ',summary:'Gia đình — phòng khách, khuếch tán que',
+      badge:null,
+      desc:'Dùng lâu dài cho gia đình. ~4.500–14.400đ/ml — tiết kiệm hơn đáng kể so với chai nhỏ. Đủ 13 hương.',
+      scents:'💡 Tiết kiệm ~60% so với chai 5ml khi tính theo ml',
+      tip:'→ Phù hợp máy siêu âm và bộ khuếch tán que',
+      ctas:[{label:'💬 Hỏi Zalo',href:ZALO_URL,type:'zalo'},{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-50ml-diffuser.png',name:'Bộ Khuếch Tán Que 50ml',
+      price:'300.000 – 500.000đ',summary:'Không cần điện — tỏa hương 1–2 tháng',
+      badge:null,
+      desc:'Tinh dầu + que tre trong lọ thủy tinh. Không cần điện, tỏa hương tự nhiên 1–2 tháng liên tục. Phòng ngủ, phòng khách.',
+      tip:'→ Lật ngược que khi muốn mùi đậm hơn',
+      ctas:[{label:'💬 Hỏi Zalo',href:ZALO_URL,type:'zalo'},{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-100ml-bottle.png',name:'Tinh Dầu Thảo Mộc 100ml',
+      price:'350.000 – 1.450.000đ',summary:'Dùng 3–6 tháng — kinh tế nhất / ml',
+      badge:'💰 Kinh tế nhất / ml',
+      desc:'Chai lớn nhất cho cá nhân. ~3.500–14.500đ/ml, rẻ hơn 65% so với chai 10ml. Dùng 3–6 tháng tùy tần suất.',
+      tip:'→ Phù hợp người dùng đều đặn hằng ngày',
+      ctas:[{label:'💬 Hỏi Zalo',href:ZALO_URL,type:'zalo'},{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-100ml-diffuser.png',name:'Bộ Khuếch Tán Que 100ml',
+      price:'400.000 – 900.000đ',summary:'Phòng khách, văn phòng — tỏa hương 2–4 tháng',
+      badge:null,
+      desc:'Phiên bản lớn, tỏa hương 2–4 tháng liên tục. Lý tưởng cho phòng khách lớn, văn phòng nhỏ, tiếp tân homestay.',
+      tip:'→ Lật ngược que định kỳ để duy trì mùi đều',
+      ctas:[{label:'💬 Hỏi Zalo',href:ZALO_URL,type:'zalo'},{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    }
+  ],
+  'nen-thom': [
+    {
+      img:'assets/img-candle-lifestyle.png',name:'Nến Sáp Dừa 100gr',
+      price:'150.000đ',summary:'Bàn làm việc, phòng ngủ · Cháy ~30 giờ',
+      badge:null,
+      desc:'Sáp dừa 100% + dầu macca + tinh dầu nguyên chất Đà Lạt. Không parafin, không hóa chất. Cháy sạch, tỏa hương nhẹ nhàng.',
+      scents:'🕯 Có hương: Oải Hương · Sả Chanh · Quế · Hương Thảo · Cam · Phong Lữ · Cây Lá Bạc',
+      tip:'→ Thử hương lần đầu với size nhỏ này',
+      ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-candle-lifestyle.png',name:'Nến Sáp Dừa 150gr',
+      price:'200.000đ',summary:'Phòng ngủ, phòng đọc · Cháy ~40–45 giờ',
+      badge:'⭐ Bán chạy nhất',
+      desc:'Kích thước trung bình, được chọn nhiều nhất. Cháy 40–45 giờ đều và sạch. Sáp dừa thiên nhiên 100%.',
+      scents:'🕯 Có hương: Oải Hương · Sả Chanh · Quế · Hương Thảo · Cam · Phong Lữ · Cây Lá Bạc',
+      tip:'→ Size kinh tế nhất cho dùng hằng ngày',
+      ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-candle-lifestyle.png',name:'Nến Sáp Dừa 200gr',
+      price:'300.000đ',summary:'Phòng khách, không gian lớn · Cháy ~55–60 giờ',
+      badge:null,
+      desc:'Kích thước lớn nhất — kinh tế nhất tính theo giờ cháy. Phòng khách, không gian thoáng.',
+      scents:'🕯 Có hương: Oải Hương · Sả Chanh · Quế · Hương Thảo · Cam · Phong Lữ · Cây Lá Bạc',
+      tip:'→ ~5.000đ/giờ — kinh tế nhất trong 3 size',
+      ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-candle-lifestyle.png',name:'Combo "7 Ngày Yêu"',
+      price:'805.000đ',summary:'Bộ 7 nến 100gr · Tiết kiệm ~200k',
+      badge:'🎁 Quà tặng ý nghĩa',
+      desc:'Mỗi ngày một hương khác nhau trong 7 ngày liên tiếp. Quà tặng ý nghĩa hoặc tự thưởng cho mình.',
+      scents:'🕯 7 hương: Oải Hương · Sả Chanh · Quế · Hương Thảo · Cam · Phong Lữ · Cây Lá Bạc',
+      tip:'→ Tiết kiệm ~200k so với mua lẻ 7 cái',
+      ctas:[{label:'Mua combo →',href:SHOPEE_URL,type:'shopee'}]
+    }
+  ],
+  'xa-bong': [
+    {
+      img:'assets/img-soap-collection.jpg',name:'Xà Bông Handmade 40gr',
+      price:'35.000đ / bánh',summary:'9 hương thảo mộc — nặn thủ công bởi người Điếc',
+      badge:null,
+      desc:'Không chất tạo bọt công nghiệp, không chất bảo quản. Nặn và cắt thủ công tại xưởng Đà Lạt. Mua lẻ từng loại hoặc set tự chọn.',
+      scents:'🧼 9 hương: Socola · Trà Xanh · Cà Phê · Quế · Cam · Chùm Ngây · Oải Hương · Sả · Muối',
+      tip:'→ Mua set nhiều loại để thử đa dạng hương và chất liệu',
+      ctas:[{label:'Xem Tất Cả →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-spray-lifestyle.png',name:'Xịt Thơm Phòng',
+      price:'150.000đ / chai',summary:'5 hương tự nhiên · Mùi lưu 30–60 phút không khí, 2–4 giờ trên vải',
+      badge:null,
+      desc:'Không cồn hóa học, không chất tạo mùi tổng hợp. Xịt trực tiếp vào không khí, rèm, gối, xe hơi. Combo 5 loại tiết kiệm 50k.',
+      scents:'🌿 5 hương: Quế · Sả Chanh · Cam · Thảo Mộc · Phong Lữ',
+      tip:'→ Combo 5 loại: 700.000đ (tiết kiệm 50k)',
+      ctas:[{label:'Xem Tất Cả →',href:SHOPEE_URL,type:'shopee'},{label:'💬 Hỏi Zalo',href:ZALO_URL,type:'zalo'}]
+    }
+  ],
+  'nuoc-hoa': [
+    {
+      img:'assets/img-perfume-collection.png',name:'"Đà Lạt Bên Hiên Nhà"',
+      price:'250k / 800k / 1.200k',summary:'BST 01 · 5 mùi hương · 10ml – 50ml',
+      badge:null,
+      desc:'Lấy cảm hứng từ sương mù, hiên nhà gỗ và nhịp sống chậm Đà Lạt. Không phải nước hoa thị trường — đây là ký ức được đóng chai.',
+      scents:'🌸 Youth (hoa cỏ tươi sáng) · Sunrise (cam chanh, bình minh) · Sunset (hoa trắng ấm) · Lifeline (xạ hương tinh tế) · Nightlife (gỗ trầm đêm phố núi)',
+      tip:'→ Bắt đầu với 10ml để thử hương trước khi mua chai lớn',
+      ctas:[{label:'Xem Ngay →',href:SHOPEE_URL,type:'shopee'}]
+    },
+    {
+      img:'assets/img-perfume-collection.png',name:'"Xuân-Hạ-Thu-Đông Rồi Lại Xuân"',
+      price:'1.200.000đ · 30ml EDP',summary:'BST 02 · 5 mùa Đà Lạt · 30ml EDP nồng độ cao',
+      badge:'✦ Premium EDP',
+      desc:'Năm mùi tái hiện vòng tuần hoàn của Đà Lạt. EDP nồng độ cao, lưu hương 6–8 giờ. Phiên bản giới hạn.',
+      scents:'🌸 Xuân (hoa tươi, hy vọng) · Hạ (citrus năng động) · Thu (lá vàng, hoài niệm) · Đông (gỗ trầm, nội tâm) · Rồi Lại Xuân (hoa trắng, vòng tuần hoàn)',
+      tip:'→ EDP lưu hương 6–8 giờ, dùng được cả ngày',
+      ctas:[{label:'Xem Ngay →',href:SHOPEE_URL,type:'shopee'},{label:'💬 Hỏi Zalo',href:ZALO_URL,type:'zalo'}]
+    }
+  ],
+  'b2b': [
+    {
+      img:'assets/img-b2b-spa-ambiance.png',name:'Set Tinh Dầu Spa',
+      price:'Liên hệ báo giá sỉ',summary:'Can 500ml cho Spa, Wellness, Phòng massage',
+      badge:'🏨 Giá sỉ',
+      desc:'Oải Hương + Phong Lữ + Hương Thảo tạo không gian thư giãn chuyên nghiệp. Can 500ml đủ dùng 3–6 tháng. Tư vấn hương theo concept miễn phí.',
+      tip:'→ Đơn từ 5 can có giá ưu đãi đặc biệt',
+      ctas:[{label:'💬 Tư vấn qua Zalo',href:ZALO_URL,type:'zalo'}]
+    },
+    {
+      img:'assets/img-b2b-spa-ambiance.png',name:'Can Tinh Dầu 500ml — Khách Sạn',
+      price:'850.000 – 5.500.000đ',summary:'Xử lý ẩm mốc phòng · Sả Chanh, Sả Java',
+      badge:'🏨 B2B · Phòng ẩm',
+      desc:'Xử lý ẩm mốc phòng khách sạn hiệu quả hơn hóa chất. Mùi tự nhiên sạch, không gây kích ứng hô hấp khách lưu trú.',
+      tip:'→ Hiệu quả xử lý ẩm và kháng khuẩn tự nhiên',
+      ctas:[{label:'💬 Liên hệ đặt hàng',href:ZALO_URL,type:'zalo'}]
+    },
+    {
+      img:'assets/img-b2b-spa-ambiance.png',name:'Tinh Dầu Xe VIP 500ml',
+      price:'850.000 – 5.500.000đ',summary:'Xe VIP, dịch vụ cao cấp · Mùi tự nhiên lịch sự',
+      badge:null,
+      desc:'Sả Java, Quế, Cam — mùi thảo mộc không gây khó chịu cho hành khách. Dùng với bộ khuếch tán xe.',
+      tip:'→ Nâng tầm trải nghiệm dịch vụ với mùi hương tự nhiên',
+      ctas:[{label:'💬 Liên hệ tư vấn',href:ZALO_URL,type:'zalo'}]
+    }
+  ]
+};
+
+function renderPhub(tabId) {
+  const panels = document.getElementById('phubPanels');
+  if(!panels) return;
+  panels.innerHTML = '';
+  const data = phubData[tabId] || [];
+  const panel = document.createElement('div');
+  panel.className = 'phub-panel active';
+  const grid = document.createElement('div');
+  grid.className = 'phub-grid';
+  data.forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'phub-card fade-up';
+    const ctasHtml = p.ctas.map(c => {
+      if(c.type === 'shopee') return `<a href="${c.href}" target="_blank" class="btn-shopee" onclick="event.stopPropagation()">${c.label}</a>`;
+      if(c.type === 'zalo') return `<a href="${c.href}" target="_blank" class="btn-zalo-sm" style="padding:9px 16px;font-size:.8rem" onclick="event.stopPropagation()">${c.label}</a>`;
+      return `<a href="${c.href}" class="btn-outline" style="font-size:.8rem;padding:9px 16px" onclick="event.stopPropagation()">${c.label}</a>`;
+    }).join('');
+    card.innerHTML = `
+      <img class="phub-card-img" src="${p.img}" alt="${p.name}">
+      <div class="phub-card-brief">
+        <div class="phub-card-top">
+          <div class="phub-card-name">${p.name}</div>
+          <div class="phub-card-price">${p.price}</div>
+        </div>
+        <div class="phub-card-summary">${p.summary}</div>
+        ${p.badge ? `<span class="phub-card-badge">${p.badge}</span>` : ''}
+        <div class="phub-card-toggle" id="toggle-${Math.random().toString(36).slice(2)}">▾ Xem chi tiết</div>
+      </div>
+      <div class="phub-card-detail">
+        <div class="phub-card-detail-inner">
+          <div class="phub-detail-desc">${p.desc}</div>
+          ${p.scents ? `<div class="phub-detail-scents">${p.scents}</div>` : ''}
+          ${p.tip ? `<div class="phub-detail-tip">${p.tip}</div>` : ''}
+          <div class="phub-detail-ctas">${ctasHtml}</div>
+        </div>
+      </div>`;
+    const toggle = card.querySelector('.phub-card-toggle');
+    card.addEventListener('click', () => {
+      const isOpen = card.classList.contains('open');
+      grid.querySelectorAll('.phub-card.open').forEach(c => {
+        c.classList.remove('open');
+        c.querySelector('.phub-card-toggle').textContent = '▾ Xem chi tiết';
+      });
+      if(!isOpen){
+        card.classList.add('open');
+        toggle.textContent = '▴ Thu gọn';
+      }
+    });
+    grid.appendChild(card);
+  });
+  panel.appendChild(grid);
+  if(tabId === 'tinh-dau'){
+    const strip = document.createElement('div');
+    strip.className = 'scent-strip fade-up';
+    strip.style.cssText = 'margin-top:40px;padding-top:28px;border-top:1px solid var(--border)';
+    renderScentGroups(strip, 'https://nhacuathoithanhxuan.com/');
+    panel.appendChild(strip);
+  }
+  panels.appendChild(panel);
+  panel.querySelectorAll('.fade-up').forEach(el => { if(typeof io !== 'undefined') io.observe(el) });
+}
+
+document.querySelectorAll('.phub-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.phub-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    renderPhub(tab.dataset.tab);
+  });
+});
+renderPhub('tinh-dau');
+
+// ── SOAP GRID ──
+const soaps = [
+  { name:'Socola',      color:'#7B4F3A' },
+  { name:'Trà Xanh',   color:'#6BAF8F' },
+  { name:'Cà Phê',     color:'#9A6B45' },
+  { name:'Quế',        color:'#C4875A' },
+  { name:'Cam',        color:'#E0A04A' },
+  { name:'Chùm Ngây',  color:'#8FAA6B' },
+  { name:'Oải Hương',  color:'#B09CC4' },
+  { name:'Sả',         color:'#C9C46A' },
+  { name:'Muối',       color:'#A8B8B0' },
+];
+const soapGrid = document.getElementById('soapGrid');
+if(soapGrid){
+  soaps.forEach(s => {
+    const el = document.createElement('div');
+    el.className = 'soap-card';
+    el.innerHTML = `
+      <div class="soap-swatch" style="background:${s.color}"></div>
+      <div class="soap-name">${s.name}</div>
+      <div class="soap-price">35.000đ</div>`;
+    soapGrid.appendChild(el);
+  });
+}
+
+// ── SPRAY GRID ──
+const sprays = [
+  { name:'Quế',       color:'#C4875A' },
+  { name:'Sả Chanh',  color:'#D4C86A' },
+  { name:'Cam',       color:'#E0A04A' },
+  { name:'Thảo Mộc', color:'#9CAF88' },
+  { name:'Phong Lữ',  color:'#C48E9A' },
+];
+const sprayGrid = document.getElementById('sprayGrid');
+if(sprayGrid){
+  sprays.forEach(s => {
+    const el = document.createElement('div');
+    el.className = 'soap-card';
+    el.innerHTML = `
+      <div class="soap-swatch" style="background:${s.color}"></div>
+      <div class="soap-name">${s.name}</div>
+      <div class="soap-price">150.000đ</div>`;
+    sprayGrid.appendChild(el);
+  });
+}
+
+
+
+</script>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar-left">
+    <div class="sticky-bar-text"><strong>Tinh Dầu Thảo Mộc NCTTX</strong> · 13 hương · Giao toàn quốc</div>
+    <div class="sticky-bar-price">Từ 10.000đ</div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;flex-shrink:0">
+    <a href="https://zalo.me/0914142850" target="_blank" class="sticky-bar-zalo">
+      💬 Zalo
+    </a>
+    <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="sticky-bar-cta">
+      Mua Ngay →
+    </a>
+  </div>
+</div>
+
+  <!-- NCTTX Affiliate Tracker & Direct Checkout Form -->
+  <script src="assets/affiliate-tracker.js"></script>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner" id="promoBanner">
+  <button class="promo-close" id="promoClose" aria-label="Đóng">✕</button>
+  <div class="promo-tag">✦ Khuyến Mãi</div>
+  <div class="promo-title">Mua 1<br>Tinh Dầu 5ml</div>
+  <div class="promo-gift">🎁 Tặng 1 Quả Trứng Thông Tỏa Hương</div>
+  <a href="#catalog" class="promo-cta" id="promoCtaBtn">Mua Ngay →</a>
+</div>
+
+<style>
+.promo-banner{
+  position:fixed;right:0;top:50%;transform:translateY(-50%);
+  z-index:450;
+  background:#2C1E0E;
+  border-left:3px solid var(--gold);
+  border-radius:12px 0 0 12px;
+  padding:20px 18px 18px;
+  width:148px;
+  text-align:center;
+  box-shadow:-4px 0 24px rgba(37,28,14,.28);
+  animation:promoPop .5s cubic-bezier(.34,1.56,.64,1) forwards, promoShake 4s 2s ease-in-out infinite;
+  transform-origin:right center;
+}
+@keyframes promoPop{
+  from{transform:translateY(-50%) translateX(100%);opacity:0}
+  to{transform:translateY(-50%) translateX(0);opacity:1}
+}
+@keyframes promoShake{
+  0%,90%,100%{transform:translateY(-50%) rotate(0deg)}
+  92%{transform:translateY(-50%) rotate(-2deg)}
+  94%{transform:translateY(-50%) rotate(2deg)}
+  96%{transform:translateY(-50%) rotate(-1.5deg)}
+  98%{transform:translateY(-50%) rotate(1deg)}
+}
+.promo-banner.hide{
+  animation:promoHide .3s ease forwards;
+}
+@keyframes promoHide{
+  to{transform:translateY(-50%) translateX(120%);opacity:0}
+}
+.promo-close{
+  position:absolute;top:8px;right:10px;
+  background:none;border:none;cursor:pointer;
+  color:rgba(253,251,247,.4);font-size:.75rem;
+  transition:color .2s;line-height:1;padding:2px;
+}
+.promo-close:hover{color:var(--gold-light)}
+.promo-tag{
+  font-family:'Montserrat',sans-serif;
+  font-size:.52rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold-light);margin-bottom:10px;
+}
+.promo-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:.82rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--cream);line-height:1.25;margin-bottom:10px;
+}
+.promo-gift{
+  font-family:'Courier New',monospace;
+  font-size:.68rem;color:rgba(253,251,247,.72);
+  line-height:1.55;letter-spacing:-0.04em;
+  margin-bottom:14px;
+  padding:8px 6px;
+  background:rgba(184,122,40,.15);
+  border-radius:6px;
+  border:1px solid rgba(184,122,40,.25);
+}
+.promo-cta{
+  display:block;
+  background:var(--gold);color:var(--text);
+  font-family:'Montserrat',sans-serif;
+  font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  padding:9px 12px;border-radius:4px;text-decoration:none;
+  transition:all .2s;
+}
+.promo-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
+/* Mobile: strip cố định ngay trên sticky bar, có gap 6px */
+@media(max-width:600px){
+  .promo-banner{
+    right:0;left:0;top:auto;
+    bottom:62px; /* sticky bar ~56px + gap 6px */
+    transform:translateY(calc(100% + 62px));
+    width:100%;border-radius:0;
+    border-left:none;border-top:2px solid var(--gold);
+    padding:10px 16px;
+    display:flex;align-items:center;gap:8px;
+    text-align:left;
+    transition:transform .4s cubic-bezier(.4,0,.2,1);
+    animation:none;
+  }
+  .promo-banner.mobile-show{transform:translateY(0)}
+  .promo-banner.hide{transform:translateY(calc(100% + 62px)) !important;transition:transform .3s ease}
+  .promo-tag{display:none}
+  .promo-title{font-size:.68rem;white-space:nowrap;margin-bottom:0;flex-shrink:0}
+  .promo-gift{
+    font-size:.62rem;margin-bottom:0;padding:0;
+    background:none;border:none;border-radius:0;
+    flex:1;min-width:0;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
+  .promo-cta{padding:8px 12px;font-size:.58rem;white-space:nowrap;flex-shrink:0}
+  .promo-close{position:static;order:5;flex-shrink:0;font-size:.8rem;color:rgba(253,251,247,.5)}
+}
+</style>
+<script>
+(function(){
+  const banner  = document.getElementById('promoBanner');
+  const closeBtn = document.getElementById('promoClose');
+  const ctaBtn  = document.getElementById('promoCtaBtn');
+  if(!banner) return;
+
+  const isMobile = () => window.innerWidth <= 600;
+
+  // Mobile: show promo sau 1.5s (cùng lúc sticky bar xuất hiện)
+  // Desktop: animation pop từ phải tự chạy qua CSS
+  if(isMobile()){
+    setTimeout(() => banner.classList.add('mobile-show'), 1500);
+  }
+
+  window.addEventListener('resize', () => {
+    if(isMobile()) banner.classList.add('mobile-show');
+    else banner.classList.remove('mobile-show');
+  });
+
+  function hideBanner(){
+    banner.classList.add('hide');
+    setTimeout(() => { banner.style.display = 'none' }, 320);
+  }
+
+  closeBtn.addEventListener('click', hideBanner);
+  ctaBtn.addEventListener('click', hideBanner);
+})();
+</script>
+
+</div><!-- /.page-wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

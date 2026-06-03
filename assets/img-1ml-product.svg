@@ -1,0 +1,168 @@
+<svg viewBox="0 0 480 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="spotlight" cx="50%" cy="42%" r="52%">
+      <stop offset="0%" stop-color="#C17F3E" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#C17F3E" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#2A1810" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="groundGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C17F3E" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#2A1810" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bottleBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3D2B1F" stop-opacity="0.7"/>
+      <stop offset="25%" stop-color="#E8DFD0" stop-opacity="0.65"/>
+      <stop offset="60%" stop-color="#C17F3E" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#2A1810" stop-opacity="0.55"/>
+    </linearGradient>
+    <pattern id="bgTex" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="0.65" fill="#C17F3E" opacity="0.08"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="dropGlow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bottleShadow">
+      <feDropShadow dx="4" dy="8" stdDeviation="10" flood-color="#1A0E08" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="520" fill="#1E1008"/>
+  <rect width="480" height="520" fill="url(#bgTex)"/>
+
+  <!-- Warm ambient spotlight from top -->
+  <circle cx="240" cy="200" r="260" fill="url(#spotlight)"/>
+
+  <!-- Vertical grid lines (LP2 decoration) -->
+  <g opacity="0.045" stroke="#E8DFD0" stroke-width="0.5">
+    <line x1="120" y1="0" x2="120" y2="520"/>
+    <line x1="240" y1="0" x2="240" y2="520"/>
+    <line x1="360" y1="0" x2="360" y2="520"/>
+  </g>
+
+  <!-- Ground glow / surface reflection -->
+  <ellipse cx="244" cy="408" rx="90" ry="22" fill="url(#groundGlow)"/>
+  <!-- Kraft surface line -->
+  <rect x="80" y="404" width="320" height="2" rx="1" fill="#5C3D2E" opacity="0.3"/>
+
+  <!-- ── LEFT BOTANICAL: Lavender ── -->
+  <g opacity="0.5">
+    <line x1="82" y1="500" x2="96" y2="280" stroke="#8B6914" stroke-width="1.2"/>
+    <line x1="88" y1="498" x2="102" y2="278" stroke="#7A5914" stroke-width="1"/>
+    <line x1="95" y1="502" x2="108" y2="282" stroke="#8B6914" stroke-width="1.1"/>
+    <!-- buds -->
+    <ellipse cx="87" cy="298" rx="5" ry="9" fill="#B09CC4" transform="rotate(-8 87 298)" opacity="0.85"/>
+    <ellipse cx="94" cy="293" rx="4.5" ry="8" fill="#9B89B8" transform="rotate(-2 94 293)" opacity="0.8"/>
+    <ellipse cx="101" cy="296" rx="5" ry="8.5" fill="#B09CC4" transform="rotate(5 101 296)" opacity="0.82"/>
+    <ellipse cx="107" cy="299" rx="4" ry="7.5" fill="#C4B4D4" transform="rotate(8 107 299)" opacity="0.75"/>
+    <!-- leaves -->
+    <ellipse cx="84" cy="350" rx="9" ry="3.5" fill="#6B8F4E" transform="rotate(-30 84 350)" opacity="0.6"/>
+    <ellipse cx="97" cy="368" rx="8" ry="3" fill="#4E6B38" transform="rotate(-25 97 368)" opacity="0.55"/>
+    <ellipse cx="86" cy="390" rx="7" ry="3" fill="#6B8F4E" transform="rotate(-20 86 390)" opacity="0.5"/>
+  </g>
+
+  <!-- ── RIGHT BOTANICAL: Herb / Rosemary ── -->
+  <g opacity="0.45">
+    <line x1="380" y1="500" x2="368" y2="285" stroke="#8B6914" stroke-width="1.3"/>
+    <!-- leaves pairs -->
+    <ellipse cx="361" cy="308" rx="8" ry="3" fill="#6B8F4E" transform="rotate(28 361 308)"/>
+    <ellipse cx="375" cy="308" rx="8" ry="3" fill="#4E6B38" transform="rotate(-28 375 308)"/>
+    <ellipse cx="356" cy="330" rx="7.5" ry="3" fill="#6B8F4E" transform="rotate(25 356 330)"/>
+    <ellipse cx="372" cy="330" rx="7.5" ry="3" fill="#4E6B38" transform="rotate(-25 372 330)"/>
+    <ellipse cx="354" cy="352" rx="7" ry="2.8" fill="#6B8F4E" transform="rotate(20 354 352)"/>
+    <ellipse cx="370" cy="352" rx="7" ry="2.8" fill="#4E6B38" transform="rotate(-20 370 352)"/>
+    <ellipse cx="356" cy="374" rx="6.5" ry="2.5" fill="#6B8F4E" transform="rotate(15 356 374)"/>
+    <ellipse cx="370" cy="374" rx="6.5" ry="2.5" fill="#4E6B38" transform="rotate(-15 370 374)"/>
+    <!-- tip -->
+    <ellipse cx="367" cy="288" rx="5" ry="8" fill="#6B8F4E" transform="rotate(-5 367 288)" opacity="0.7"/>
+  </g>
+
+  <!-- ── BOTTLE GROUP (tilted -5 degrees) ── -->
+  <g transform="rotate(-5, 244, 370)" filter="url(#bottleShadow)">
+
+    <!-- Body -->
+    <rect x="222" y="228" width="44" height="174" rx="7" fill="url(#bottleBody)"/>
+
+    <!-- Glass highlight left edge -->
+    <rect x="222" y="228" width="6" height="174" rx="3" fill="rgba(255,255,255,0.08)"/>
+    <!-- Glass shine stripe -->
+    <rect x="231" y="235" width="3" height="155" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+
+    <!-- Label -->
+    <rect x="225" y="252" width="38" height="108" rx="4" fill="#FDFBF7" opacity="0.93"/>
+
+    <!-- Label content -->
+    <text x="244" y="272" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
+          font-size="7.5" font-weight="700" fill="#2A1810" letter-spacing="0.5">TINH DẦU</text>
+    <text x="244" y="284" text-anchor="middle" font-family="Georgia,serif"
+          font-size="6.5" font-style="italic" fill="#C17F3E">Nguyên Chất</text>
+    <line x1="227" y1="291" x2="261" y2="291" stroke="#D6CBBA" stroke-width="0.6"/>
+    <text x="244" y="302" text-anchor="middle" font-family="Georgia,serif"
+          font-size="6" font-style="italic" fill="#6B8F4E">Cao Nguyên Đà Lạt</text>
+    <line x1="227" y1="310" x2="261" y2="310" stroke="#D6CBBA" stroke-width="0.6"/>
+    <text x="244" y="322" text-anchor="middle" font-family="Arial,sans-serif"
+          font-size="5.5" fill="#7A6355" letter-spacing="0.5">Nhà Của Thời Thanh Xuân</text>
+    <text x="244" y="334" text-anchor="middle" font-family="Arial,sans-serif"
+          font-size="5.5" fill="#7A6355">100% Pure · 2013</text>
+    <!-- Volume badge -->
+    <rect x="233" y="342" width="22" height="12" rx="6" fill="#3D2B1F" opacity="0.12"/>
+    <text x="244" y="351" text-anchor="middle" font-family="Arial,sans-serif"
+          font-size="6" font-weight="700" fill="#C17F3E">1 ml</text>
+
+    <!-- Neck -->
+    <rect x="231" y="210" width="26" height="21" rx="4" fill="#4E3525"/>
+    <rect x="231" y="210" width="6" height="21" fill="rgba(255,255,255,0.05)"/>
+
+    <!-- Dropper bulb -->
+    <ellipse cx="244" cy="203" rx="16" ry="11" fill="#3D2B1F"/>
+    <ellipse cx="237" cy="199" rx="4" ry="3" fill="rgba(255,255,255,0.07)"/>
+
+    <!-- Dropper cap -->
+    <rect x="233" y="184" width="22" height="21" rx="4" fill="#2A1810"/>
+    <rect x="236" y="187" width="6" height="9" rx="1.5" fill="#5C3D2E" opacity="0.7"/>
+
+    <!-- Dropper tip (thin tube) -->
+    <rect x="241" y="170" width="6" height="17" rx="3" fill="#2A1810"/>
+    <rect x="242.5" y="170" width="2" height="17" rx="1" fill="#3D2B1F" opacity="0.5"/>
+
+  </g>
+
+  <!-- ── OIL DROP (outside bottle rotate group, falls vertically) ── -->
+  <!-- Drop forming at tip -->
+  <path d="M241 168 C241 162 236 155 241 147 C246 155 241 162 241 168Z"
+        fill="#C17F3E" opacity="0.92" filter="url(#dropGlow)"/>
+  <!-- Smaller dot above (falling) -->
+  <circle cx="241" cy="141" r="3.5" fill="#E0AA6A" opacity="0.85" filter="url(#dropGlow)"/>
+  <!-- Tiny dot higher -->
+  <circle cx="242" cy="132" r="1.8" fill="#E0AA6A" opacity="0.5"/>
+  <!-- Amber glow around drop area -->
+  <circle cx="241" cy="152" r="18" fill="#C17F3E" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- ── BOTTLE SHADOW (bottom) ── -->
+  <ellipse cx="244" cy="408" rx="36" ry="9" fill="#1A0E08" opacity="0.45"/>
+
+  <!-- ── PRICE BADGE (bottom right of image) ── -->
+  <g opacity="0.9">
+    <circle cx="390" cy="445" r="38" fill="#3D2B1F"/>
+    <circle cx="390" cy="445" r="36" fill="none" stroke="rgba(193,127,62,0.4)" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text x="390" y="438" text-anchor="middle" font-family="Georgia,serif"
+          font-size="18" font-weight="700" fill="#E0AA6A">10K</text>
+    <text x="390" y="452" text-anchor="middle" font-family="Arial,sans-serif"
+          font-size="7.5" fill="rgba(249,246,241,0.6)">/lọ · nguyên chất</text>
+  </g>
+
+  <!-- ── CORNER ACCENT TOP-LEFT ── -->
+  <g opacity="0.15">
+    <path d="M0 80 C20 60 40 80 30 110" stroke="#C17F3E" stroke-width="1" fill="none"/>
+    <ellipse cx="18" cy="65" rx="10" ry="4" fill="#C17F3E" transform="rotate(-30 18 65)"/>
+  </g>
+
+  <!-- ── BOTTOM LABEL ── -->
+  <text x="240" y="500" text-anchor="middle" font-family="Arial,sans-serif"
+        font-size="8" letter-spacing="2.5" fill="rgba(193,127,62,0.38)">TINH DẦU · ĐÀ LẠT · TỪ 2013</text>
+</svg>

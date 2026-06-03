@@ -1,0 +1,157 @@
+<svg viewBox="0 0 640 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#C9A84C" opacity="0.18"/>
+    </pattern>
+    <linearGradient id="glass1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8BAF70" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#C9A84C" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#8BAF70" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="glass2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5C9E7A" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#C9A84C" stop-opacity="0.68"/>
+      <stop offset="100%" stop-color="#5C9E7A" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#3D2B1F" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="520" fill="#F5F0E8"/>
+  <rect width="640" height="520" fill="url(#dots)"/>
+
+  <!-- Bottom surface line -->
+  <rect x="40" y="440" width="560" height="1" fill="#D5CEBE" opacity="0.8"/>
+
+  <!-- ── BOTTLE 1: 1ml ── cx=90 -->
+  <g filter="url(#shadow)">
+    <!-- shadow -->
+    <ellipse cx="90" cy="446" rx="16" ry="5" fill="#3D2B1F" opacity="0.1"/>
+    <!-- body -->
+    <rect x="77" y="368" width="26" height="76" rx="4" fill="url(#glass1)"/>
+    <!-- label -->
+    <rect x="79" y="382" width="22" height="44" rx="2" fill="#FDFBF7" opacity="0.92"/>
+    <text x="90" y="398" text-anchor="middle" font-family="Georgia,serif" font-size="5.5" font-weight="700" fill="#2C4A2E">TINH DẦU</text>
+    <text x="90" y="408" text-anchor="middle" font-family="Georgia,serif" font-size="5" font-style="italic" fill="#A07830">Oải Hương</text>
+    <line x1="81" y1="413" x2="99" y2="413" stroke="#D5CEBE" stroke-width="0.5"/>
+    <text x="90" y="421" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">1 ml</text>
+    <!-- neck -->
+    <rect x="83" y="356" width="14" height="14" rx="2" fill="#3D6640"/>
+    <!-- cap -->
+    <rect x="79" y="344" width="22" height="14" rx="3" fill="#2C4A2E"/>
+    <!-- cap shine -->
+    <rect x="82" y="346" width="5" height="6" rx="1" fill="#4A7C59" opacity="0.5"/>
+  </g>
+
+  <!-- Label: 1ml size -->
+  <text x="90" y="466" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#6B7B6E">1ml</text>
+  <text x="90" y="478" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#A07830">10k</text>
+
+  <!-- ── BOTTLE 2: 5ml ── cx=196 -->
+  <g filter="url(#shadow)">
+    <ellipse cx="196" cy="446" rx="22" ry="6" fill="#3D2B1F" opacity="0.1"/>
+    <!-- body -->
+    <rect x="181" y="322" width="30" height="122" rx="5" fill="url(#glass2)"/>
+    <!-- label -->
+    <rect x="183" y="338" width="26" height="68" rx="2" fill="#FDFBF7" opacity="0.92"/>
+    <text x="196" y="356" text-anchor="middle" font-family="Georgia,serif" font-size="5.5" font-weight="700" fill="#2C4A2E">TINH DẦU</text>
+    <text x="196" y="367" text-anchor="middle" font-family="Georgia,serif" font-size="5" font-style="italic" fill="#A07830">Hương Thảo</text>
+    <line x1="185" y1="373" x2="207" y2="373" stroke="#D5CEBE" stroke-width="0.5"/>
+    <text x="196" y="382" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">NCTTX · Đà Lạt</text>
+    <text x="196" y="394" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">Pure · Undiluted</text>
+    <!-- neck -->
+    <rect x="188" y="308" width="16" height="16" rx="2" fill="#3D6640"/>
+    <!-- cap -->
+    <rect x="183" y="294" width="26" height="16" rx="3" fill="#2C4A2E"/>
+    <rect x="187" y="297" width="6" height="7" rx="1" fill="#4A7C59" opacity="0.5"/>
+  </g>
+  <text x="196" y="466" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#6B7B6E">5ml</text>
+  <text x="196" y="478" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#A07830">từ 120k</text>
+
+  <!-- ── BOTTLE 3: 10ml (tallest in center) ── cx=320 -->
+  <g filter="url(#shadow)">
+    <ellipse cx="320" cy="447" rx="30" ry="7" fill="#3D2B1F" opacity="0.12"/>
+    <!-- body -->
+    <rect x="302" y="276" width="36" height="168" rx="6" fill="url(#glass1)"/>
+    <!-- label -->
+    <rect x="305" y="296" width="30" height="90" rx="3" fill="#FDFBF7" opacity="0.93"/>
+    <text x="320" y="314" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" font-weight="700" fill="#2C4A2E">TINH DẦU</text>
+    <text x="320" y="325" text-anchor="middle" font-family="Georgia,serif" font-size="5.5" font-style="italic" fill="#A07830">Nguyên Chất</text>
+    <line x1="307" y1="332" x2="333" y2="332" stroke="#D5CEBE" stroke-width="0.6"/>
+    <text x="320" y="342" text-anchor="middle" font-family="Georgia,serif" font-size="5.5" font-style="italic" fill="#4A7C59">Khuynh Diệp</text>
+    <line x1="307" y1="350" x2="333" y2="350" stroke="#D5CEBE" stroke-width="0.6"/>
+    <text x="320" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">Nhà của Thời Thanh Xuân</text>
+    <text x="320" y="372" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">100% Pure · Đà Lạt · 2013</text>
+    <!-- neck -->
+    <rect x="311" y="260" width="18" height="18" rx="3" fill="#3D6640"/>
+    <!-- cap -->
+    <rect x="305" y="244" width="30" height="18" rx="4" fill="#2C4A2E"/>
+    <rect x="310" y="248" width="8" height="8" rx="2" fill="#4A7C59" opacity="0.5"/>
+  </g>
+  <text x="320" y="466" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#6B7B6E">10ml</text>
+  <text x="320" y="478" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#A07830">từ 75k</text>
+
+  <!-- ── BOTTLE 4: 50ml ── cx=448 -->
+  <g filter="url(#shadow)">
+    <ellipse cx="448" cy="447" rx="38" ry="7" fill="#3D2B1F" opacity="0.1"/>
+    <!-- body — wider -->
+    <rect x="428" y="298" width="40" height="146" rx="6" fill="url(#glass2)"/>
+    <!-- label -->
+    <rect x="431" y="316" width="34" height="82" rx="3" fill="#FDFBF7" opacity="0.93"/>
+    <text x="448" y="332" text-anchor="middle" font-family="Georgia,serif" font-size="6" font-weight="700" fill="#2C4A2E">TINH DẦU</text>
+    <text x="448" y="343" text-anchor="middle" font-family="Georgia,serif" font-size="5.5" font-style="italic" fill="#A07830">Oải Hương</text>
+    <line x1="433" y1="349" x2="463" y2="349" stroke="#D5CEBE" stroke-width="0.6"/>
+    <text x="448" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" fill="#6B7B6E">50 ml</text>
+    <text x="448" y="373" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">NCTTX · Đà Lạt</text>
+    <text x="448" y="384" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">100% Nguyên Chất</text>
+    <!-- neck -->
+    <rect x="438" y="282" width="20" height="18" rx="3" fill="#3D6640"/>
+    <!-- cap -->
+    <rect x="432" y="266" width="32" height="18" rx="4" fill="#2C4A2E"/>
+    <rect x="437" y="270" width="8" height="8" rx="2" fill="#4A7C59" opacity="0.5"/>
+  </g>
+  <text x="448" y="466" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#6B7B6E">50ml</text>
+  <text x="448" y="478" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#A07830">từ 225k</text>
+
+  <!-- ── BOTTLE 5: 100ml ── cx=562 -->
+  <g filter="url(#shadow)">
+    <ellipse cx="562" cy="448" rx="44" ry="8" fill="#3D2B1F" opacity="0.1"/>
+    <!-- body — widest -->
+    <rect x="538" y="300" width="48" height="144" rx="7" fill="url(#glass1)"/>
+    <!-- label -->
+    <rect x="542" y="318" width="40" height="80" rx="3" fill="#FDFBF7" opacity="0.93"/>
+    <text x="562" y="334" text-anchor="middle" font-family="Georgia,serif" font-size="7" font-weight="700" fill="#2C4A2E">TINH DẦU</text>
+    <text x="562" y="346" text-anchor="middle" font-family="Georgia,serif" font-size="5.5" font-style="italic" fill="#A07830">Sả Chanh</text>
+    <line x1="544" y1="352" x2="580" y2="352" stroke="#D5CEBE" stroke-width="0.6"/>
+    <text x="562" y="363" text-anchor="middle" font-family="Arial,sans-serif" font-size="5.5" fill="#6B7B6E">100 ml</text>
+    <text x="562" y="375" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">Nhà của Thời Thanh Xuân</text>
+    <text x="562" y="387" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#6B7B6E">100% Pure · Đà Lạt</text>
+    <!-- neck -->
+    <rect x="550" y="282" width="24" height="20" rx="3" fill="#3D6640"/>
+    <!-- cap -->
+    <rect x="543" y="264" width="38" height="20" rx="5" fill="#2C4A2E"/>
+    <rect x="549" y="268" width="9" height="9" rx="2" fill="#4A7C59" opacity="0.5"/>
+  </g>
+  <text x="562" y="466" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#6B7B6E">100ml</text>
+  <text x="562" y="478" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#A07830">từ 350k</text>
+
+  <!-- ── Botanical corner accent ── -->
+  <g opacity="0.25">
+    <!-- stem -->
+    <path d="M580 20 C590 60 575 100 585 140" stroke="#4A7C59" stroke-width="1.5" fill="none"/>
+    <!-- leaves -->
+    <ellipse cx="595" cy="50" rx="14" ry="6" fill="#4A7C59" transform="rotate(-30 595 50)"/>
+    <ellipse cx="572" cy="80" rx="12" ry="5" fill="#4A7C59" transform="rotate(25 572 80)"/>
+    <ellipse cx="598" cy="108" rx="13" ry="5" fill="#4A7C59" transform="rotate(-20 598 108)"/>
+  </g>
+  <g opacity="0.2">
+    <path d="M50 30 C40 70 55 110 45 145" stroke="#4A7C59" stroke-width="1.5" fill="none"/>
+    <ellipse cx="35" cy="55" rx="12" ry="5" fill="#4A7C59" transform="rotate(30 35 55)"/>
+    <ellipse cx="58" cy="85" rx="11" ry="5" fill="#4A7C59" transform="rotate(-25 58 85)"/>
+  </g>
+
+  <!-- ── Footer label ── -->
+  <text x="320" y="504" text-anchor="middle" font-family="Georgia,serif" font-size="9" letter-spacing="2" fill="#A07830" opacity="0.7">100% NGUYÊN CHẤT · ĐÀ LẠT · TỪ 2013</text>
+</svg>

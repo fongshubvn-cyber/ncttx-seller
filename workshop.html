@@ -1,0 +1,881 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshop Thủ Công Đà Lạt — Nhà Của Thời Thanh Xuân</title>
+<meta name="description" content="Workshop dầu gió và nến thơm handmade tại NCTTX, Đà Lạt. 200K/người, bao gồm nước uống. Trải nghiệm tự tay làm sản phẩm thảo mộc cùng người Điếc.">
+<meta property="og:title" content="Workshop Thủ Công Đà Lạt — Nhà Của Thời Thanh Xuân">
+<meta property="og:description" content="Tự tay tạo dầu gió và nến thơm từ tinh dầu thảo mộc Đà Lạt. 200K/người. Đặt chỗ ngay.">
+<meta property="og:image" content="assets/img-workshop-hero.jpeg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/logo TTX-01.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F8F3EB;--bg-warm:#F0E9DD;--bg-aged:#E8DFD0;
+  --off-white:#FEFCF8;--text:#251C0E;--text-muted:#7A6852;
+  --gold:#B87A28;--gold-light:#C9963A;--gold-pale:#F5EDD8;
+  --border:#D8CCBA;--cream:#FEFAE0;
+  --forest:#2B5240;--forest-mid:#3D7060;--forest-dark:#1A3428;
+  --white:#FFFFFF;
+}
+html{scroll-behavior:smooth}
+
+/* ── TYPOGRAPHY SYSTEM ── */
+/* Headers: Lora — warm calligraphic serif, Vietnamese support */
+h1,h2,h3,h4,h5,h6{
+  font-family:'Montserrat','Be Vietnam Pro',sans-serif;
+  font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-style:normal;
+}
+/* Full-caps elements: Be Vietnam Pro + tracking */
+.section-label,
+.hero-tag,.hero-eyebrow,.hero-slide-label,
+.ws-hero-tag,.ws-intro-label,.ws-includes-label,.ws-contact-label,
+.phub-tab,.cat-nav-link,.ws-tab{
+  font-family:'Montserrat',sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+body{font-family:'Courier New','Courier',monospace;background:#CFC5B4;color:var(--text);line-height:1.8;overflow-x:hidden;letter-spacing:-0.07em;font-size:.95rem;text-shadow:0 0 0.5px currentColor;-webkit-font-smoothing:antialiased}
+
+/* ── BOXED LAYOUT ── */
+.page-wrap{
+  max-width:1660px;margin:0 auto;
+  background:var(--bg);
+  position:relative;
+  box-shadow:0 0 0 1px rgba(37,28,14,.06),0 8px 60px rgba(37,28,14,.14);
+  min-height:100vh;
+}
+nav,
+.sticky-bar{
+  right:auto !important;
+  left:50% !important;
+  transform:translateX(-50%) !important;
+  width:100% !important;
+  max-width:1660px !important;
+}
+@media(min-width:1660px){
+  .floating-zalo{right:calc((100vw - 1660px)/2 + 18px)}
+}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:center;position:relative;padding:0 52px;height:92px;background:rgba(248,243,235,0.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(184,122,40,.18);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
+.nav-brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.nav-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;flex-shrink:0}
+.nav-right{display:flex;align-items:center;gap:10px;margin-left:auto;flex-shrink:0}
+.nav-center a{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border-radius:4px;transition:all .2s;white-space:nowrap}
+.nav-center a:hover{color:var(--gold);background:rgba(184,122,40,.07)}
+.nav-center a.nav-active{color:var(--gold);background:rgba(184,122,40,.1)}
+.nav-sep{color:var(--border);font-size:.65rem;user-select:none;padding:0 2px}
+.nav-zalo{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid rgba(184,122,40,.25);padding:8px 14px;border-radius:4px;transition:all .2s;white-space:nowrap}
+.nav-zalo:hover{background:rgba(184,122,40,.06);color:var(--gold);border-color:rgba(184,122,40,.45)}
+.nav-cta{background:var(--gold);color:var(--text);padding:10px 22px;border-radius:4px;font-family:'Montserrat',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:all .2s;white-space:nowrap}
+.nav-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
+
+.nav-sep{color:var(--border);font-size:.65rem;user-select:none;padding:0 2px}
+.nav-zalo{
+  color:var(--text-muted);text-decoration:none;
+  font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;
+  border:1.5px solid rgba(184,122,40,.25);
+  padding:8px 14px;border-radius:4px;transition:all .2s;white-space:nowrap;
+}
+.nav-zalo:hover{background:rgba(184,122,40,.06);color:var(--gold);border-color:rgba(184,122,40,.45)}
+.nav-phone{
+  color:var(--text-muted);text-decoration:none;
+  font-family:'Montserrat',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  border:1.5px solid rgba(184,122,40,.28);padding:8px 16px;border-radius:4px;
+  transition:all .2s;
+}
+.nav-phone:hover{background:rgba(184,122,40,.06);color:var(--gold)}
+
+
+@media(max-width:900px){
+  .footer-copy-bar{padding:14px 24px}
+}
+@media(max-width:600px){
+  .footer-btn-ghost,
+}
+
+/* ── HERO ── */
+.ws-hero{
+  height:82vh;min-height:520px;max-height:900px;
+  position:relative;overflow:hidden;
+  background:#251C0E;
+  display:flex;align-items:flex-end;
+}
+.ws-hero-bg{
+  position:absolute;inset:0;
+  width:100%;height:100%;object-fit:cover;object-position:center 25%;
+  display:block;
+  transform:scale(1.04);transition:transform 8s ease;
+}
+.ws-hero:hover .ws-hero-bg{transform:scale(1)}
+.ws-hero::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(37,28,14,.96) 0%,
+    rgba(37,28,14,.72) 35%,
+    rgba(37,28,14,.28) 65%,
+    rgba(0,0,0,.04) 100%
+  );
+}
+.ws-hero-content{
+  position:relative;z-index:2;
+  padding:80px 72px 88px;
+  max-width:720px;
+}
+.ws-hero-tag{
+  font-family:'Montserrat',sans-serif;
+  font-size:.6rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  color:rgba(184,122,40,.85);
+  display:flex;align-items:center;gap:14px;margin-bottom:18px;
+}
+.ws-hero-tag::before{content:'';width:36px;height:1px;background:rgba(184,122,40,.5);flex-shrink:0}
+.ws-hero h1{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(2.2rem,4.2vw,4.6rem);
+  color:var(--cream);line-height:1.08;
+  font-weight:800;font-style:normal;
+  letter-spacing:.05em;text-transform:uppercase;
+  margin-bottom:18px;
+}
+.ws-hero h1 em{color:var(--gold-light);font-style:normal}
+.ws-hero-sub{
+  font-family:'Courier New',monospace;
+  color:rgba(253,251,247,.65);font-size:.9rem;
+  line-height:1.75;letter-spacing:-0.07em;
+  max-width:480px;margin-bottom:28px;
+}
+.ws-hero-price{
+  display:inline-flex;align-items:center;gap:12px;
+  background:rgba(184,122,40,.15);border:2px solid rgba(184,122,40,.45);
+  padding:14px 24px;border-radius:4px;
+  font-family:'Montserrat',sans-serif;
+  color:var(--gold-light);font-weight:800;font-size:1.4rem;letter-spacing:.04em;
+}
+.ws-hero-price span{color:rgba(253,251,247,.5);font-weight:400;font-size:.78rem;font-family:'Courier New',monospace;letter-spacing:-.05em}
+
+/* ── WORKSHOP INFO STRIP ── */
+.ws-info-strip{
+  background:#2C1E0E;
+  display:flex;align-items:center;justify-content:center;
+  gap:32px;flex-wrap:wrap;
+  padding:16px 48px;
+}
+.ws-info-item{
+  display:flex;align-items:center;gap:8px;
+  color:rgba(253,251,247,.75);font-size:.82rem;
+}
+.ws-info-item strong{color:var(--gold-light);font-weight:700}
+
+/* ── TABS ── */
+.ws-tabs-wrap{
+  position:relative;
+  background:var(--bg-aged);
+  border-bottom:3px solid rgba(184,122,40,.3);
+  padding:8px 0;
+}
+.ws-tabs{
+  display:flex;gap:0;padding:0 48px;
+  overflow-x:auto;scrollbar-width:none;
+  justify-content:center;
+}
+.ws-tabs::-webkit-scrollbar{display:none}
+.ws-tab{
+  padding:16px 32px;font-size:.9rem;font-weight:600;
+  color:var(--text-muted);background:none;border:none;cursor:pointer;
+  white-space:nowrap;border-bottom:2.5px solid transparent;
+  transition:all .2s;flex-shrink:0;margin-bottom:-1px;
+  display:flex;align-items:center;gap:8px;font-family:'Montserrat',sans-serif;
+}
+.ws-tab:hover{color:var(--text)}
+.ws-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+.ws-tab-icon{font-size:1.1rem}
+
+/* ── PANEL ── */
+.ws-panel{display:none}
+.ws-panel.active{display:block}
+
+/* ── WORKSHOP SECTION ── */
+.section{padding:80px 48px}
+.container{max-width:1200px;margin:0 auto}
+
+.ws-intro-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:64px;align-items:center;margin-bottom:72px;
+}
+.ws-intro-img{
+  width:100%;aspect-ratio:4/3;
+  object-fit:cover;border-radius:20px;
+  box-shadow:0 12px 40px rgba(37,28,14,.12);
+}
+.ws-intro-label{
+  font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:10px;
+  display:flex;align-items:center;gap:10px;
+}
+.ws-intro-label::before{content:'——';letter-spacing:-.1em;color:rgba(184,122,40,.4)}
+.ws-intro-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(1.8rem,3vw,2.6rem);
+  color:var(--text);line-height:1.15;margin-bottom:16px;
+}
+.ws-intro-title em{color:var(--gold);font-style:italic}
+.ws-intro-desc{font-size:.92rem;color:var(--text-muted);line-height:1.75;margin-bottom:24px}
+.ws-features{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.ws-feature{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:.86rem;color:var(--text-muted);line-height:1.5;
+}
+.ws-feature-dot{
+  width:7px;height:7px;border-radius:50%;
+  background:var(--gold-light);flex-shrink:0;margin-top:5px;
+}
+
+/* ── STEPS ── */
+.ws-steps-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.6rem;color:var(--text);margin-bottom:28px;
+}
+.ws-steps{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:16px;margin-bottom:64px;
+}
+.ws-step{
+  background:var(--off-white);border:1px solid var(--border);
+  border-radius:16px;padding:22px 18px;
+  position:relative;
+}
+.ws-step-num{
+  font-family:'Montserrat',sans-serif;
+  font-size:2.4rem;color:rgba(184,122,40,.12);
+  font-weight:700;line-height:1;margin-bottom:8px;
+}
+.ws-step-title{font-size:.88rem;font-weight:700;color:var(--text);margin-bottom:6px}
+.ws-step-desc{font-size:.8rem;color:var(--text-muted);line-height:1.6}
+
+/* ── INCLUDES ── */
+.ws-includes{
+  background:#2C1E0E;border-radius:20px;padding:36px 40px;
+  margin-bottom:64px;
+  display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;
+}
+.ws-includes-label{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,150,58,.6);margin-bottom:12px}
+.ws-includes-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.8rem;color:var(--cream);line-height:1.2;font-style:italic;
+}
+.ws-includes-price{
+  font-family:'Montserrat',sans-serif;
+  font-size:3.6rem;font-weight:800;color:var(--gold-light);line-height:1;margin-top:10px;
+  letter-spacing:.02em;
+}
+.ws-includes-price span{font-size:1rem;color:rgba(253,251,247,.5);font-family:'Montserrat',sans-serif;margin-left:4px}
+.ws-includes-list{display:flex;flex-direction:column;gap:10px}
+.ws-includes-item{
+  display:flex;align-items:center;gap:10px;
+  font-size:.86rem;color:rgba(253,251,247,.75);
+}
+.ws-includes-check{color:var(--gold-light);font-size:1rem;flex-shrink:0}
+
+/* ── REGISTRATION FORM ── */
+.ws-form-wrap{
+  background:var(--off-white);border-radius:24px;
+  border:1px solid var(--border);
+  padding:48px;
+  max-width:620px;
+  margin:0 auto;
+  box-shadow:0 8px 32px rgba(37,28,14,.06);
+}
+.ws-form-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.6rem;font-weight:800;color:var(--text);
+  letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px;
+}
+.ws-form-sub{font-size:.86rem;color:var(--text-muted);margin-bottom:32px;line-height:1.55}
+.ws-form{display:flex;flex-direction:column;gap:18px}
+.ws-field{display:flex;flex-direction:column;gap:6px}
+.ws-label{font-size:.82rem;font-weight:600;color:var(--text)}
+.ws-input,.ws-select{
+  padding:12px 16px;border-radius:10px;
+  border:1.5px solid var(--border);
+  font-family:'Montserrat',sans-serif;font-size:.88rem;color:var(--text);
+  background:var(--off-white);
+  transition:border-color .2s,box-shadow .2s;
+  width:100%;
+  outline:none;
+}
+.ws-input:focus,.ws-select:focus{
+  border-color:var(--gold-light);
+  box-shadow:0 0 0 3px rgba(184,122,40,.1);
+}
+.ws-input::placeholder{color:#B0B8B0}
+.ws-date-time{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ws-date-row{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:8px}
+.ws-time-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ws-field-hint{font-size:.74rem;color:var(--text-muted);margin-top:2px}
+.ws-submit{
+  background:var(--gold);color:var(--text);
+  padding:15px 32px;border-radius:100px;border:none;
+  font-family:'Montserrat',sans-serif;font-size:.9rem;font-weight:700;
+  cursor:pointer;transition:all .2s;
+  width:100%;display:flex;align-items:center;justify-content:center;gap:8px;
+  margin-top:6px;
+}
+.ws-submit:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 6px 20px rgba(184,122,40,.3)}
+
+/* ── SUCCESS STATE ── */
+.ws-success{
+  display:none;text-align:center;padding:40px 20px;
+}
+.ws-success-icon{font-size:3rem;margin-bottom:16px}
+.ws-success-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.6rem;color:var(--text);margin-bottom:8px;
+}
+.ws-success-msg{font-size:.88rem;color:var(--text-muted);line-height:1.65;margin-bottom:24px}
+.ws-success-info{
+  background:var(--bg-warm);border-radius:12px;padding:16px 20px;
+  font-size:.84rem;color:var(--text);line-height:1.8;
+  border:1px solid var(--border);text-align:left;margin-bottom:20px;
+}
+.ws-zalo-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#0068FF;color:#fff;
+  padding:13px 28px;border-radius:100px;
+  font-size:.88rem;font-weight:700;text-decoration:none;
+  transition:all .2s;
+}
+.ws-zalo-btn:hover{background:#0055CC;transform:translateY(-1px)}
+
+/* ── CONTACT SECTION ── */
+.ws-contact{
+  background:#2C1E0E;
+  padding:56px 48px;text-align:center;
+}
+.ws-contact-label{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(184,122,40,.65);margin-bottom:10px}
+.ws-contact-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(1.8rem,3vw,2.4rem);
+  color:var(--cream);margin-bottom:12px;font-style:italic;
+}
+.ws-contact-sub{color:rgba(253,251,247,.6);font-size:.9rem;margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto}
+.ws-contact-actions{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.ws-contact-phone{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.08);
+  border:1.5px solid rgba(255,255,255,.2);
+  color:var(--cream);padding:12px 24px;border-radius:100px;
+  font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s;
+}
+.ws-contact-phone:hover{background:rgba(255,255,255,.14)}
+.ws-contact-zalo{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#0068FF;color:#fff;
+  padding:12px 24px;border-radius:100px;
+  font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s;
+}
+.ws-contact-zalo:hover{background:#0055CC;transform:translateY(-1px)}
+
+/* ── FOOTER ── */
+.footer-inner{max-width:1660px;margin:0 auto;display:flex;align-items:center;position:relative;gap:20px}
+.footer-right{margin-left:auto;flex-shrink:0;display:flex;gap:10px;align-items:center}
+.footer-zalo-btn{color:var(--cream);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1.5px solid rgba(201,150,58,.32);padding:8px 14px;border-radius:4px;transition:all .2s;white-space:nowrap}
+.footer-zalo-btn:hover{border-color:rgba(201,150,58,.6);color:var(--gold-light);background:rgba(255,255,255,.04)}
+.footer-shopee-btn{background:var(--gold);color:var(--text);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:9px 18px;border-radius:4px;transition:all .2s;white-space:nowrap}
+.footer-shopee-btn:hover{background:var(--gold-light);transform:translateY(-1px)}
+.footer-bottom{max-width:1660px;margin:20px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:center}
+.footer-copy{font-family:'Montserrat',sans-serif;font-size:.58rem;color:rgba(253,251,247,.25);letter-spacing:.1em;text-transform:uppercase}
+.footer-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;flex-wrap:wrap;
+}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{color:rgba(253,251,247,.5);text-decoration:none;font-size:.8rem;transition:color .2s}
+.footer-links a:hover{color:var(--gold-light)}
+.footer-copy{color:rgba(253,251,247,.3);font-size:.75rem}
+
+/* ── ANIMATIONS ── */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
+.fade-up.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .ws-hero-content{padding:88px 24px 56px}
+  .ws-tabs{padding:0 20px}
+  .section{padding:56px 24px}
+  .ws-intro-grid{grid-template-columns:1fr;gap:36px}
+  .ws-steps{grid-template-columns:repeat(2,1fr)}
+  .ws-includes{grid-template-columns:1fr;gap:24px}
+  .ws-contact{padding:48px 24px}
+}
+@media(max-width:600px){
+  nav{height:60px;padding:0 16px}
+  .nav-center a{font-size:.8rem;padding:6px 12px}
+  .nav-phone{display:none}
+  .ws-hero{height:72vh;min-height:420px}
+  .ws-hero-content{padding:80px 20px 48px}
+  .ws-hero h1{font-size:2.2rem}
+  .ws-tabs{padding:0 8px}
+  .ws-tab{padding:13px 18px;font-size:.82rem}
+  .ws-form-wrap{padding:28px 20px}
+  .ws-date-row{grid-template-columns:1fr 1fr;gap:8px}
+  .ws-date-row .ws-select:last-child{grid-column:span 2}
+  .ws-steps{grid-template-columns:1fr}
+  .ws-includes{padding:24px 20px}
+  .ws-contact-actions{flex-direction:column;align-items:stretch}
+  .ws-contact-phone,.ws-contact-zalo{text-align:center;justify-content:center}
+  .footer-inner{flex-direction:column;gap:16px}
+}
+@media(max-width:375px){
+  nav{padding:0 12px}
+  .ws-hero-content{padding:72px 16px 40px}
+  .section{padding:44px 16px}
+}
+/* ── FOOTER ── */
+@media(max-width:900px){
+  }
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="tinh-dau.html" class="nav-brand">
+    <img src="assets/logo TTX-01.png" alt="Nhà Của Thời Thanh Xuân" style="height:80px;width:auto;object-fit:contain;mix-blend-mode:multiply;">
+  </a>
+  <div class="nav-center">
+    <a href="tinh-dau.html">Sản Phẩm</a>
+    <span class="nav-sep">·</span>
+    <a href="tinh-dau-1ml.html">Tinh Dầu 1ml</a>
+    <span class="nav-sep">·</span>
+    <a href="workshop.html" class="nav-active">Workshop</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:0946816647" class="nav-zalo">📞 0946 816 647</a>
+    <a href="https://zalo.me/0946816647" target="_blank" class="nav-cta">Đặt chỗ →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="ws-hero">
+  <img src="assets/img-workshop-hero.jpeg" alt="Workshop handmade tại NCTTX Đà Lạt" class="ws-hero-bg">
+  <div class="ws-hero-content fade-up">
+    <div class="ws-hero-tag">Workshop Thủ Công · Đà Lạt</div>
+    <h1>Tự Tay Tạo Ra<br><em>Sản Phẩm Của Bạn</em></h1>
+    <p class="ws-hero-sub">Trải nghiệm làm dầu gió và nến thơm cùng các bạn Điếc tại xưởng NCTTX. Mang về sản phẩm thảo mộc do chính tay bạn tạo ra.</p>
+    <div class="ws-hero-price">
+      ✦ 200.000đ / người <span>· Bao gồm nước uống</span>
+    </div>
+  </div>
+</section>
+
+<!-- INFO STRIP -->
+<div class="ws-info-strip">
+  <div class="ws-info-item">🕐 <strong>60–90 phút</strong> / buổi</div>
+  <div class="ws-info-item">👥 Nhóm tối đa <strong>10 người</strong></div>
+  <div class="ws-info-item">🌿 Nguyên liệu <strong>thiên nhiên 100%</strong></div>
+  <div class="ws-info-item">🧏 Hướng dẫn bởi <strong>người Điếc</strong></div>
+  <div class="ws-info-item">🎁 Mang về <strong>sản phẩm của mình</strong></div>
+</div>
+
+<!-- TABS -->
+<div class="ws-tabs-wrap">
+  <div class="ws-tabs">
+    <button class="ws-tab active" data-tab="dau-gio" onclick="switchTab('dau-gio')">
+      <span class="ws-tab-icon">💨</span> Workshop Dầu Gió
+    </button>
+    <button class="ws-tab" data-tab="nen-thom" onclick="switchTab('nen-thom')">
+      <span class="ws-tab-icon">🕯️</span> Workshop Nến Thơm
+    </button>
+  </div>
+</div>
+
+<!-- ===== TAB: DẦU GIÓ ===== -->
+<div class="ws-panel active" id="panel-dau-gio">
+  <section class="section" style="background:var(--bg-warm)">
+    <div class="container">
+
+      <!-- Intro -->
+      <div class="ws-intro-grid">
+        <div>
+          <div class="ws-intro-label">Workshop Dầu Gió</div>
+          <h2 class="ws-intro-title">Tự Tay Pha Chế<br><em>Dầu Gió Thảo Mộc</em></h2>
+          <p class="ws-intro-desc">Học cách phối hương từ tinh dầu thảo mộc nguyên chất Đà Lạt để tạo ra chai dầu gió cá nhân theo ý thích. Hiểu tác dụng của từng loại tinh dầu — Bạc Hà, Quế, Khuynh Diệp, Sả Chanh. Mang về sản phẩm do chính tay bạn tạo ra.</p>
+          <div class="ws-features">
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Được hướng dẫn bởi thợ người Điếc tại xưởng NCTTX</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Tự chọn hương tinh dầu theo sở thích</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Tự tay đóng chai, dán nhãn thủ công</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Mang về 1 chai dầu gió 10ml cá nhân hóa</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Bao gồm nước uống trong suốt buổi</div>
+          </div>
+        </div>
+        <img src="assets/img-workshop-dau-gio.jpeg"
+             alt="Workshop dầu gió thảo mộc tại NCTTX Đà Lạt"
+             class="ws-intro-img fade-up d1">
+      </div>
+
+      <!-- Steps -->
+      <h3 class="ws-steps-title">Chương Trình Buổi Workshop</h3>
+      <div class="ws-steps">
+        <div class="ws-step fade-up d1">
+          <div class="ws-step-num">01</div>
+          <div class="ws-step-title">Giới thiệu tinh dầu</div>
+          <div class="ws-step-desc">Tìm hiểu về 13 hương tinh dầu thảo mộc NCTTX, tác dụng và cách kết hợp.</div>
+        </div>
+        <div class="ws-step fade-up d2">
+          <div class="ws-step-num">02</div>
+          <div class="ws-step-title">Chọn hương & tỷ lệ</div>
+          <div class="ws-step-desc">Thử mùi từng loại, chọn 2–3 hương yêu thích và phối theo tỷ lệ cá nhân.</div>
+        </div>
+        <div class="ws-step fade-up d3">
+          <div class="ws-step-num">03</div>
+          <div class="ws-step-title">Pha chế & đóng chai</div>
+          <div class="ws-step-desc">Tự tay pha tinh dầu vào dầu nền, khuấy đều và đổ vào chai thủy tinh.</div>
+        </div>
+        <div class="ws-step fade-up d1">
+          <div class="ws-step-num">04</div>
+          <div class="ws-step-title">Dán nhãn & hoàn thiện</div>
+          <div class="ws-step-desc">Viết tên hương, dán nhãn thủ công — sản phẩm hoàn toàn cá nhân hóa.</div>
+        </div>
+      </div>
+
+      <!-- Includes -->
+      <div class="ws-includes fade-up">
+        <div>
+          <div class="ws-includes-label">Chi phí tham gia</div>
+          <div class="ws-includes-title">Workshop Dầu Gió<br>Thảo Mộc Đà Lạt</div>
+          <div class="ws-includes-price">200.000đ <span>/ người</span></div>
+        </div>
+        <div class="ws-includes-list">
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Hướng dẫn trực tiếp trong 60–90 phút</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Toàn bộ nguyên liệu tinh dầu thảo mộc</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Chai thủy tinh 10ml đóng gói sẵn</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Nhãn dán thủ công cá nhân hóa</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Nước uống trong suốt buổi</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Mang về sản phẩm của chính mình</div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="ws-form-wrap fade-up" id="form-wrap-dau-gio">
+        <h3 class="ws-form-title">Đăng Ký Tham Gia</h3>
+        <p class="ws-form-sub">Điền thông tin bên dưới — nhóm tối đa 10 người mỗi buổi. Chúng mình sẽ xác nhận lịch qua Zalo sau khi nhận được đăng ký.</p>
+        <form class="ws-form" onsubmit="handleFormSubmit(event,'dau-gio')">
+          <div class="ws-field">
+            <label class="ws-label" for="name-dg">Họ và tên</label>
+            <input class="ws-input" id="name-dg" type="text" placeholder="Nguyễn Văn A" required autocomplete="name">
+          </div>
+          <div class="ws-field">
+            <label class="ws-label" for="phone-dg">Số điện thoại</label>
+            <input class="ws-input" id="phone-dg" type="tel" placeholder="0912 345 678" required autocomplete="tel">
+          </div>
+          <div class="ws-field">
+            <label class="ws-label">Thời gian tham gia mong muốn</label>
+            <div class="ws-date-row" style="margin-bottom:8px">
+              <select class="ws-select" id="day-dg" required>
+                <option value="">Ngày</option>
+              </select>
+              <select class="ws-select" id="month-dg" required>
+                <option value="">Tháng</option>
+              </select>
+              <select class="ws-select" id="year-dg" required>
+                <option value="">Năm</option>
+              </select>
+            </div>
+            <div class="ws-time-row">
+              <select class="ws-select" id="hour-dg" required>
+                <option value="">Giờ</option>
+              </select>
+              <select class="ws-select" id="minute-dg" required>
+                <option value="">Phút</option>
+              </select>
+            </div>
+            <div class="ws-field-hint">Buổi hoạt động: Thứ 2 – Chủ Nhật, 8:00 – 18:00</div>
+          </div>
+          <div class="ws-field">
+            <label class="ws-label" for="note-dg">Ghi chú thêm <span style="font-weight:400;color:var(--text-muted)">(không bắt buộc)</span></label>
+            <input class="ws-input" id="note-dg" type="text" placeholder="Số người tham gia, yêu cầu đặc biệt...">
+          </div>
+          <button type="submit" class="ws-submit">Gửi đăng ký → Xác nhận qua Zalo</button>
+        </form>
+        <div class="ws-success" id="success-dau-gio">
+          <div class="ws-success-icon">✅</div>
+          <h3 class="ws-success-title">Đã nhận đăng ký!</h3>
+          <p class="ws-success-msg">Thông tin của bạn đã được ghi nhận. Nhắn Zalo ngay để chúng mình xác nhận lịch hẹn nhanh nhất.</p>
+          <div class="ws-success-info" id="success-info-dg"></div>
+          <a href="https://zalo.me/0946816647" target="_blank" class="ws-zalo-btn">💬 Nhắn Zalo xác nhận ngay</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- ===== TAB: NẾN THƠM ===== -->
+<div class="ws-panel" id="panel-nen-thom">
+  <section class="section" style="background:var(--bg)">
+    <div class="container">
+
+      <!-- Intro -->
+      <div class="ws-intro-grid">
+        <div>
+          <div class="ws-intro-label">Workshop Nến Thơm</div>
+          <h2 class="ws-intro-title">Tự Đổ Nến<br><em>Sáp Dừa Handmade</em></h2>
+          <p class="ws-intro-desc">Trải nghiệm làm nến sáp dừa từ nguyên liệu thiên nhiên 100%. Tự chọn hương tinh dầu, đổ nến vào lọ thủy tinh, trang trí và mang về. Mỗi chiếc nến là một tác phẩm độc nhất do chính tay bạn tạo ra.</p>
+          <div class="ws-features">
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Nguyên liệu: sáp dừa + dầu macca + tinh dầu nguyên chất</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Tự chọn 1–2 hương tinh dầu yêu thích</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Học kỹ thuật đổ nến đúng nhiệt độ</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Mang về 1 nến 100gr trong lọ thủy tinh</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Bao gồm nước uống trong suốt buổi</div>
+          </div>
+        </div>
+        <img src="assets/img-workshop-nen-thom.jpeg"
+             alt="Workshop làm nến thơm sáp dừa tại NCTTX Đà Lạt"
+             class="ws-intro-img fade-up d1">
+      </div>
+
+      <!-- Steps -->
+      <h3 class="ws-steps-title">Chương Trình Buổi Workshop</h3>
+      <div class="ws-steps">
+        <div class="ws-step fade-up d1">
+          <div class="ws-step-num">01</div>
+          <div class="ws-step-title">Tìm hiểu nguyên liệu</div>
+          <div class="ws-step-desc">Làm quen với sáp dừa, dầu macca và các loại tinh dầu thảo mộc Đà Lạt.</div>
+        </div>
+        <div class="ws-step fade-up d2">
+          <div class="ws-step-num">02</div>
+          <div class="ws-step-title">Chọn hương & pha tinh dầu</div>
+          <div class="ws-step-desc">Thử 7 hương nến, chọn 1–2 yêu thích. Tính tỷ lệ và pha tinh dầu vào sáp.</div>
+        </div>
+        <div class="ws-step fade-up d3">
+          <div class="ws-step-num">03</div>
+          <div class="ws-step-title">Đổ nến vào lọ</div>
+          <div class="ws-step-desc">Đun sáp đúng nhiệt độ, đổ vào lọ thủy tinh, cố định bấc nến đúng kỹ thuật.</div>
+        </div>
+        <div class="ws-step fade-up d1">
+          <div class="ws-step-num">04</div>
+          <div class="ws-step-title">Để nguội & hoàn thiện</div>
+          <div class="ws-step-desc">Chờ nến đông, cắt bấc, dán nhãn và đóng hộp — sản phẩm hoàn toàn của bạn.</div>
+        </div>
+      </div>
+
+      <!-- Includes -->
+      <div class="ws-includes fade-up">
+        <div>
+          <div class="ws-includes-label">Chi phí tham gia</div>
+          <div class="ws-includes-title">Workshop Nến Thơm<br>Sáp Dừa Tự Nhiên</div>
+          <div class="ws-includes-price">200.000đ <span>/ người</span></div>
+        </div>
+        <div class="ws-includes-list">
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Hướng dẫn trực tiếp trong 60–90 phút</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Sáp dừa + dầu macca + tinh dầu nguyên chất</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Lọ thủy tinh 100gr + bấc nến cotton</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Nhãn dán và hộp đựng thủ công</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Nước uống trong suốt buổi</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Mang về nến 100gr do chính tay tạo ra</div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="ws-form-wrap fade-up" id="form-wrap-nen-thom">
+        <h3 class="ws-form-title">Đăng Ký Tham Gia</h3>
+        <p class="ws-form-sub">Điền thông tin bên dưới — nhóm tối đa 10 người mỗi buổi. Chúng mình sẽ xác nhận lịch qua Zalo sau khi nhận được đăng ký.</p>
+        <form class="ws-form" onsubmit="handleFormSubmit(event,'nen-thom')">
+          <div class="ws-field">
+            <label class="ws-label" for="name-nt">Họ và tên</label>
+            <input class="ws-input" id="name-nt" type="text" placeholder="Nguyễn Văn A" required autocomplete="name">
+          </div>
+          <div class="ws-field">
+            <label class="ws-label" for="phone-nt">Số điện thoại</label>
+            <input class="ws-input" id="phone-nt" type="tel" placeholder="0912 345 678" required autocomplete="tel">
+          </div>
+          <div class="ws-field">
+            <label class="ws-label">Thời gian tham gia mong muốn</label>
+            <div class="ws-date-row" style="margin-bottom:8px">
+              <select class="ws-select" id="day-nt" required>
+                <option value="">Ngày</option>
+              </select>
+              <select class="ws-select" id="month-nt" required>
+                <option value="">Tháng</option>
+              </select>
+              <select class="ws-select" id="year-nt" required>
+                <option value="">Năm</option>
+              </select>
+            </div>
+            <div class="ws-time-row">
+              <select class="ws-select" id="hour-nt" required>
+                <option value="">Giờ</option>
+              </select>
+              <select class="ws-select" id="minute-nt" required>
+                <option value="">Phút</option>
+              </select>
+            </div>
+            <div class="ws-field-hint">Buổi hoạt động: Thứ 2 – Chủ Nhật, 8:00 – 18:00</div>
+          </div>
+          <div class="ws-field">
+            <label class="ws-label" for="note-nt">Ghi chú thêm <span style="font-weight:400;color:var(--text-muted)">(không bắt buộc)</span></label>
+            <input class="ws-input" id="note-nt" type="text" placeholder="Số người tham gia, yêu cầu đặc biệt...">
+          </div>
+          <button type="submit" class="ws-submit">Gửi đăng ký → Xác nhận qua Zalo</button>
+        </form>
+        <div class="ws-success" id="success-nen-thom">
+          <div class="ws-success-icon">✅</div>
+          <h3 class="ws-success-title">Đã nhận đăng ký!</h3>
+          <p class="ws-success-msg">Thông tin của bạn đã được ghi nhận. Nhắn Zalo ngay để chúng mình xác nhận lịch hẹn nhanh nhất.</p>
+          <div class="ws-success-info" id="success-info-nt"></div>
+          <a href="https://zalo.me/0946816647" target="_blank" class="ws-zalo-btn">💬 Nhắn Zalo xác nhận ngay</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<section class="ws-contact">
+  <div class="ws-contact-label">Tư vấn & Đặt chỗ</div>
+  <h2 class="ws-contact-title">Có Câu Hỏi?<br>Liên Hệ Ngay.</h2>
+  <p class="ws-contact-sub">Nhóm nhỏ, không gian thân mật. Đặt chỗ trước để chúng mình chuẩn bị nguyên liệu đủ cho bạn nhé.</p>
+  <div class="ws-contact-actions">
+    <a href="tel:0946816647" class="ws-contact-phone">📞 0946 816 647</a>
+    <a href="https://zalo.me/0946816647" target="_blank" class="ws-contact-zalo">💬 Nhắn Zalo ngay</a>
+  </div>
+</section>
+
+
+
+<script>
+// ── TAB SWITCH ──
+function switchTab(tabId) {
+  document.querySelectorAll('.ws-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.ws-panel').forEach(p => p.classList.remove('active'));
+  document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
+  document.getElementById(`panel-${tabId}`).classList.add('active');
+  // Re-trigger fade-up
+  document.querySelectorAll(`#panel-${tabId} .fade-up`).forEach(el => {
+    el.classList.remove('in');
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('in')));
+  });
+}
+
+// ── POPULATE DATE/TIME SELECTS ──
+function populateSelects(suffix) {
+  const dayEl = document.getElementById(`day-${suffix}`);
+  const monthEl = document.getElementById(`month-${suffix}`);
+  const yearEl = document.getElementById(`year-${suffix}`);
+  const hourEl = document.getElementById(`hour-${suffix}`);
+  const minEl = document.getElementById(`minute-${suffix}`);
+  if (!dayEl) return;
+
+  for (let d = 1; d <= 31; d++) {
+    const o = new Option(d < 10 ? `0${d}` : d, d < 10 ? `0${d}` : d);
+    dayEl.appendChild(o);
+  }
+  const months = ['Tháng 1','Tháng 2','Tháng 3','Tháng 4','Tháng 5','Tháng 6',
+                  'Tháng 7','Tháng 8','Tháng 9','Tháng 10','Tháng 11','Tháng 12'];
+  months.forEach((m, i) => monthEl.appendChild(new Option(m, i + 1 < 10 ? `0${i+1}` : i+1)));
+
+  const curYear = new Date().getFullYear();
+  for (let y = curYear; y <= curYear + 1; y++) yearEl.appendChild(new Option(y, y));
+
+  for (let h = 8; h <= 18; h++) {
+    const label = h < 10 ? `0${h}:00` : `${h}:00`;
+    hourEl.appendChild(new Option(label, h < 10 ? `0${h}` : h));
+  }
+  ['00','15','30','45'].forEach(m => minEl.appendChild(new Option(`:${m}`, m)));
+}
+
+populateSelects('dg');
+populateSelects('nt');
+
+// ── GOOGLE SHEET URL ──
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzHseYD-FpQXgUvggpVwx-d1IJY2FEixuvHn3xfu9B5hL330z1nmjMOPBTe2IJntM7SMg/exec';
+
+// ── FORM SUBMIT ──
+function handleFormSubmit(e, type) {
+  e.preventDefault();
+  const suffix = type === 'dau-gio' ? 'dg' : 'nt';
+  const wsName = type === 'dau-gio' ? 'Workshop Dầu Gió' : 'Workshop Nến Thơm';
+
+  const name  = document.getElementById(`name-${suffix}`).value.trim();
+  const phone = document.getElementById(`phone-${suffix}`).value.trim();
+  const day   = document.getElementById(`day-${suffix}`).value;
+  const month = document.getElementById(`month-${suffix}`).value;
+  const year  = document.getElementById(`year-${suffix}`).value;
+  const hour  = document.getElementById(`hour-${suffix}`).value;
+  const minute = document.getElementById(`minute-${suffix}`).value;
+  const note  = document.getElementById(`note-${suffix}`) ? document.getElementById(`note-${suffix}`).value.trim() : '';
+
+  const dateStr = `${day}/${month}/${year}`;
+  const timeStr = `${hour}:${minute}`;
+  const fullTime = `${dateStr} lúc ${timeStr}`;
+
+  const infoHtml = `
+    <strong>Loại workshop:</strong> ${wsName}<br>
+    <strong>Họ tên:</strong> ${name}<br>
+    <strong>Số điện thoại:</strong> ${phone}<br>
+    <strong>Thời gian:</strong> ${fullTime}
+    ${note ? `<br><strong>Ghi chú:</strong> ${note}` : ''}
+  `;
+
+  // Gửi lên Google Sheet
+  fetch(SHEET_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      workshop: wsName,
+      name:     name,
+      phone:    phone,
+      date:     dateStr,
+      time:     timeStr,
+      note:     note
+    })
+  }).catch(() => {}); // Không chặn nếu lỗi mạng
+
+  // Hiện success state
+  document.getElementById(`form-wrap-${type}`).querySelector('.ws-form').style.display = 'none';
+  const successEl = document.getElementById(`success-${type}`);
+  document.getElementById(`success-info-${suffix}`).innerHTML = infoHtml;
+  successEl.style.display = 'block';
+
+  // Mở Zalo sau 800ms
+  setTimeout(() => window.open('https://zalo.me/0946816647', '_blank'), 800);
+}
+
+// ── FADE-UP OBSERVER ──
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') });
+}, { threshold:0.08, rootMargin:'0px 0px -32px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+// ── NAV SCROLL ──
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+
+// ws-tabs: static, nằm trong flow trang
+</script>
+</div><!-- /.page-wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
