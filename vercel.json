@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/", "dest": "/tinh-dau.html" },
+    { "src": "/san-pham", "dest": "/tinh-dau.html" },
+    { "src": "/1ml", "dest": "/tinh-dau-1ml.html" },
+    { "src": "/workshop", "dest": "/workshop.html" }
+  ]
+}
