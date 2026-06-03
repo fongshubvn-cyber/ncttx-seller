@@ -1193,11 +1193,12 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   backdrop-filter:blur(16px);
   border-bottom:2px solid rgba(184,122,40,.2);
   box-shadow:0 8px 32px rgba(37,28,14,.12);
-  padding:0;
+  display:none;padding:0;
   max-height:0;overflow:hidden;
   transition:max-height .35s cubic-bezier(.4,0,.2,1), padding .35s ease;
 }
 .mobile-menu.open{
+  display:block;
   max-height:400px;
   padding:20px 24px 28px;
 }
@@ -3346,6 +3347,7 @@ if(sprayGrid){
 </div><!-- /.page-wrap -->
 </body>
 </html>
+
 
 
 
