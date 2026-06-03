@@ -102,6 +102,42 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   .footer-btn-ghost,
 }
 
+/* ── HAMBURGER MENU ── */
+.nav-hamburger{
+  display:none;
+  flex-direction:column;justify-content:center;gap:5px;
+  width:40px;height:40px;background:none;border:none;
+  cursor:pointer;padding:6px;margin-left:auto;flex-shrink:0;
+}
+.nav-hamburger span{
+  display:block;width:22px;height:2px;
+  background:var(--text);border-radius:2px;
+  transition:all .3s ease;transform-origin:center;
+}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{
+  position:fixed;top:92px;left:50%;transform:translateX(-50%);
+  width:100%;max-width:1660px;z-index:290;
+  background:rgba(248,243,235,0.98);backdrop-filter:blur(16px);
+  border-bottom:2px solid rgba(184,122,40,.2);
+  box-shadow:0 8px 32px rgba(37,28,14,.12);
+  max-height:0;overflow:hidden;padding:0;
+  transition:max-height .35s cubic-bezier(.4,0,.2,1),padding .35s ease;
+}
+.mobile-menu.open{max-height:400px;padding:20px 24px 28px}
+.mobile-menu-links{display:flex;flex-direction:column;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--border);padding-bottom:16px}
+.mobile-menu-links a{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 14px;border-radius:4px;transition:all .2s;display:block}
+.mobile-menu-links a:hover{color:var(--gold);background:rgba(184,122,40,.07)}
+.mobile-menu-links a.nav-active{color:var(--gold);background:rgba(184,122,40,.1)}
+.mobile-menu-actions{display:flex;gap:10px;flex-wrap:wrap}
+.mobile-menu-actions a{flex:1;min-width:120px;text-align:center;justify-content:center}
+.mobile-menu-overlay{display:none;position:fixed;inset:0;z-index:280;background:rgba(37,28,14,.2)}
+.mobile-menu-overlay.open{display:block}
+@media(max-width:900px){.nav-center{display:none}.nav-hamburger{display:flex}.nav-right .nav-zalo{display:none}.nav-right .nav-cta{display:none}}
+@media(max-width:600px){.mobile-menu{top:60px}.mobile-menu-links a{font-size:.68rem;padding:11px 12px}}
+
 /* ── HERO ── */
 .ws-hero{
   height:82vh;min-height:520px;max-height:900px;
@@ -465,8 +501,26 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   <div class="nav-right">
     <a href="tel:0946816647" class="nav-zalo">📞 0946 816 647</a>
     <a href="https://zalo.me/0946816647" target="_blank" class="nav-cta">Đặt chỗ →</a>
-  </div>
+    <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-links">
+    <a href="tinh-dau.html">Sản Phẩm</a>
+    <a href="tinh-dau-1ml.html">Tinh Dầu 1ml</a>
+    <a href="workshop.html" class="nav-active">Workshop</a>
+  </div>
+  <div class="mobile-menu-actions">
+    <a href="tel:0946816647" class="nav-zalo">📞 0946 816 647</a>
+    <a href="https://zalo.me/0946816647" target="_blank" class="nav-cta">Đặt chỗ →</a>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="ws-hero">
@@ -866,11 +920,24 @@ document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
 
+// ── HAMBURGER MENU ──
+(function(){
+  const btn=document.getElementById('hamburgerBtn');
+  const menu=document.getElementById('mobileMenu');
+  const overlay=document.getElementById('mobileOverlay');
+  if(!btn||!menu) return;
+  function toggle(open){btn.classList.toggle('open',open);menu.classList.toggle('open',open);overlay.classList.toggle('open',open);document.body.style.overflow=open?'hidden':'';}
+  btn.addEventListener('click',()=>toggle(!menu.classList.contains('open')));
+  overlay.addEventListener('click',()=>toggle(false));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggle(false)));
+})();
+
 // ws-tabs: static, nằm trong flow trang
 </script>
 </div><!-- /.page-wrap -->
 </body>
 </html>
+
 
 
 

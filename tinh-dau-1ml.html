@@ -86,6 +86,42 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   .footer-btn-ghost,
 }
 
+/* ── HAMBURGER MENU ── */
+.nav-hamburger{
+  display:none;
+  flex-direction:column;justify-content:center;gap:5px;
+  width:40px;height:40px;background:none;border:none;
+  cursor:pointer;padding:6px;margin-left:auto;flex-shrink:0;
+}
+.nav-hamburger span{
+  display:block;width:22px;height:2px;
+  background:var(--text);border-radius:2px;
+  transition:all .3s ease;transform-origin:center;
+}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{
+  position:fixed;top:92px;left:50%;transform:translateX(-50%);
+  width:100%;max-width:1660px;z-index:290;
+  background:rgba(248,243,235,0.98);backdrop-filter:blur(16px);
+  border-bottom:2px solid rgba(184,122,40,.2);
+  box-shadow:0 8px 32px rgba(37,28,14,.12);
+  max-height:0;overflow:hidden;padding:0;
+  transition:max-height .35s cubic-bezier(.4,0,.2,1),padding .35s ease;
+}
+.mobile-menu.open{max-height:400px;padding:20px 24px 28px}
+.mobile-menu-links{display:flex;flex-direction:column;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--border);padding-bottom:16px}
+.mobile-menu-links a{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 14px;border-radius:4px;transition:all .2s;display:block}
+.mobile-menu-links a:hover{color:var(--gold);background:rgba(184,122,40,.07)}
+.mobile-menu-links a.nav-active{color:var(--gold);background:rgba(184,122,40,.1)}
+.mobile-menu-actions{display:flex;gap:10px;flex-wrap:wrap}
+.mobile-menu-actions a{flex:1;min-width:120px;text-align:center;justify-content:center}
+.mobile-menu-overlay{display:none;position:fixed;inset:0;z-index:280;background:rgba(37,28,14,.2)}
+.mobile-menu-overlay.open{display:block}
+@media(max-width:900px){.nav-center{display:none}.nav-hamburger{display:flex}.nav-right .nav-zalo{display:none}.nav-right .nav-cta{display:none}}
+@media(max-width:600px){.mobile-menu{top:60px}.mobile-menu-links a{font-size:.68rem;padding:11px 12px}}
+
 /* ── HERO ── */
 .hero{
   background:var(--bg);
@@ -541,7 +577,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
 @media(max-width:768px){
   nav{padding:0 20px}
   .nav-brand{display:flex;align-items:center}
-  .nav-brand img{height:28px}
+  .nav-brand img{height:56px}
   .step-bar{padding:0 20px}
   .section{padding:60px 24px}
   .why-grid{grid-template-columns:1fr}
@@ -563,7 +599,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   .hero-right img{width:min(240px,75vw)!important;max-height:280px!important}
   .hero-price-num{font-family:'Montserrat',sans-serif;font-size:clamp(3.5rem,7vw,6rem);color:var(--text);font-weight:800;line-height:1}
   .hero-ctas{flex-direction:column}
-  .nav-brand{display:none}
+  .nav-brand img{height:52px !important}
   .collection-grid{grid-template-columns:repeat(2,1fr)}
   .final-price-big{font-family:'Montserrat',sans-serif;font-size:5rem;color:var(--text);font-weight:800;line-height:1}
   .final-ctas{flex-direction:column;align-items:center}
@@ -611,8 +647,26 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   <div class="nav-right">
     <a href="https://zalo.me/0914142850" target="_blank" class="nav-zalo">💬 Zalo</a>
     <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="nav-cta">Mua Ngay →</a>
-  </div>
+    <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-links">
+    <a href="tinh-dau.html">Sản Phẩm</a>
+    <a href="tinh-dau-1ml.html" class="nav-active">Tinh Dầu 1ml</a>
+    <a href="workshop.html">Workshop</a>
+  </div>
+  <div class="mobile-menu-actions">
+    <a href="https://zalo.me/0914142850" target="_blank" class="nav-zalo">💬 Zalo</a>
+    <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="nav-cta">Mua Ngay →</a>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -637,7 +691,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
 
     <h1 class="fade-up d1">
       Một Lọ Tinh Dầu<br>
-      <em>Nguyên Chất</em> Đà Lạt
+      <em>Thảo Mộc</em> Đà Lạt
     </h1>
 
     <div class="hero-compare fade-up d2">
@@ -796,7 +850,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
         <div class="howto-icon">✋</div>
         <div>
           <h4>Mát Xa Pha Loãng</h4>
-          <p>Pha với dầu nền (dầu dừa, dầu hạnh nhân) theo tỷ lệ 2% trước khi tiếp xúc da. Không dùng nguyên chất trực tiếp lên da nhạy cảm.</p>
+          <p>Pha với dầu nền (dầu dừa, dầu hạnh nhân) theo tỷ lệ 2% trước khi tiếp xúc da. Không dùng Thảo Mộc trực tiếp lên da nhạy cảm.</p>
           <span class="howto-ratio">2 giọt / 5ml dầu nền</span>
         </div>
       </div>
@@ -971,14 +1025,14 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   <div class="story-strip-inner" style="grid-template-columns:1fr 1fr">
     <div class="fade-up">
       <img src="assets/img-1ml-story.png"
-           alt="Tinh dầu 1ml nguyên chất thủ công tại Đà Lạt"
+           alt="Tinh dầu 1ml Thảo Mộc thủ công tại Đà Lạt"
            style="width:100%;border-radius:16px;display:block;">
     </div>
     <div class="fade-up d1">
       <div class="story-strip-label" style="margin-bottom:20px;">Mỗi lọ nhỏ.<br>Một câu<br>chuyện thật.</div>
       <p class="story-strip-text">Mỗi lọ tinh dầu 1ml bạn cầm trên tay được làm ra bởi bàn tay người Điếc tại Đà Lạt. Không phải máy móc. Không phải dây chuyền công nghiệp. <strong>Người thật, việc thật, hàng thật.</strong></p>
       <br>
-      <p class="story-strip-text">Từ 2013, vườn thảo mộc cao nguyên đã được chăm sóc để mang đến mùi hương thuần khiết nhất có thể. Khi bạn mua một lọ 10k, bạn đang ủng hộ một mô hình doanh nghiệp xã hội tạo ra việc làm thật sự — không phải từ thiện, không phải thương hại.</p>
+      <p class="story-strip-text">Từ 2013, vườn thảo mộc cao nguyên đã được chăm sóc để mang đến mùi hương tự nhiên nhất có thể. Khi bạn mua một lọ 10k, bạn đang ủng hộ một mô hình doanh nghiệp xã hội tạo ra việc làm thật sự — không phải từ thiện, không phải thương hại.</p>
     </div>
   </div>
 </section>
@@ -993,7 +1047,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
     <h2 class="final-title fade-up">Chọn Hương Của Bạn<br>Hôm Nay</h2>
     <img src="assets/1ml-lifestyle-cam-tay.png"
          class="fade-up d1"
-         alt="Tinh dầu 1ml nguyên chất NCTTX"
+         alt="Tinh dầu 1ml Thảo Mộc NCTTX"
          style="width:100%;max-width:360px;border-radius:20px;margin:28px auto 20px;display:block;
                 box-shadow:0 12px 48px rgba(0,0,0,.2);object-fit:cover;">
     <div class="final-price-display fade-up d1">
@@ -1075,6 +1129,18 @@ items.forEach(s => {
   track.innerHTML += `<span class="marquee-item">${s.name}<span class="marquee-dot"></span></span>`;
 });
 
+// ── HAMBURGER MENU ──
+(function(){
+  const btn=document.getElementById('hamburgerBtn');
+  const menu=document.getElementById('mobileMenu');
+  const overlay=document.getElementById('mobileOverlay');
+  if(!btn||!menu) return;
+  function toggle(open){btn.classList.toggle('open',open);menu.classList.toggle('open',open);overlay.classList.toggle('open',open);document.body.style.overflow=open?'hidden':'';}
+  btn.addEventListener('click',()=>toggle(!menu.classList.contains('open')));
+  overlay.addEventListener('click',()=>toggle(false));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggle(false)));
+})();
+
 // Nav scroll
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
@@ -1127,6 +1193,8 @@ document.querySelectorAll('img[src^="assets/"]').forEach(img => {
 </div><!-- /.page-wrap -->
 </body>
 </html>
+
+
 
 
 

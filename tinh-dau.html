@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tinh Dầu Thảo Mộc Đà Lạt Nguyên Chất | Nến, Nước Hoa — NCTTX</title>
-<meta name="description" content="Tinh dầu thảo mộc nguyên chất từ Đà Lạt, chưng cất bởi người Điếc. 13 hương từ 10.000đ. Nến sáp dừa, xà bông handmade, nước hoa cao nguyên. 1.170+ đánh giá 5★.">
-<meta property="og:title" content="Tinh Dầu Thảo Mộc Đà Lạt Nguyên Chất — Nhà Của Thời Thanh Xuân">
+<title>Tinh Dầu Thảo Mộc Đà Lạt | Nến, Nước Hoa — NCTTX</title>
+<meta name="description" content="Tinh dầu thảo mộc từ Đà Lạt, chưng cất bởi người Điếc. 13 hương từ 10.000đ. Nến sáp dừa, xà bông handmade, nước hoa cao nguyên. 1.170+ đánh giá 5★.">
+<meta property="og:title" content="Tinh Dầu Thảo Mộc Đà Lạt — Nhà Của Thời Thanh Xuân">
 <meta property="og:description" content="13 hương thảo mộc Đà Lạt, từ 10.000đ. Nến sáp dừa, xà bông handmade, nước hoa. 1.170+ đánh giá 5★.">
 <meta property="og:image" content="assets/img-bottles-collection.png">
 <meta property="og:type" content="website">
@@ -1170,6 +1170,72 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   .promo-video-ctas{flex-direction:column}
 }
 
+/* ── HAMBURGER MENU ── */
+.nav-hamburger{
+  display:none;
+  flex-direction:column;justify-content:center;gap:5px;
+  width:40px;height:40px;background:none;border:none;
+  cursor:pointer;padding:6px;margin-left:auto;flex-shrink:0;
+}
+.nav-hamburger span{
+  display:block;width:22px;height:2px;
+  background:var(--text);border-radius:2px;
+  transition:all .3s ease;transform-origin:center;
+}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.mobile-menu{
+  position:fixed;top:92px;left:50%;transform:translateX(-50%);
+  width:100%;max-width:1660px;z-index:290;
+  background:rgba(248,243,235,0.98);
+  backdrop-filter:blur(16px);
+  border-bottom:2px solid rgba(184,122,40,.2);
+  box-shadow:0 8px 32px rgba(37,28,14,.12);
+  padding:0;
+  max-height:0;overflow:hidden;
+  transition:max-height .35s cubic-bezier(.4,0,.2,1), padding .35s ease;
+}
+.mobile-menu.open{
+  max-height:400px;
+  padding:20px 24px 28px;
+}
+.mobile-menu-links{
+  display:flex;flex-direction:column;gap:4px;
+  margin-bottom:20px;
+  border-bottom:1px solid var(--border);
+  padding-bottom:16px;
+}
+.mobile-menu-links a{
+  color:var(--text-muted);text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:12px 14px;border-radius:4px;transition:all .2s;
+  display:block;
+}
+.mobile-menu-links a:hover{color:var(--gold);background:rgba(184,122,40,.07)}
+.mobile-menu-links a.nav-active{color:var(--gold);background:rgba(184,122,40,.1)}
+.mobile-menu-actions{display:flex;gap:10px;flex-wrap:wrap}
+.mobile-menu-actions a{flex:1;min-width:120px;text-align:center;justify-content:center}
+
+/* Overlay để đóng menu khi click ngoài */
+.mobile-menu-overlay{
+  display:none;position:fixed;inset:0;z-index:280;background:rgba(37,28,14,.2);
+}
+.mobile-menu-overlay.open{display:block}
+
+@media(max-width:900px){
+  .nav-center{display:none}
+  .nav-hamburger{display:flex}
+  .nav-right .nav-zalo{display:none}
+  .nav-right .nav-cta{display:none}
+}
+@media(max-width:600px){
+  .mobile-menu{top:60px}
+  .mobile-menu-links a{font-size:.68rem;padding:11px 12px}
+}
+
 /* ── ANIMATIONS ── */
 @keyframes beam{
   0%{left:-100%}100%{left:200%}
@@ -1881,8 +1947,28 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   <div class="nav-right">
     <a href="https://zalo.me/0914142850" target="_blank" class="nav-zalo">💬 Zalo</a>
     <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="nav-cta">Mua Ngay →</a>
-  </div>
+  
+  <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-links">
+    <a href="tinh-dau.html" class="nav-active">Sản Phẩm</a>
+    <a href="tinh-dau-1ml.html">Tinh Dầu 1ml</a>
+    <a href="workshop.html">Workshop</a>
+  </div>
+  <div class="mobile-menu-actions">
+    <a href="https://zalo.me/0914142850" target="_blank" class="nav-zalo">💬 Zalo</a>
+    <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="nav-cta">Mua Ngay →</a>
+  </div>
+</div>
 
 <!-- WELCOME STRIP (từ trang 1ml) -->
 <div class="welcome-strip" id="welcomeStrip">
@@ -2139,7 +2225,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
         <div class="process-icon">🌿</div>
         <span class="process-num">Bước 01</span>
         <h3>Vườn Cao Nguyên Đà Lạt</h3>
-        <p>Trồng, chăm sóc và thu hái thủ công từ vườn thảo mộc tại Đà Lạt — không phân bón hóa học, không chất bảo quản tổng hợp.</p>
+        <p>Trồng, chăm sóc và thu hái thủ công từ vườn thảo mộc tại Đà Lạt — Không phân bón hóa học.</p>
       </div>
       <div class="process-step fade-up d2">
         <div class="process-icon">⚗️</div>
@@ -2386,7 +2472,7 @@ const heroSlides = [
     img: 'assets/img-candle-lifestyle.png',
     label: 'Nến Sáp Dừa · Handmade',
     title: 'Cháy Sạch.<br><em>Tỏa Hương</em> Tự Nhiên.',
-    sub: 'Sáp dừa 100% + tinh dầu nguyên chất. Không parafin, không hóa chất tổng hợp.',
+    sub: 'Sáp dừa tự nhiên + tinh dầu thảo mộc. Không parafin, không hóa chất.',
   },
   {
     img: 'assets/img-distillation-process.png',
@@ -2623,6 +2709,23 @@ if(params.get('from') === '1ml'){
     if(cat) cat.scrollIntoView({ behavior:'smooth', block:'start' });
   }, 1000);
 }
+
+// ── HAMBURGER MENU ──
+(function(){
+  const btn = document.getElementById('hamburgerBtn');
+  const menu = document.getElementById('mobileMenu');
+  const overlay = document.getElementById('mobileOverlay');
+  if(!btn || !menu) return;
+  function toggle(open){
+    btn.classList.toggle('open', open);
+    menu.classList.toggle('open', open);
+    overlay.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  btn.addEventListener('click', () => toggle(!menu.classList.contains('open')));
+  overlay.addEventListener('click', () => toggle(false));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggle(false)));
+})();
 
 // Nav scroll
 const nav = document.getElementById('nav');
@@ -2865,7 +2968,7 @@ const phubData = {
       img:'assets/img-candle-lifestyle.png',name:'Nến Sáp Dừa 100gr',
       price:'150.000đ',summary:'Bàn làm việc, phòng ngủ · Cháy ~30 giờ',
       badge:null,
-      desc:'Sáp dừa 100% + dầu macca + tinh dầu nguyên chất Đà Lạt. Không parafin, không hóa chất. Cháy sạch, tỏa hương nhẹ nhàng.',
+      desc:'Sáp dừa tự nhiên + dầu macca + tinh dầu thảo mộc Đà Lạt. Không parafin, không hóa chất. Cháy sạch, tỏa hương nhẹ nhàng.',
       scents:'🕯 Có hương: Oải Hương · Sả Chanh · Quế · Hương Thảo · Cam · Phong Lữ · Cây Lá Bạc',
       tip:'→ Thử hương lần đầu với size nhỏ này',
       ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
@@ -2874,7 +2977,7 @@ const phubData = {
       img:'assets/img-candle-lifestyle.png',name:'Nến Sáp Dừa 150gr',
       price:'200.000đ',summary:'Phòng ngủ, phòng đọc · Cháy ~40–45 giờ',
       badge:'⭐ Bán chạy nhất',
-      desc:'Kích thước trung bình, được chọn nhiều nhất. Cháy 40–45 giờ đều và sạch. Sáp dừa thiên nhiên 100%.',
+      desc:'Kích thước trung bình, được chọn nhiều nhất. Cháy 40–45 giờ đều và sạch. Sáp dừa thiên nhiên.',
       scents:'🕯 Có hương: Oải Hương · Sả Chanh · Quế · Hương Thảo · Cam · Phong Lữ · Cây Lá Bạc',
       tip:'→ Size kinh tế nhất cho dùng hằng ngày',
       ctas:[{label:'Mua Ngay →',href:SHOPEE_URL,type:'shopee'}]
@@ -3243,6 +3346,8 @@ if(sprayGrid){
 </div><!-- /.page-wrap -->
 </body>
 </html>
+
+
 
 
 
