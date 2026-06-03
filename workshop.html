@@ -485,7 +485,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
 <div class="ws-info-strip">
   <div class="ws-info-item">🕐 <strong>60–90 phút</strong> / buổi</div>
   <div class="ws-info-item">👥 Nhóm tối đa <strong>10 người</strong></div>
-  <div class="ws-info-item">🌿 Nguyên liệu <strong>thiên nhiên 100%</strong></div>
+  <div class="ws-info-item">🌿 Nguyên liệu <strong>thiên nhiên</strong></div>
   <div class="ws-info-item">🧏 Hướng dẫn bởi <strong>người Điếc</strong></div>
   <div class="ws-info-item">🎁 Mang về <strong>sản phẩm của mình</strong></div>
 </div>
@@ -512,7 +512,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
         <div>
           <div class="ws-intro-label">Workshop Dầu Gió</div>
           <h2 class="ws-intro-title">Tự Tay Pha Chế<br><em>Dầu Gió Thảo Mộc</em></h2>
-          <p class="ws-intro-desc">Học cách phối hương từ tinh dầu thảo mộc nguyên chất Đà Lạt để tạo ra chai dầu gió cá nhân theo ý thích. Hiểu tác dụng của từng loại tinh dầu — Bạc Hà, Quế, Khuynh Diệp, Sả Chanh. Mang về sản phẩm do chính tay bạn tạo ra.</p>
+          <p class="ws-intro-desc">Học cách phối hương từ tinh dầu thảo mộc Thảo Mộc Đà Lạt để tạo ra chai dầu gió cá nhân theo ý thích. Hiểu tác dụng của từng loại tinh dầu — Bạc Hà, Quế, Khuynh Diệp, Sả Chanh. Mang về sản phẩm do chính tay bạn tạo ra.</p>
           <div class="ws-features">
             <div class="ws-feature"><div class="ws-feature-dot"></div>Được hướng dẫn bởi thợ người Điếc tại xưởng NCTTX</div>
             <div class="ws-feature"><div class="ws-feature-dot"></div>Tự chọn hương tinh dầu theo sở thích</div>
@@ -633,9 +633,9 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
         <div>
           <div class="ws-intro-label">Workshop Nến Thơm</div>
           <h2 class="ws-intro-title">Tự Đổ Nến<br><em>Sáp Dừa Handmade</em></h2>
-          <p class="ws-intro-desc">Trải nghiệm làm nến sáp dừa từ nguyên liệu thiên nhiên 100%. Tự chọn hương tinh dầu, đổ nến vào lọ thủy tinh, trang trí và mang về. Mỗi chiếc nến là một tác phẩm độc nhất do chính tay bạn tạo ra.</p>
+          <p class="ws-intro-desc">Trải nghiệm làm nến sáp dừa từ nguyên liệu thiên nhiên. Tự chọn hương tinh dầu, đổ nến vào lọ thủy tinh, trang trí và mang về. Mỗi chiếc nến là một tác phẩm độc nhất do chính tay bạn tạo ra.</p>
           <div class="ws-features">
-            <div class="ws-feature"><div class="ws-feature-dot"></div>Nguyên liệu: sáp dừa + dầu macca + tinh dầu nguyên chất</div>
+            <div class="ws-feature"><div class="ws-feature-dot"></div>Nguyên liệu: sáp dừa + dầu macca + tinh dầu thảo mộc</div>
             <div class="ws-feature"><div class="ws-feature-dot"></div>Tự chọn 1–2 hương tinh dầu yêu thích</div>
             <div class="ws-feature"><div class="ws-feature-dot"></div>Học kỹ thuật đổ nến đúng nhiệt độ</div>
             <div class="ws-feature"><div class="ws-feature-dot"></div>Mang về 1 nến 100gr trong lọ thủy tinh</div>
@@ -681,7 +681,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
         </div>
         <div class="ws-includes-list">
           <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Hướng dẫn trực tiếp trong 60–90 phút</div>
-          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Sáp dừa + dầu macca + tinh dầu nguyên chất</div>
+          <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Sáp dừa + dầu macca + tinh dầu thảo mộc</div>
           <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Lọ thủy tinh 100gr + bấc nến cotton</div>
           <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Nhãn dán và hộp đựng thủ công</div>
           <div class="ws-includes-item"><span class="ws-includes-check">✦</span>Nước uống trong suốt buổi</div>
@@ -802,7 +802,7 @@ populateSelects('dg');
 populateSelects('nt');
 
 // ── GOOGLE SHEET URL ──
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzHseYD-FpQXgUvggpVwx-d1IJY2FEixuvHn3xfu9B5hL330z1nmjMOPBTe2IJntM7SMg/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbw_AnV-kPL2WKACQsLVKD_pKCVoAnR4j-2--bHr1S_AYDXmWaNSme4GkiOAcm_7_kZj8w/exec';
 
 // ── FORM SUBMIT ──
 function handleFormSubmit(e, type) {
@@ -831,10 +831,11 @@ function handleFormSubmit(e, type) {
     ${note ? `<br><strong>Ghi chú:</strong> ${note}` : ''}
   `;
 
-  // Gửi lên Google Sheet
+  // Gửi lên Google Sheet (no-cors + text/plain tránh preflight CORS)
   fetch(SHEET_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain' },
     body: JSON.stringify({
       workshop: wsName,
       name:     name,
@@ -843,7 +844,7 @@ function handleFormSubmit(e, type) {
       time:     timeStr,
       note:     note
     })
-  }).catch(() => {}); // Không chặn nếu lỗi mạng
+  }).catch(() => {});
 
   // Hiện success state
   document.getElementById(`form-wrap-${type}`).querySelector('.ws-form').style.display = 'none';
@@ -870,6 +871,7 @@ window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.
 </div><!-- /.page-wrap -->
 </body>
 </html>
+
 
 
 
