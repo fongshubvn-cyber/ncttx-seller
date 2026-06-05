@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tinh Dầu Thảo Mộc Đà Lạt | Nến, Nước Hoa — NCTTX</title>
-<meta name="description" content="Tinh dầu thảo mộc từ Đà Lạt, chưng cất bởi người Điếc. 13 hương từ 10.000đ. Nến sáp dừa, xà bông handmade, nước hoa cao nguyên. 1.170+ đánh giá 5★.">
+<meta name="description" content="Tinh dầu thảo mộc từ Đà Lạt. 13 hương từ 10.000đ. Nến sáp dừa, xà bông handmade, nước hoa cao nguyên. 1.170+ đánh giá 5★.">
 <meta property="og:title" content="Tinh Dầu Thảo Mộc Đà Lạt — Nhà Của Thời Thanh Xuân">
 <meta property="og:description" content="13 hương thảo mộc Đà Lạt, từ 10.000đ. Nến sáp dừa, xà bông handmade, nước hoa. 1.170+ đánh giá 5★.">
 <meta property="og:image" content="assets/img-bottles-collection.png">
@@ -14,7 +14,7 @@
 <link rel="apple-touch-icon" href="assets/logo TTX-01.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -64,7 +64,7 @@ h3,h4{letter-spacing:.07em;font-weight:600}
 .hero-tag,.hero-eyebrow,.hero-slide-label,
 .ws-hero-tag,.ws-intro-label,.ws-includes-label,.ws-contact-label,
 .phub-tab,/* Body: Courier New — typewriter vintage */
-body{font-family:'Courier New','Courier',monospace;color:var(--text);line-height:1.8;letter-spacing:-0.07em;font-size:.95rem;text-shadow:0 0 0.5px currentColor;-webkit-font-smoothing:antialiased}
+body{font-family:'Courier Prime','Courier New','Courier',monospace;color:var(--text);line-height:1.8;letter-spacing:-0.07em;font-size:.95rem;text-shadow:0 0 0.5px currentColor;-webkit-font-smoothing:antialiased}
 
 /* ── BOXED LAYOUT ── */
 .page-wrap{
@@ -207,7 +207,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   padding-bottom:2px;
 }
 .hero-content .hero-sub{
-  font-family:'Courier New',monospace;
+  font-family:'Courier Prime','Courier New',monospace;
   color:rgba(253,251,247,.65);
   font-size:.88rem;line-height:1.75;
   letter-spacing:-0.07em;
@@ -295,13 +295,22 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
 .trust-bar{
   background:var(--off-white);
   border-bottom:1px solid var(--border);
-  padding:18px 48px;
-  display:flex;align-items:center;justify-content:center;
-  gap:44px;flex-wrap:wrap;
+  overflow:hidden;padding:0;
+}
+.trust-track{
+  display:flex;align-items:center;
+  width:max-content;padding:13px 0;
+  animation:trustScroll 32s linear infinite;
+}
+.trust-track:hover{animation-play-state:paused}
+@keyframes trustScroll{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
 }
 .trust-item{
   display:flex;align-items:center;gap:9px;
   font-size:.82rem;color:var(--text-muted);font-weight:500;
+  padding:0 36px;white-space:nowrap;flex-shrink:0;
 }
 .trust-item-icon{font-size:1.05rem}
 .trust-item strong{color:var(--text)}
@@ -1133,7 +1142,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   line-height:1.3;letter-spacing:.02em;text-transform:uppercase;
 }
 .promo-video-desc{
-  font-family:'Courier New',monospace;
+  font-family:'Courier Prime','Courier New',monospace;
   font-size:.84rem;color:var(--text-muted);
   line-height:1.75;letter-spacing:-0.05em;max-width:420px;
 }
@@ -1154,7 +1163,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
 }
 .promo-video-btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
 .promo-video-note{
-  font-family:'Courier New',monospace;
+  font-family:'Courier Prime','Courier New',monospace;
   font-size:.72rem;color:var(--text-muted);
   letter-spacing:-0.04em;font-style:italic;
 }
@@ -1501,7 +1510,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   .hero-ctas{justify-content:center}
   .hero-dots{left:50%;transform:translateX(-50%);bottom:24px}
   .hero-scroll-hint{display:none}
-  .trust-bar{padding:14px 20px;gap:14px}
+  .trust-item{padding:0 20px;font-size:.78rem}
   .section{padding:64px 24px}
   .b2b{padding:64px 24px}
   .story-grid,.b2b-inner{grid-template-columns:1fr;gap:40px}
@@ -1553,7 +1562,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   .choose-card{padding:20px 16px}
   .process-grid{grid-template-columns:1fr}
   .process-step{padding:16px 14px}
-  .trust-bar{gap:10px;padding:12px 16px}
+  .trust-item{padding:0 16px;font-size:.74rem}
   .mood-results{grid-template-columns:1fr}
   .sticky-bar{padding:8px 14px}
 }
@@ -1810,7 +1819,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   .hero-stat{min-width:45%;border-right:none;padding:0;margin-bottom:8px}
 
   /* ── TRUST BAR ── */
-  .trust-bar{padding:12px 20px;gap:12px;flex-wrap:wrap}
+  .trust-item{padding:0 18px}
 
   /* ── TYPOGRAPHY ── */
   .section-title{font-size:clamp(1.55rem,5vw,2rem)}
@@ -1920,7 +1929,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   .shelf-grid{grid-template-columns:repeat(2,1fr)}
   .choose-card{padding:16px 14px}
   .process-step{padding:14px 12px}
-  .trust-bar{gap:10px;padding:10px 14px}
+  .trust-item{padding:0 14px;font-size:.72rem}
   .sticky-bar{padding:8px 14px}
   .b2b-inner{padding:0}
   .candle-grid{gap:10px}
@@ -1991,7 +2000,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
   <div class="hero-content">
     <div class="hero-slide-label"><span id="heroLabel">Tinh Dầu Thảo Mộc · Đà Lạt</span></div>
     <h1 id="heroTitle">Thuần Tự Nhiên<br>Từ <em>Cao Nguyên</em></h1>
-    <p class="hero-sub" id="heroSub">Chưng cất bởi người Điếc tại Đà Lạt. Không hóa chất tổng hợp. 1.170+ đánh giá 5★.</p>
+    <p class="hero-sub" id="heroSub">Thảo mộc Đà Lạt. Không hóa chất tổng hợp. 1.170+ đánh giá 5★.</p>
     <div class="hero-ctas">
       <a href="https://nhacuathoithanhxuan.com/" target="_blank" class="btn-primary">Mua Ngay →</a>
       <a href="tinh-dau-1ml.html" class="btn-outline">Thử 1ml — chỉ 10k</a>
@@ -2010,11 +2019,16 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-item">🌿 <span>Thảo mộc Đà Lạt · không hóa chất</span></div>
-  <div class="trust-item">🤝 <span>Sản xuất bởi <strong>người Điếc</strong> tại Đà Lạt</span></div>
-  <div class="trust-item">🏔️ <span>Vườn thảo mộc cao nguyên <strong>từ 2013</strong></span></div>
-  <div class="trust-item">⭐ <span><strong>1.170+</strong> đánh giá · 100% đề xuất</span></div>
-  <div class="trust-item">🚚 <span>Giao toàn quốc <strong>2–5 ngày</strong> · Thẳng từ Đà Lạt</span></div>
+  <div class="trust-track">
+    <div class="trust-item">🌿 <span>Thảo mộc Đà Lạt · không hóa chất</span></div>
+    <div class="trust-item">🏔️ <span>Vườn thảo mộc cao nguyên <strong>từ 2013</strong></span></div>
+    <div class="trust-item">⭐ <span><strong>1.170+</strong> đánh giá · 100% đề xuất</span></div>
+    <div class="trust-item">🚚 <span>Giao toàn quốc <strong>2–5 ngày</strong> · Thẳng từ Đà Lạt</span></div>
+    <div class="trust-item">🌿 <span>Thảo mộc Đà Lạt · không hóa chất</span></div>
+    <div class="trust-item">🏔️ <span>Vườn thảo mộc cao nguyên <strong>từ 2013</strong></span></div>
+    <div class="trust-item">⭐ <span><strong>1.170+</strong> đánh giá · 100% đề xuất</span></div>
+    <div class="trust-item">🚚 <span>Giao toàn quốc <strong>2–5 ngày</strong> · Thẳng từ Đà Lạt</span></div>
+  </div>
 </div>
 <!-- SHIPPING BAR -->
 <div class="shipping-bar">
@@ -2158,7 +2172,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
         <div class="section-label">Câu chuyện thương hiệu</div>
         <h2 class="section-title">Hàng Thật.<br>Người Thật.<br>Việc Thật.</h2>
         <div class="story-text-block">
-          <p>Từ năm 2013, những vườn thảo mộc đầu tiên được gieo trồng trên cao nguyên Đà Lạt. Năm 2017, Nhà Của Thời Thanh Xuân ra đời — không chỉ là thương hiệu tinh dầu, mà là ngôi nhà của những người Điếc tìm thấy việc làm từ chính đôi tay mình.</p>
+          <p>Từ năm 2013, những vườn thảo mộc đầu tiên được gieo trồng trên cao nguyên Đà Lạt. Năm 2017, Nhà Của Thời Thanh Xuân ra đời — không chỉ là thương hiệu tinh dầu, mà là doanh nghiệp xã hội tạo ra việc làm thật sự từ chính đôi tay người lao động.</p>
           <p>Chúng tôi không đánh bóng. Không dùng câu chuyện khuyết tật để bán hàng thương hại. Chúng tôi xây dựng một tiêu chuẩn: khi mùi hương đủ thật, người mua sẽ quay lại — không cần PR hoa mỹ.</p>
         </div>
         <div class="story-values">
@@ -2214,7 +2228,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
       <div class="intro-text fade-up">
         <div class="section-label">Quy trình</div>
         <h2 class="section-title">Từ Vườn Thảo Mộc<br>Đến Lọ Của Bạn</h2>
-        <p class="section-desc" style="margin-top:14px">Từ vườn thảo mộc cao nguyên, qua đôi tay người Điếc, đến lọ tinh dầu trong suốt của bạn — mỗi bước đều thủ công và nguyên bản.</p>
+        <p class="section-desc" style="margin-top:14px">Từ vườn thảo mộc cao nguyên, thủ công tại xưởng Đà Lạt, đến lọ tinh dầu trong suốt của bạn — mỗi bước đều nguyên bản.</p>
       </div>
       <div class="intro-img-wrap fade-up d1">
         <img src="assets/img-distillation-process.png"
@@ -2231,8 +2245,8 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
       <div class="process-step fade-up d2">
         <div class="process-icon">⚗️</div>
         <span class="process-num">Bước 02</span>
-        <h3>Chưng Cất Bởi Người Điếc</h3>
-        <p>Bàn tay người Điếc tại xưởng NCTTX — kỹ thuật chưng cất hơi nước, giữ nguyên hợp chất thơm từ thảo mộc tươi.</p>
+        <h3>Chưng Cất Thủ Công Tại Xưởng</h3>
+        <p>Kỹ thuật chưng cất hơi nước tại xưởng NCTTX — giữ nguyên hợp chất thơm từ thảo mộc tươi, không dung môi hóa học.</p>
       </div>
       <div class="process-step fade-up d3">
         <div class="process-icon">📦</div>
@@ -2331,7 +2345,7 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
         <div class="testimonial-stars">
           <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
         </div>
-        <p class="testimonial-text">"Thích nhất là câu chuyện sau thương hiệu. Biết sản phẩm do các bạn Điếc làm ra thì dùng có cảm giác khác hẳn. Quế và Hương Thảo là đặc biệt nhất."</p>
+        <p class="testimonial-text">"Mùi thật, không pha tạp. Dùng Oải Hương ngủ ngon hơn hẳn — Quế và Hương Thảo là hai hương yêu thích nhất."</p>
         <div class="testimonial-author">
           <div class="testimonial-avatar" style="background:#C4875A">P</div>
           <div>
@@ -2372,10 +2386,10 @@ nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
 
       <div class="faq-item">
         <button class="faq-q">
-          <span class="faq-q-text">Người Điếc làm tinh dầu thì chất lượng có đảm bảo không?</span>
+          <span class="faq-q-text">NCTTX có nhận đặt sỉ cho spa, khách sạn, văn phòng không?</span>
           <span class="faq-chevron">▾</span>
         </button>
-        <div class="faq-a"><div class="faq-a-inner">Người Điếc tại NCTTX không phải "đối tượng được hỗ trợ" — họ là người thợ được đào tạo bài bản về quy trình chưng cất thảo mộc. Thiếu một giác quan khiến các giác quan còn lại nhạy hơn — nhiều thợ Điếc của mình có khứu giác kiểm phẩm rất tốt. 1.170+ đánh giá là bằng chứng chất lượng thực tế.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Có. NCTTX có dòng B2B với can 500ml–1L cho spa, khách sạn và xe VIP. Giá sỉ từ 850.000đ/can tùy hương. Liên hệ Zalo để được tư vấn combo hương phù hợp với không gian của bạn.</div></div>
       </div>
 
       <div class="faq-item">
@@ -2467,7 +2481,7 @@ const heroSlides = [
     img: 'assets/img-1ml-story.png',
     label: 'Tinh Dầu Thảo Mộc · Đà Lạt',
     title: 'Thuần Tự Nhiên<br>Từ <em>Cao Nguyên</em>',
-    sub: 'Chưng cất bởi người Điếc tại Đà Lạt. Không hóa chất tổng hợp. 1.170+ đánh giá 5★.',
+    sub: 'Thảo mộc Đà Lạt. Không hóa chất tổng hợp. 1.170+ đánh giá 5★.',
   },
   {
     img: 'assets/img-candle-lifestyle.png',
@@ -2479,7 +2493,7 @@ const heroSlides = [
     img: 'assets/img-distillation-process.png',
     label: 'Câu Chuyện · Từ 2013',
     title: 'Hàng Thật.<br><em>Người Thật.</em>',
-    sub: 'Từ 2013, người Điếc tại xưởng Đà Lạt tự tay làm ra từng lọ — không thương hại, chỉ chất lượng.',
+    sub: 'Từ 2013, xưởng thủ công Đà Lạt sản xuất từng lọ — hàng thật, không thương hại, chỉ chất lượng.',
   },
   {
     img: 'assets/img-soap-collection.jpg',
@@ -3268,7 +3282,7 @@ if(sprayGrid){
   color:var(--cream);line-height:1.25;margin-bottom:10px;
 }
 .promo-gift{
-  font-family:'Courier New',monospace;
+  font-family:'Courier Prime','Courier New',monospace;
   font-size:.68rem;color:rgba(253,251,247,.72);
   line-height:1.55;letter-spacing:-0.04em;
   margin-bottom:14px;
