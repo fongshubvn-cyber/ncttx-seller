@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tinh Dầu Thảo Mộc 10ml Tặng Trứng Thông Đà Lạt | Nhà Của Thời Thanh Xuân</title>
+  <meta name="description" content="Ưu đãi giới hạn: Mua tinh dầu thảo mộc 10ml tặng quả trứng thông khô Đà Lạt khuếch tán tự nhiên. Mùi hương rừng thông ấm áp từ mô hình doanh nghiệp xã hội.">
+  
+  <link rel="icon" type="image/png" href="assets/logo TTX-01.png">
+  <link rel="apple-touch-icon" href="assets/logo TTX-01.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ── DESIGN SYSTEM & VARIABLE ── */
+    :root {
+      --primary: #fe2c55; /* TikTok signature red-pink */
+      --primary-gradient: linear-gradient(135deg, #ff2a5f 0%, #fe2c55 100%);
+      --secondary: #2B5240; /* Forest Green for NCTTX */
+      --secondary-light: #5A9A7A;
+      --secondary-pale: #F1F6F3;
+      --bg-page: #f8f9fa;
+      --bg-card: #ffffff;
+      --text: #251C0E;
+      --text-muted: #7A6852;
+      --border: #edeae4;
+      --gold: #B87A28;
+      --gold-pale: #FBF7F0;
+      --price-color: #fe2c55;
+      --flash-sale-gradient: linear-gradient(90deg, #ff2a5f 0%, #ff6b35 100%);
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background-color: #eaecef;
+      color: var(--text);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    /* Giả lập khung di động trên desktop */
+    body {
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .desktop-wrapper {
+      width: 100%;
+      max-width: 480px;
+      background-color: var(--bg-page);
+      min-height: 100vh;
+      position: relative;
+      box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      padding-bottom: 74px; /* Chừa chỗ cho thanh mua hàng cố định */
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      height: 52px;
+    }
+
+    .btn-header-back {
+      border: none;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      color: var(--text);
+    }
+    .btn-header-back:active {
+      background-color: rgba(0,0,0,0.05);
+    }
+
+    .header-nav {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .header-nav-item {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      position: relative;
+      padding: 6px 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .header-nav-item.active {
+      color: var(--primary);
+    }
+    .header-nav-item.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary-gradient);
+      border-radius: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-header-action {
+      border: none;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      color: var(--text);
+    }
+
+    /* ── PRODUCT CAROUSEL ── */
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1; /* Khung hình vuông 1:1 */
+      overflow: hidden;
+      background-color: #f0eae1;
+    }
+
+    .carousel-track {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+      height: 100%;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-counter {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.6);
+      color: var(--white);
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── FLASH SALE BANNER ── */
+    .flash-sale-bar {
+      background: var(--flash-sale-gradient);
+      color: var(--white);
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .flash-sale-left {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .flash-sale-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .flash-sale-progress-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.68rem;
+    }
+
+    .flash-sale-progress-bar {
+      width: 110px;
+      height: 8px;
+      background-color: rgba(255,255,255,0.3);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .flash-sale-progress-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-color: var(--white);
+      border-radius: 4px;
+      width: 82%; /* giả định đã bán 82% */
+      animation: fillProgress 1.5s ease-out forwards;
+    }
+
+    @keyframes fillProgress {
+      from { width: 0%; }
+    }
+
+    .flash-sale-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2px;
+    }
+
+    .countdown-label {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      opacity: 0.9;
+    }
+
+    .countdown-timer {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .timer-box {
+      background-color: var(--text);
+      color: var(--white);
+      padding: 3px 5px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      min-width: 22px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .timer-colon {
+      font-weight: 800;
+      font-size: 0.72rem;
+      color: var(--white);
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0.3; }
+    }
+
+    /* ── PRODUCT INFO CARD ── */
+    .section-card {
+      background-color: var(--bg-card);
+      margin-bottom: 8px;
+      padding: 16px;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .price-current {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--price-color);
+    }
+
+    .price-original {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    .discount-tag {
+      background-color: rgba(254, 44, 85, 0.08);
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    .product-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .gift-banner {
+      background-color: var(--gold-pale);
+      border: 1px dashed rgba(184, 122, 40, 0.3);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .gift-icon {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .gift-text h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .gift-text p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .trust-metrics {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      font-size: 0.75rem;
+    }
+
+    .rating-block {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 600;
+    }
+
+    .rating-stars {
+      color: #ffc308;
+      display: flex;
+    }
+
+    .sold-count {
+      color: var(--text-muted);
+      border-left: 1px solid var(--border);
+      padding-left: 14px;
+    }
+
+    .social-enterprise-badge {
+      margin-left: auto;
+      background-color: var(--secondary-pale);
+      color: var(--secondary);
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      border: 1px solid rgba(43, 82, 64, 0.15);
+    }
+
+    /* ── SCENT GRID SECTION ── */
+    .scent-section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .scents-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .scent-chip {
+      background-color: var(--bg-page);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 6px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .scent-chip.active {
+      border-color: var(--secondary);
+      background-color: var(--secondary-pale);
+      box-shadow: 0 2px 6px rgba(43, 82, 64, 0.1);
+    }
+
+    .scent-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .scent-name {
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .scent-detail-box {
+      background-color: var(--gold-pale);
+      border-radius: 8px;
+      padding: 12px;
+      border: 1px solid rgba(184, 122, 40, 0.15);
+      min-height: 70px;
+    }
+
+    .scent-detail-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .scent-detail-desc {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      font-style: italic;
+    }
+
+    /* ── DETAILED CONTENT (PRODUCT DESCRIPTION) ── */
+    .detail-heading {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+      text-align: center;
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    .detail-heading::before, .detail-heading::after {
+      content: '';
+      height: 1px;
+      width: 40px;
+      background-color: var(--border);
+    }
+
+    .detail-image-wrapper {
+      width: 100%;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .detail-image-wrapper img {
+      width: 100%;
+      display: block;
+    }
+
+    .detail-text-card {
+      background-color: var(--secondary-pale);
+      border-radius: 12px;
+      padding: 16px;
+      border-left: 4px solid var(--secondary);
+      margin-bottom: 16px;
+    }
+
+    .detail-text-card h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .detail-text-card p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .feature-check {
+      color: var(--secondary);
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .feature-text h5 {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .feature-text p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ── REVIEWS SECTION ── */
+    .reviews-summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .reviews-summary-left h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .reviews-summary-left p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .reviews-summary-right {
+      text-align: right;
+      font-size: 0.75rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .review-item {
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+    }
+    .review-item:last-child {
+      border-bottom: none;
+    }
+
+    .review-user-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .review-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: var(--border);
+      overflow: hidden;
+    }
+    .review-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .review-username {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .review-verified-badge {
+      font-size: 0.65rem;
+      color: #20b2aa;
+      font-weight: 600;
+      background-color: rgba(32, 178, 170, 0.08);
+      padding: 1px 4px;
+      border-radius: 3px;
+      margin-left: auto;
+    }
+
+    .review-stars-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .review-scent-tag {
+      background-color: var(--bg-page);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.68rem;
+    }
+
+    .review-text {
+      font-size: 0.82rem;
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    /* ── STICKY BOTTOM BAR ── */
+    .sticky-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      height: 64px;
+      background-color: var(--white);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      gap: 12px;
+      z-index: 99;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+    }
+
+    .sticky-btn-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.68rem;
+      font-weight: 500;
+      width: 50px;
+      height: 100%;
+      gap: 2px;
+    }
+    .sticky-btn-contact img {
+      width: 22px;
+      height: 22px;
+      opacity: 0.75;
+    }
+
+    .sticky-btn-buy {
+      flex-grow: 1;
+      height: 46px;
+      border: none;
+      background: var(--primary-gradient);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border-radius: 23px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(254, 44, 85, 0.25);
+      transition: all 0.2s;
+    }
+    .sticky-btn-buy:active {
+      transform: scale(0.98);
+      opacity: 0.95;
+    }
+
+    /* ── BOTTOM SHEET CHECKOUT ── */
+    .bottom-sheet-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .bottom-sheet-overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .bottom-sheet {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      width: 100%;
+      max-width: 480px;
+      background-color: var(--white);
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      z-index: 1001;
+      transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .bottom-sheet.show {
+      transform: translate(-50%, 0);
+    }
+
+    .bottom-sheet-header {
+      display: flex;
+      align-items: flex-start;
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    .sheet-product-img {
+      width: 72px;
+      height: 72px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background-color: var(--bg-page);
+    }
+    .sheet-product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .sheet-product-info {
+      margin-left: 12px;
+      flex-grow: 1;
+      padding-right: 24px;
+    }
+    .sheet-product-price {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--price-color);
+      margin-bottom: 2px;
+    }
+    .sheet-product-stock {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    .sheet-product-desc {
+      font-size: 0.76rem;
+      color: var(--text);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .btn-sheet-close {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .btn-sheet-close:active {
+      background-color: rgba(0,0,0,0.05);
+    }
+
+    .bottom-sheet-content {
+      padding: 16px;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    .sheet-section {
+      margin-bottom: 16px;
+    }
+
+    .sheet-section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Combo Chips */
+    .combo-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .combo-option {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s;
+    }
+    .combo-option.active {
+      border-color: var(--primary);
+      background-color: rgba(254, 44, 85, 0.02);
+    }
+
+    .combo-name {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .combo-radio {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      position: relative;
+    }
+    .combo-option.active .combo-radio {
+      border-color: var(--primary);
+    }
+    .combo-option.active .combo-radio::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      top: 2px;
+      left: 2px;
+    }
+
+    .combo-price-wrap {
+      text-align: right;
+    }
+    .combo-price-label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--price-color);
+    }
+    .combo-saving-label {
+      font-size: 0.65rem;
+      color: var(--primary);
+      font-weight: 600;
+      background-color: rgba(254, 44, 85, 0.08);
+      padding: 1px 4px;
+      border-radius: 3px;
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* Scent Dropdowns */
+    .scent-selectors-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .scent-selector-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .scent-selector-row label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .scent-select {
+      flex-grow: 1;
+      max-width: 75%;
+      height: 38px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background-color: var(--bg-page);
+      padding: 0 8px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      color: var(--text);
+      outline: none;
+    }
+
+    /* Quantity Selector */
+    .quantity-selector {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      width: fit-content;
+      overflow: hidden;
+    }
+    .btn-qty {
+      border: none;
+      background-color: var(--bg-page);
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .input-qty {
+      border: none;
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      width: 40px;
+      height: 32px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      outline: none;
+    }
+
+    /* Form Fields */
+    .checkout-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .form-input, .form-select {
+      height: 42px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      padding: 0 12px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      outline: none;
+      background-color: var(--white);
+      color: var(--text);
+    }
+    .form-input:focus, .form-select:focus {
+      border-color: var(--primary);
+    }
+
+    .form-textarea {
+      min-height: 60px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      outline: none;
+      resize: none;
+    }
+    .form-textarea:focus {
+      border-color: var(--primary);
+    }
+
+    .location-dropdowns-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+
+    .location-dropdowns-group select {
+      font-size: 0.74rem;
+      padding: 0 4px;
+    }
+
+    .bottom-sheet-footer {
+      padding: 16px;
+      border-top: 1px solid var(--border);
+      background-color: var(--white);
+    }
+
+    .btn-submit-order {
+      width: 100%;
+      height: 46px;
+      border: none;
+      background: var(--primary-gradient);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      border-radius: 23px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(254, 44, 85, 0.3);
+    }
+    .btn-submit-order:active {
+      transform: scale(0.98);
+    }
+
+    /* ── SOCIAL PROOF TOASTS ── */
+    .toast-notification {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translate(-50%, 20px);
+      width: calc(100% - 32px);
+      max-width: 400px;
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(5px);
+      border-radius: 30px;
+      padding: 6px 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 98;
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+      border: 1px solid rgba(43, 82, 64, 0.08);
+    }
+    .toast-notification.show {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+
+    .toast-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--secondary-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .toast-body {
+      flex-grow: 1;
+      font-size: 0.74rem;
+      color: var(--text);
+    }
+    .toast-body strong {
+      font-weight: 600;
+    }
+    .toast-time {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      margin-left: 6px;
+      white-space: nowrap;
+    }
+
+    /* ── DIALOG THANKS ── */
+    .dialog-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .dialog-overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .dialog-box {
+      background-color: var(--white);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      max-width: 380px;
+      width: 100%;
+      transform: scale(0.9);
+      transition: transform 0.3s ease;
+    }
+    .dialog-overlay.show .dialog-box {
+      transform: scale(1);
+    }
+
+    .dialog-success-icon {
+      width: 60px;
+      height: 60px;
+      background-color: var(--secondary-pale);
+      color: var(--secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 16px;
+    }
+
+    .dialog-box h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .dialog-box p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .btn-dialog-close {
+      border: none;
+      background: var(--secondary);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="desktop-wrapper">
+    
+    <!-- ── HEADER ── -->
+    <header>
+      <button class="btn-header-back" onclick="history.back() || alert('Trở lại trang chủ')" aria-label="Quay lại">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      </button>
+      <nav class="header-nav">
+        <a href="#product" class="header-nav-item active">Sản phẩm</a>
+        <a href="#details" class="header-nav-item">Chi tiết</a>
+        <a href="#reviews" class="header-nav-item">Đánh giá</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-header-action" onclick="alert('Đã sao chép liên kết chia sẻ!')" aria-label="Chia sẻ">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- ── PRODUCT SECTION (ANCHOR) ── -->
+    <div id="product"></div>
+
+    <!-- Carousel Ảnh -->
+    <div class="carousel-container" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide"><img src="assets/tinh-dau-10ml-trung-thong.png" alt="Tinh dầu 10ml và quả trứng thông Đà Lạt"></div>
+        <div class="carousel-slide"><img src="assets/img-10ml-bottle.png" alt="Lọ tinh dầu thảo mộc 10ml"></div>
+        <div class="carousel-slide"><img src="assets/img-bottles-collection.png" alt="Bộ sưu tập các dung tích tinh dầu"></div>
+        <div class="carousel-slide"><img src="assets/img-distillation-process.png" alt="Quy trình chưng cất tinh dầu thủ công"></div>
+        <div class="carousel-slide"><img src="assets/img-1ml-story.png" alt="Câu chuyện doanh nghiệp xã hội của người điếc"></div>
+      </div>
+      <div class="carousel-counter" id="carouselCounter">1/5</div>
+    </div>
+
+    <!-- Flash Sale Bar -->
+    <div class="flash-sale-bar">
+      <div class="flash-sale-left">
+        <div class="flash-sale-title">
+          ⚡ FLASH SALE
+        </div>
+        <div class="flash-sale-progress-container">
+          <div class="flash-sale-progress-bar">
+            <div class="flash-sale-progress-fill"></div>
+          </div>
+          <span>Đang bán chạy</span>
+        </div>
+      </div>
+      <div class="flash-sale-right">
+        <span class="countdown-label">Kết thúc sau</span>
+        <div class="countdown-timer" id="countdown">
+          <div class="timer-box" id="hour">02</div>
+          <span class="timer-colon">:</span>
+          <div class="timer-box" id="minute">45</div>
+          <span class="timer-colon">:</span>
+          <div class="timer-box" id="second">12</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thông tin sản phẩm -->
+    <section class="section-card">
+      <div class="price-row">
+        <span class="price-current">180.000đ</span>
+        <span class="price-original">270.000đ</span>
+        <span class="discount-tag">Giảm 33%</span>
+      </div>
+      
+      <h1 class="product-title">Tinh Dầu Thảo Mộc Đà Lạt 10ml — Tặng 1 Quả Trứng Thông Khuếch Tán Tự Nhiên</h1>
+      
+      <!-- Banner Quà tặng -->
+      <div class="gift-banner">
+        <span class="gift-icon">🎁</span>
+        <div class="gift-text">
+          <h5>Quà tặng đặc biệt</h5>
+          <p>Tặng kèm 01 quả trứng thông khô Đà Lạt. Nhỏ trực tiếp tinh dầu lên quả thông để khuếch tán hương thơm ấm áp, mộc mạc tự nhiên cho không gian.</p>
+        </div>
+      </div>
+
+      <!-- Trust Metrics -->
+      <div class="trust-metrics">
+        <div class="rating-block">
+          <span>4.9</span>
+          <div class="rating-stars">★ ★ ★ ★ ★</div>
+        </div>
+        <div class="sold-count">Đã bán 4.8k</div>
+        <div class="social-enterprise-badge">Doanh nghiệp Xã hội</div>
+      </div>
+    </section>
+
+    <!-- Chọn hương nhanh -->
+    <section class="section-card">
+      <h3 class="scent-section-title">🌿 Trải nghiệm 13 hương thảo mộc</h3>
+      <div class="scents-grid" id="scentGrid">
+        <!-- Render động bằng JS -->
+      </div>
+      
+      <div class="scent-detail-box">
+        <div class="scent-detail-title" id="scentDetailTitle">Hương Thảo</div>
+        <div class="scent-detail-desc" id="scentDetailDesc">"Thảo mộc tươi mát, tăng tập trung làm việc và học bài."</div>
+      </div>
+    </section>
+
+    <!-- ── DETAILS SECTION (ANCHOR) ── -->
+    <div id="details"></div>
+    <section class="section-card">
+      <h3 class="detail-heading">Thông tin chi tiết</h3>
+      
+      <div class="detail-text-card">
+        <h4>Quả Trứng Thông Đà Lạt</h4>
+        <p>Quả thông khô được thu lượm từ cánh rừng thông Đà Lạt hoang dã. Kết cấu các kẽ vảy gỗ tự nhiên hoạt động như một bộ khuếch tán thụ động tuyệt vời. Khi nhỏ 3-5 giọt tinh dầu, quả thông sẽ giữ hương và tỏa hương thoang thoảng dịu nhẹ quanh bàn làm việc, xe hơi hoặc đầu giường mà không cần nhiệt hay điện.</p>
+      </div>
+
+      <div class="detail-image-wrapper">
+        <img src="assets/tinh-dau-10ml-trung-thong.png" alt="Bộ sản phẩm 10ml và quả thông">
+      </div>
+
+      <div class="detail-text-card" style="background-color: var(--gold-pale); border-left-color: var(--gold);">
+        <h4>Quy trình thủ công & Nhân văn</h4>
+        <p>Từng chai tinh dầu được đóng gói, dán nhãn tỉ mỉ bởi các bạn thanh niên Điếc và khuyết tật tại <strong>Nhà Của Thời Thanh Xuân</strong>. Mỗi đơn hàng của bạn góp phần duy trì công ăn việc làm bền vững và bình đẳng cho các bạn.</p>
+      </div>
+
+      <div class="features-list">
+        <div class="feature-item">
+          <span class="feature-check">✔</span>
+          <div class="feature-text">
+            <h5>Tinh chất 100% tự nhiên</h5>
+            <p>Không pha tạp, không chứa hương liệu nhân tạo, chưng cất hơi nước tinh khiết.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-check">✔</span>
+          <div class="feature-text">
+            <h5>Bộ khuếch tán xanh</h5>
+            <p>Quả trứng thông hoàn toàn thân thiện môi trường, tái sử dụng vô tận.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-check">✔</span>
+          <div class="feature-text">
+            <h5>Cam kết đổi trả bảo hành</h5>
+            <p>Hỗ trợ đổi trả 100% miễn phí trong 7 ngày nếu nứt vỡ hoặc không hài lòng chất lượng.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REVIEWS SECTION (ANCHOR) ── -->
+    <div id="reviews"></div>
+    <section class="section-card">
+      <div class="reviews-summary">
+        <div class="reviews-summary-left">
+          <h4>Đánh giá sản phẩm</h4>
+          <p>Dựa trên 1.2k phản hồi khách hàng</p>
+        </div>
+        <div class="reviews-summary-right">99% Phản hồi tốt</div>
+      </div>
+
+      <div class="reviews-list">
+        <div class="review-item">
+          <div class="review-user-row">
+            <div class="review-avatar">🌻</div>
+            <span class="review-username">Hồng H.</span>
+            <span class="review-verified-badge">Đã mua hàng</span>
+          </div>
+          <div class="review-stars-row">
+            <span class="rating-stars">★★★★★</span>
+            <span>1 ngày trước</span>
+            <span class="review-scent-tag">Mùi: Oải Hương</span>
+          </div>
+          <p class="review-text">Tinh dầu thơm rất thư giãn. Shop đóng gói cẩn thận có tặng quả thông khô xinh xắn. Nhỏ tinh dầu lên quả thông để bàn học thơm dịu nhẹ cực kỳ.</p>
+        </div>
+
+        <div class="review-item">
+          <div class="review-user-row">
+            <div class="review-avatar">🌲</div>
+            <span class="review-username">Minh T.</span>
+            <span class="review-verified-badge">Đã mua hàng</span>
+          </div>
+          <div class="review-stars-row">
+            <span class="rating-stars">★★★★★</span>
+            <span>3 ngày trước</span>
+            <span class="review-scent-tag">Mùi: Trắc Bách Diệp</span>
+          </div>
+          <p class="review-text">Mùi Trắc Bách Diệp chuẩn mùi rừng thông Đà Lạt mát ẩm, ngửi rất bình yên. Quả thông tặng kèm xịn lắm nha, giữ hương được tầm 2 ngày.</p>
+        </div>
+
+        <div class="review-item">
+          <div class="review-user-row">
+            <div class="review-avatar">🍋</div>
+            <span class="review-username">Ngọc A.</span>
+            <span class="review-verified-badge">Đã mua hàng</span>
+          </div>
+          <div class="review-stars-row">
+            <span class="rating-stars">★★★★★</span>
+            <span>Tuần trước</span>
+            <span class="review-scent-tag">Mùi: Sả Chanh</span>
+          </div>
+          <p class="review-text">Nhà mình hay dùng sả chanh của Thanh Xuân để đuổi muỗi và lọc không khí phòng bếp. Mua combo 2 lọ được free ship lại được tặng 2 quả thông nữa quá hời.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STICKY BOTTOM BAR ── -->
+    <div class="sticky-bottom-bar">
+      <a href="https://zalo.me/+84914142850" target="_blank" class="sticky-btn-contact">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        <span>Tư vấn</span>
+      </a>
+      <button class="sticky-btn-buy" id="btnBuyNow">MUA NGAY (Tặng quả thông)</button>
+    </div>
+
+    <!-- ── BOTTOM SHEET CHECKOUT ── -->
+    <div class="bottom-sheet-overlay" id="sheetOverlay"></div>
+    <div class="bottom-sheet" id="checkoutSheet">
+      
+      <div class="bottom-sheet-header">
+        <div class="sheet-product-img">
+          <img src="assets/tinh-dau-10ml-trung-thong.png" alt="Tinh dầu 10ml + quả thông">
+        </div>
+        <div class="sheet-product-info">
+          <div class="sheet-product-price" id="sheetPriceDisplay">180.000đ</div>
+          <div class="sheet-product-stock">Tồn kho còn: 48 chai · Tặng trứng thông</div>
+          <div class="sheet-product-desc" id="sheetComboDesc">Gói: 1 chai 10ml + 1 Quả thông</div>
+        </div>
+        <button class="btn-sheet-close" id="btnSheetClose" aria-label="Đóng">✕</button>
+      </div>
+
+      <div class="bottom-sheet-content">
+        <!-- Section Chọn Combo -->
+        <div class="sheet-section">
+          <h4 class="sheet-section-title">Chọn gói ưu đãi</h4>
+          <div class="combo-list">
+            <div class="combo-option active" data-combo="1" data-price="180000">
+              <div class="combo-name">
+                <span class="combo-radio"></span>
+                Combo 1: Mua 1 lọ 10ml
+              </div>
+              <div class="combo-price-wrap">
+                <span class="combo-price-label">180.000đ</span>
+              </div>
+            </div>
+            <div class="combo-option" data-combo="2" data-price="320000">
+              <div class="combo-name">
+                <span class="combo-radio"></span>
+                Combo 2: Mua 2 lọ 10ml
+              </div>
+              <div class="combo-price-wrap">
+                <span class="combo-price-label">320.000đ</span>
+                <span class="combo-saving-label">Tiết kiệm 40k + FreeShip</span>
+              </div>
+            </div>
+            <div class="combo-option" data-combo="3" data-price="450000">
+              <div class="combo-name">
+                <span class="combo-radio"></span>
+                Combo 3: Mua 3 lọ 10ml
+              </div>
+              <div class="combo-price-wrap">
+                <span class="combo-price-label">450.000đ</span>
+                <span class="combo-saving-label">Tiết kiệm 90k + FreeShip</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Chọn Mùi Hương (Động) -->
+        <div class="sheet-section">
+          <h4 class="sheet-section-title">Chọn mùi hương tinh dầu</h4>
+          <div class="scent-selectors-container" id="scentSelectorsContainer">
+            <!-- Render động dropdown tùy theo số lọ mua -->
+          </div>
+        </div>
+
+        <!-- Section Số lượng combo -->
+        <div class="sheet-section" style="display: flex; justify-content: space-between; align-items: center;">
+          <h4 class="sheet-section-title" style="margin-bottom:0;">Số lượng bộ đặt mua</h4>
+          <div class="quantity-selector">
+            <button class="btn-qty" id="btnQtyMinus">—</button>
+            <input type="number" class="input-qty" id="qtyInput" value="1" min="1" readonly>
+            <button class="btn-qty" id="btnQtyPlus">+</button>
+          </div>
+        </div>
+
+        <!-- Form đặt hàng -->
+        <div class="sheet-section">
+          <h4 class="sheet-section-title">Thông tin giao nhận hàng</h4>
+          <form class="checkout-form" id="orderForm">
+            
+            <div class="form-group">
+              <input type="text" class="form-input" id="customerName" placeholder="Họ và tên người nhận" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" class="form-input" id="customerPhone" placeholder="Số điện thoại di động" required pattern="^(0|\+84)[3|5|7|8|9][0-9]{8}$">
+            </div>
+
+            <div class="location-dropdowns-group">
+              <select class="form-select" id="provinceSelect" required>
+                <option value="">Tỉnh/Thành</option>
+              </select>
+              <select class="form-select" id="districtSelect" required>
+                <option value="">Quận/Huyện</option>
+              </select>
+              <select class="form-select" id="wardSelect" required>
+                <option value="">Phường/Xã</option>
+              </select>
+            </div>
+
+            <!-- Các input dự phòng khi chọn Tỉnh thành khác -->
+            <div class="form-group" id="manualLocationGroup" style="display: none; gap: 8px;">
+              <input type="text" class="form-input" id="manualDistrict" placeholder="Nhập Quận/Huyện của bạn">
+              <input type="text" class="form-input" id="manualWard" placeholder="Nhập Phường/Xã của bạn">
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-input" id="customerAddress" placeholder="Địa chỉ chi tiết (Số nhà, đường...)" required>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-textarea" id="orderNote" placeholder="Ghi chú về đơn hàng (ví dụ: giao giờ hành chính,...)"></textarea>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Sheet -->
+      <div class="bottom-sheet-footer">
+        <button class="btn-submit-order" id="btnSubmitOrder">
+          <span>XÁC NHẬN ĐẶT HÀNG</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ── SOCIAL PROOF TOASTS ── -->
+    <div class="toast-notification" id="orderToast">
+      <div class="toast-avatar">🛍️</div>
+      <div class="toast-body">
+        Khách hàng <strong>Nguyễn Thị L.</strong> (098****214)<br>
+        vừa đặt combo 2 chai 10ml + quả thông
+      </div>
+      <span class="toast-time">12s trước</span>
+    </div>
+
+    <!-- ── DIALOG THANKS ── -->
+    <div class="dialog-overlay" id="thanksDialog">
+      <div class="dialog-box">
+        <div class="dialog-success-icon">✓</div>
+        <h3>Đặt hàng thành công!</h3>
+        <p>Nhà Của Thời Thanh Xuân chân thành cảm ơn sự đồng hành của bạn. Chúng mình sẽ liên hệ qua điện thoại sớm nhất để xác nhận đơn hàng.</p>
+        <button class="btn-dialog-close" id="btnDialogClose">ĐÓNG</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // ── CONFIGURATIONS ──
+    const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbw_AnV-kPL2WKACQsLVKD_pKCVoAnR4j-2--bHr1S_AYDXmWaNSme4GkiOAcm_7_kZj8w/exec'; // Thay URL Apps Script Web App của bạn ở đây
+
+    // ── SCENT DATA (13 Mùi Hương) ──
+    const scents = [
+      { name: 'Hương Thảo', fill: '#9CAF88', desc: 'Thảo mộc tươi mát, tăng tập trung làm việc và học bài.' },
+      { name: 'Sả Chanh', fill: '#D4C86A', desc: 'Hương chanh sả thư giãn, khử mùi và lọc sạch phòng ngủ.' },
+      { name: 'Oải Hương', fill: '#B09CC4', desc: 'Hương hoa oải hương ngọt dịu nhẹ, xoa dịu giấc ngủ ngon.' },
+      { name: 'Trắc Bách Diệp', fill: '#7A9A6B', desc: 'Hương gỗ xanh trầm tĩnh, tạo cảm giác thiền định, an lành.' },
+      { name: 'Bạc Hà', fill: '#7ABFB0', desc: 'The mát sảng khoái, giảm đau đầu và giải tỏa buồn ngủ.' },
+      { name: 'Cam Ngọt', fill: '#E0A04A', desc: 'Hương vỏ cam tươi vui, mang lại nguồn năng lượng tích cực.' },
+      { name: 'Quế', fill: '#C4875A', desc: 'Ấm nồng và cay nhẹ, làm ấm không gian những ngày lạnh.' },
+      { name: 'Khuynh Diệp', fill: '#6BAF8F', desc: 'The mát dễ chịu, thông thoáng mũi họng, chống cảm cúm.' },
+      { name: 'Lá Xông', fill: '#8FAA6B', desc: 'Hương lá xông xá thảo mộc truyền thống, ấm cúng và giải cảm.' },
+      { name: 'Phong Lữ', fill: '#C48E9A', desc: 'Hương hoa ngọt ngào thanh lịch, giúp giảm căng thẳng mệt mỏi.' },
+      { name: 'Cây Lá Bạc', fill: '#A0B8A0', desc: 'Hương bạc thanh sạch, dịu êm nhẹ nhàng, dễ chịu cả ngày.' },
+      { name: 'Quýt', fill: '#E8973A', desc: 'Hương quýt Đà Lạt ngọt chua tươi mát, đánh thức mọi giác quan.' },
+      { name: 'Sả Java', fill: '#C9C46A', desc: 'Mùi sả đậm mạnh, xua đuổi muỗi và côn trùng tự nhiên rất tốt.' }
+    ];
+
+    // ── RENDER QUICK SCENTS GRID ──
+    const scentGrid = document.getElementById('scentGrid');
+    const scentTitle = document.getElementById('scentDetailTitle');
+    const scentDesc = document.getElementById('scentDetailDesc');
+
+    scents.forEach((scent, index) => {
+      const chip = document.createElement('div');
+      chip.className = 'scent-chip' + (index === 0 ? ' active' : '');
+      chip.innerHTML = `
+        <span class="scent-dot" style="background-color: ${scent.fill}"></span>
+        <span class="scent-name">${scent.name}</span>
+      `;
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.scent-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        scentTitle.textContent = scent.name;
+        scentDesc.textContent = `"${scent.desc}"`;
+      });
+      scentGrid.appendChild(chip);
+    });
+
+    // ── SWIPEABLE CAROUSEL LOGIC ──
+    const track = document.getElementById('carouselTrack');
+    const slides = Array.from(track.children);
+    const counter = document.getElementById('carouselCounter');
+    let currentIndex = 0;
+    let startX = 0;
+    let isDragging = false;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let animationID = 0;
+
+    // Cài đặt vị trí ban đầu
+    function setPositionByIndex() {
+      currentTranslate = currentIndex * -track.offsetWidth;
+      prevTranslate = currentTranslate;
+      track.style.transform = `translateX(${currentTranslate}px)`;
+      counter.textContent = `${currentIndex + 1}/${slides.length}`;
+    }
+
+    // Sự kiện Touch / Mouse
+    track.addEventListener('touchstart', touchStart);
+    track.addEventListener('touchmove', touchMove);
+    track.addEventListener('touchend', touchEnd);
+
+    track.addEventListener('mousedown', touchStart);
+    track.addEventListener('mousemove', touchMove);
+    track.addEventListener('mouseup', touchEnd);
+    track.addEventListener('mouseleave', touchEnd);
+
+    function touchStart(e) {
+      isDragging = true;
+      startX = getPositionX(e);
+      animationID = requestAnimationFrame(animation);
+    }
+
+    function touchMove(e) {
+      if (!isDragging) return;
+      const currentX = getPositionX(e);
+      currentTranslate = prevTranslate + (currentX - startX);
+    }
+
+    function touchEnd() {
+      isDragging = false;
+      cancelAnimationFrame(animationID);
+      const movedBy = currentTranslate - prevTranslate;
+
+      // Đổi slide nếu di chuyển lớn hơn 20% khung hình
+      if (movedBy < -track.offsetWidth * 0.2 && currentIndex < slides.length - 1) {
+        currentIndex++;
+      } else if (movedBy > track.offsetWidth * 0.2 && currentIndex > 0) {
+        currentIndex--;
+      }
+      setPositionByIndex();
+    }
+
+    function getPositionX(e) {
+      return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    }
+
+    function animation() {
+      if (isDragging) {
+        track.style.transform = `translateX(${currentTranslate}px)`;
+        requestAnimationFrame(animation);
+      }
+    }
+
+    window.addEventListener('resize', setPositionByIndex);
+    setPositionByIndex();
+
+    // ── COUNTDOWN TIMER LOGIC ──
+    function startCountdown() {
+      const now = new Date();
+      // Tính mốc 23:59:59 của ngày hôm nay để luôn có đếm ngược Flash Sale
+      const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+      let diff = Math.floor((endOfDay - now) / 1000);
+
+      function updateClock() {
+        if (diff <= 0) {
+          diff = 86400; // Reset lại 24h nếu hết giờ
+        }
+
+        const hrs = Math.floor(diff / 3600);
+        const mins = Math.floor((diff % 3600) / 60);
+        const secs = diff % 60;
+
+        document.getElementById('hour').textContent = hrs < 10 ? '0' + hrs : hrs;
+        document.getElementById('minute').textContent = mins < 10 ? '0' + mins : mins;
+        document.getElementById('second').textContent = secs < 10 ? '0' + secs : secs;
+
+        diff--;
+      }
+
+      updateClock();
+      setInterval(updateClock, 1000);
+    }
+    startCountdown();
+
+    // ── BOTTOM SHEET CONTROLLER ──
+    const btnBuyNow = document.getElementById('btnBuyNow');
+    const sheetOverlay = document.getElementById('sheetOverlay');
+    const checkoutSheet = document.getElementById('checkoutSheet');
+    const btnSheetClose = document.getElementById('btnSheetClose');
+
+    function openSheet() {
+      sheetOverlay.classList.add('show');
+      checkoutSheet.classList.add('show');
+      document.body.style.overflow = 'hidden'; // khóa cuộn màn hình nền
+    }
+
+    function closeSheet() {
+      sheetOverlay.classList.remove('show');
+      checkoutSheet.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+
+    btnBuyNow.addEventListener('click', openSheet);
+    sheetOverlay.addEventListener('click', closeSheet);
+    btnSheetClose.addEventListener('click', closeSheet);
+
+    // ── COMBO SELECT & DYNAMIC SCENTS LOGIC ──
+    const comboOptions = document.querySelectorAll('.combo-option');
+    const scentContainer = document.getElementById('scentSelectorsContainer');
+    const sheetPriceDisplay = document.getElementById('sheetPriceDisplay');
+    const sheetComboDesc = document.getElementById('sheetComboDesc');
+    let currentCombo = 1;
+    let currentPrice = 180000;
+
+    function updateScentDropdowns(comboNum) {
+      scentContainer.innerHTML = '';
+      const scentsCount = parseInt(comboNum);
+
+      for (let i = 1; i <= scentsCount; i++) {
+        const row = document.createElement('div');
+        row.className = 'scent-selector-row';
+        row.innerHTML = `
+          <label>Chai thứ ${i}:</label>
+          <select class="scent-select" required>
+            ${scents.map((s, idx) => `<option value="${s.name}" ${idx === (i - 1) % scents.length ? 'selected' : ''}>${s.name}</option>`).join('')}
+          </select>
+        `;
+        scentContainer.appendChild(row);
+      }
+    }
+
+    comboOptions.forEach(opt => {
+      opt.addEventListener('click', () => {
+        comboOptions.forEach(o => o.classList.remove('active'));
+        opt.classList.add('active');
+
+        currentCombo = parseInt(opt.dataset.combo);
+        currentPrice = parseInt(opt.dataset.price);
+
+        // Cập nhật giá và mô tả gói trên sheet header
+        sheetPriceDisplay.textContent = (currentPrice * parseInt(qtyInput.value)).toLocaleString('vi-VN') + 'đ';
+        sheetComboDesc.textContent = currentCombo === 1
+          ? "Gói: 1 chai 10ml + 1 Quả thông"
+          : currentCombo === 2
+            ? "Gói: 2 chai 10ml + 2 Quả thông + FreeShip"
+            : "Gói: 3 chai 10ml + 3 Quả thông + FreeShip";
+
+        updateScentDropdowns(currentCombo);
+      });
+    });
+
+    // Mặc định ban đầu
+    updateScentDropdowns(currentCombo);
+
+    // ── QUANTITY CONTROL ──
+    const btnQtyMinus = document.getElementById('btnQtyMinus');
+    const btnQtyPlus = document.getElementById('btnQtyPlus');
+    const qtyInput = document.getElementById('qtyInput');
+
+    btnQtyMinus.addEventListener('click', () => {
+      let qty = parseInt(qtyInput.value);
+      if (qty > 1) {
+        qty--;
+        qtyInput.value = qty;
+        sheetPriceDisplay.textContent = (currentPrice * qty).toLocaleString('vi-VN') + 'đ';
+      }
+    });
+
+    btnQtyPlus.addEventListener('click', () => {
+      let qty = parseInt(qtyInput.value);
+      qty++;
+      qtyInput.value = qty;
+      sheetPriceDisplay.textContent = (currentPrice * qty).toLocaleString('vi-VN') + 'đ';
+    });
+
+    // ── GEOGRAPHY DATA VIETNAM (TOP PROVINCES FOR NCTTX) ──
+    const locationData = {
+      "Hồ Chí Minh": {
+        "Quận 1": ["Phường Bến Nghé", "Phường Bến Thành", "Phường Phạm Ngũ Lão", "Phường Nguyễn Cư Trinh"],
+        "Quận 3": ["Phường Võ Thị Sáu", "Phường 11", "Phường 12", "Phường 14"],
+        "Quận Bình Thạnh": ["Phường 15", "Phường 17", "Phường 19", "Phường 21"],
+        "TP. Thủ Đức": ["Phường Thảo Điền", "Phường Bình An", "Phường Hiệp Bình Chánh", "Phường Linh Đông"],
+        "Quận Gò Vấp": ["Phường 1", "Phường 3", "Phường 5", "Phường 10"]
+      },
+      "Hà Nội": {
+        "Quận Hoàn Kiếm": ["Phường Hàng Bạc", "Phường Hàng Đào", "Phường Tràng Tiền", "Phường Lý Thái Tổ"],
+        "Quận Cầu Giấy": ["Phường Dịch Vọng", "Phường Yên Hòa", "Phường Mai Dịch", "Phường Quan Hoa"],
+        "Quận Đống Đa": ["Phường Láng Hạ", "Phường Láng Thượng", "Phường Ô Chợ Dừa", "Phường Cát Linh"],
+        "Quận Nam Từ Liêm": ["Phường Mỹ Đình 1", "Phường Mỹ Đình 2", "Phường Mễ Trì", "Phường Trung Văn"]
+      },
+      "Lâm Đồng": {
+        "Thành phố Đà Lạt": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Xã Tà Nung", "Xã Xuân Trường"],
+        "Thành phố Bảo Lộc": ["Phường 1", "Phường 2", "Phường B'Lao", "Phường Lộc Sơn", "Xã Lộc Châu"],
+        "Huyện Đức Trọng": ["Thị trấn Liên Nghĩa", "Xã Hiệp An", "Xã Hiệp Thạnh", "Xã Phú Hội"],
+        "Huyện Đơn Dương": ["Thị trấn Thạnh Mỹ", "Thị trấn D'Ran", "Xã Ka Đơn", "Xã Lạc Lâm"]
+      },
+      "Đà Nẵng": {
+        "Quận Hải Châu": ["Phường Thạch Thang", "Phường Hòa Thuận Đông", "Phường Hòa Thuận Tây"],
+        "Quận Thanh Khê": ["Phường An Khê", "Phường Chính Gián", "Phường Xuân Hà"],
+        "Quận Ngũ Hành Sơn": ["Phường Mỹ An", "Phường Khuê Mỹ", "Phường Hòa Hải"]
+      }
+    };
+
+    const provinceSelect = document.getElementById('provinceSelect');
+    const districtSelect = document.getElementById('districtSelect');
+    const wardSelect = document.getElementById('wardSelect');
+    const manualLocationGroup = document.getElementById('manualLocationGroup');
+    const manualDistrict = document.getElementById('manualDistrict');
+    const manualWard = document.getElementById('manualWard');
+
+    // Nạp Tỉnh/Thành
+    Object.keys(locationData).forEach(prov => {
+      provinceSelect.add(new Option(prov, prov));
+    });
+    provinceSelect.add(new Option("Tỉnh thành khác...", "OTHER"));
+
+    provinceSelect.addEventListener('change', () => {
+      const val = provinceSelect.value;
+      districtSelect.innerHTML = '<option value="">Quận/Huyện</option>';
+      wardSelect.innerHTML = '<option value="">Phường/Xã</option>';
+      
+      if (val === 'OTHER') {
+        manualLocationGroup.style.display = 'flex';
+        districtSelect.style.display = 'none';
+        wardSelect.style.display = 'none';
+        districtSelect.required = false;
+        wardSelect.required = false;
+        manualDistrict.required = true;
+        manualWard.required = true;
+      } else {
+        manualLocationGroup.style.display = 'none';
+        districtSelect.style.display = 'block';
+        wardSelect.style.display = 'block';
+        districtSelect.required = true;
+        wardSelect.required = true;
+        manualDistrict.required = false;
+        manualWard.required = false;
+
+        if (val && locationData[val]) {
+          Object.keys(locationData[val]).forEach(dist => {
+            districtSelect.add(new Option(dist, dist));
+          });
+        }
+      }
+    });
+
+    districtSelect.addEventListener('change', () => {
+      const prov = provinceSelect.value;
+      const dist = districtSelect.value;
+      wardSelect.innerHTML = '<option value="">Phường/Xã</option>';
+
+      if (prov && dist && locationData[prov] && locationData[prov][dist]) {
+        locationData[prov][dist].forEach(w => {
+          wardSelect.add(new Option(w, w));
+        });
+      }
+    });
+
+    // ── HEADING SMOOTH NAV ──
+    const navItems = document.querySelectorAll('.header-nav-item');
+    navItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        navItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        const targetId = item.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          const headerOffset = 52;
+          const elementPosition = targetSection.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: elementPosition - headerOffset,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Theo dõi cuộn trang để tự động active các tab tiêu đề
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY + 100;
+      const productSec = document.getElementById('product');
+      const detailsSec = document.getElementById('details');
+      const reviewsSec = document.getElementById('reviews');
+
+      if (reviewsSec && scrollPos >= reviewsSec.offsetTop) {
+        setActiveTab('#reviews');
+      } else if (detailsSec && scrollPos >= detailsSec.offsetTop) {
+        setActiveTab('#details');
+      } else {
+        setActiveTab('#product');
+      }
+    });
+
+    function setActiveTab(href) {
+      navItems.forEach(item => {
+        if (item.getAttribute('href') === href) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+
+    // ── SOCIAL PROOF TOAST POPUPS ──
+    const toast = document.getElementById('orderToast');
+    const toastNames = ["Trần Thị M.", "Lê Hoàng N.", "Phạm Minh H.", "Nguyễn Bích T.", "Đỗ Văn P.", "Vũ Thu H."];
+    const toastPhones = ["098****321", "090****889", "097****445", "036****127", "091****991", "096****560"];
+    const toastCombos = ["Combo 1: Mua 1 lọ + trứng thông", "Combo 2: Mua 2 lọ + 2 trứng thông (freeship)", "Combo 3: Mua 3 lọ + 3 trứng thông (freeship)"];
+    const toastAvatars = ["🌾", "🍃", "🍊", "🏵️", "🌲", "🍃"];
+
+    function showRandomToast() {
+      const randName = toastNames[Math.floor(Math.random() * toastNames.length)];
+      const randPhone = toastPhones[Math.floor(Math.random() * toastPhones.length)];
+      const randCombo = toastCombos[Math.floor(Math.random() * toastCombos.length)];
+      const randAvatar = toastAvatars[Math.floor(Math.random() * toastAvatars.length)];
+      const randSec = Math.floor(Math.random() * 45) + 5;
+
+      toast.querySelector('.toast-avatar').textContent = randAvatar;
+      toast.querySelector('.toast-body').innerHTML = `Khách hàng <strong>${randName}</strong> (${randPhone})<br>vừa đặt <strong>${randCombo}</strong>`;
+      toast.querySelector('.toast-time').textContent = `${randSec}s trước`;
+
+      toast.classList.add('show');
+
+      // Tắt sau 5 giây
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 5000);
+    }
+
+    // Hiển thị thông báo đầu tiên sau 7s, sau đó lặp lại mỗi 17s
+    setTimeout(() => {
+      showRandomToast();
+      setInterval(showRandomToast, 17000);
+    }, 7000);
+
+    // ── SUBMIT ORDER TO GOOGLE SHEET ──
+    const btnSubmitOrder = document.getElementById('btnSubmitOrder');
+    const thanksDialog = document.getElementById('thanksDialog');
+    const btnDialogClose = document.getElementById('btnDialogClose');
+
+    btnSubmitOrder.addEventListener('click', (e) => {
+      const form = document.getElementById('orderForm');
+      
+      // Kiểm tra tính hợp lệ của Form đặt hàng
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      // Vô hiệu hóa nút để tránh nhấn nhiều lần
+      btnSubmitOrder.disabled = true;
+      btnSubmitOrder.querySelector('span').textContent = 'ĐANG XỬ LÝ...';
+
+      // Gom mùi hương đã chọn
+      const scentSelects = document.querySelectorAll('.scent-select');
+      const chosenScents = Array.from(scentSelects).map(select => select.value).join(', ');
+
+      const name = document.getElementById('customerName').value.trim();
+      const phone = document.getElementById('customerPhone').value.trim();
+      const address = document.getElementById('customerAddress').value.trim();
+      const note = document.getElementById('orderNote').value.trim();
+      const qty = parseInt(qtyInput.value);
+      
+      // Lấy thông tin vị trí
+      let province = provinceSelect.value;
+      let district = "";
+      let ward = "";
+
+      if (province === 'OTHER') {
+        province = "Tỉnh thành khác";
+        district = manualDistrict.value.trim();
+        ward = manualWard.value.trim();
+      } else {
+        district = districtSelect.value;
+        ward = wardSelect.value;
+      }
+
+      const comboText = currentCombo === 1 
+        ? "Combo 1: Mua 1 lọ 10ml" 
+        : currentCombo === 2 
+          ? "Combo 2: Mua 2 lọ 10ml" 
+          : "Combo 3: Mua 3 lọ 10ml";
+
+      const totalFormatted = (currentPrice * qty).toLocaleString('vi-VN') + 'đ';
+
+      const payload = {
+        name: name,
+        phone: phone,
+        combo: comboText,
+        scents: chosenScents,
+        quantity: qty,
+        totalPrice: totalFormatted,
+        province: province,
+        district: district,
+        ward: ward,
+        address: address,
+        note: note
+      };
+
+      // Gửi Ajax lên Google Sheets (no-cors để vượt CORS của Apps Script)
+      fetch(GOOGLE_SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'text/plain'
+        },
+        body: JSON.stringify(payload)
+      })
+      .then(response => {
+        // Vì dùng no-cors, response trả về sẽ có type: "opaque", không thể đọc được nội dung body JSON.
+        // Nhưng nếu request thành công (không lọt vào catch), ta mặc định dữ liệu đã được đẩy lên sheet.
+        btnSubmitOrder.disabled = false;
+        btnSubmitOrder.querySelector('span').textContent = 'XÁC NHẬN ĐẶT HÀNG';
+        
+        // Reset form & Close Bottom sheet
+        form.reset();
+        closeSheet();
+        
+        // Hiện thông báo thành công
+        thanksDialog.classList.add('show');
+      })
+      .catch(error => {
+        console.error('Lỗi khi đặt hàng:', error);
+        alert('Đặt hàng gặp sự cố đường truyền, vui lòng thử lại hoặc nhắn tin Zalo cho chúng mình hỗ trợ!');
+        btnSubmitOrder.disabled = false;
+        btnSubmitOrder.querySelector('span').textContent = 'XÁC NHẬN ĐẶT HÀNG';
+      });
+    });
+
+    btnDialogClose.addEventListener('click', () => {
+      thanksDialog.classList.remove('show');
+    });
+
+  </script>
+</body>
+</html>

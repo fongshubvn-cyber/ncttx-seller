@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LMKB8H0EGP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LMKB8H0EGP');
+</script>
+<title>Sứ Mệnh Dự Án — Nhà Của Thời Thanh Xuân</title>
+<meta name="description" content="Khám phá sứ mệnh và câu chuyện lịch sử 10 năm của Nhà Của Thời Thanh Xuân. Nơi nâng đỡ các bạn Điếc tự lập, giữ gìn thiên nhiên Đà Lạt và bảo tồn giá trị lao động chân chính.">
+<meta property="og:title" content="Sứ Mệnh Dự Án — Nhà Của Thời Thanh Xuân">
+<meta property="og:description" content="Hành trình 10 năm của những đôi tay khiếm thính kiên cường, giữ gìn rừng xanh và khẳng định phẩm giá lao động.">
+<meta property="og:image" content="assets/img-workshop-story.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/logo TTX-01.png">
+<link rel="apple-touch-icon" href="assets/logo TTX-01.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F8F3EB;--bg-warm:#F0E9DD;--bg-aged:#E8DFD0;
+  --off-white:#FEFCF8;--text:#251C0E;--text-muted:#7A6852;
+  --gold:#B87A28;--gold-light:#C9963A;--gold-pale:#F5EDD8;
+  --border:#D8CCBA;--cream:#FEFAE0;
+  --forest:#2B5240;--forest-mid:#3D7060;--forest-dark:#1A3428;
+  --white:#FFFFFF;
+}
+html{scroll-behavior:smooth}
+
+/* ── TYPOGRAPHY SYSTEM ── */
+h1,h2,h3,h4,h5,h6{
+  font-family:'Montserrat','Be Vietnam Pro',sans-serif;
+  font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-style:normal;
+}
+.section-label,
+.hero-tag,.hero-eyebrow,
+.contact-label{
+  font-family:'Montserrat',sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+body{font-family:'Space Mono',monospace;background:#CFC5B4;color:var(--text);line-height:1.8;overflow-x:hidden;letter-spacing:-0.07em;font-size:.95rem;text-shadow:0 0 0.5px currentColor;-webkit-font-smoothing:antialiased}
+
+/* ── BOXED LAYOUT ── */
+.page-wrap{
+  max-width:1660px;margin:0 auto;
+  background:var(--bg);
+  position:relative;
+  box-shadow:0 0 0 1px rgba(37,28,14,.06),0 8px 60px rgba(37,28,14,.14);
+  min-height:100vh;
+}
+nav,
+.sticky-bar{
+  right:auto !important;
+  left:50% !important;
+  transform:translateX(-50%) !important;
+  width:100% !important;
+  max-width:1660px !important;
+}
+@media(min-width:1660px){
+  .floating-zalo{right:calc((100vw - 1660px)/2 + 18px)}
+  .floating-messenger{right:calc((100vw - 1660px)/2 + 18px)}
+}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:center;position:relative;padding:0 52px;height:92px;background:rgba(248,243,235,0.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(184,122,40,.18);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 28px rgba(37,28,14,.1)}
+.nav-brand{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.nav-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;flex-shrink:0}
+.nav-right{display:flex;align-items:center;gap:10px;margin-left:auto;flex-shrink:0}
+.nav-center a{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border-radius:4px;transition:all .2s;white-space:nowrap}
+.nav-center a:hover{color:var(--gold);background:rgba(184,122,40,.07)}
+.nav-center a.nav-active{color:var(--gold);background:rgba(184,122,40,.1)}
+.nav-sep{color:var(--border);font-size:.65rem;user-select:none;padding:0 2px}
+.nav-zalo{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid rgba(184,122,40,.25);padding:8px 14px;border-radius:4px;transition:all .2s;white-space:nowrap}
+.nav-zalo:hover{background:rgba(184,122,40,.06);color:var(--gold);border-color:rgba(184,122,40,.45)}
+.nav-cta{background:var(--gold);color:var(--text);padding:10px 22px;border-radius:4px;font-family:'Montserrat',sans-serif;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:all .2s;white-space:nowrap}
+.nav-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
+
+/* ── HAMBURGER MENU ── */
+.nav-hamburger{
+  display:none;
+  flex-direction:column;justify-content:center;gap:5px;
+  width:40px;height:40px;background:none;border:none;
+  cursor:pointer;padding:6px;margin-left:auto;flex-shrink:0;
+}
+.nav-hamburger span{
+  display:block;width:22px;height:2px;
+  background:var(--text);border-radius:2px;
+  transition:all .3s ease;transform-origin:center;
+}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.mobile-menu{
+  position:fixed;top:92px;left:50%;transform:translateX(-50%);
+  width:100%;max-width:1660px;z-index:290;
+  background:rgba(248,243,235,0.98);backdrop-filter:blur(16px);
+  border-bottom:2px solid rgba(184,122,40,.2);
+  box-shadow:0 8px 32px rgba(37,28,14,.12);
+  display:none;max-height:0;overflow:hidden;padding:0;
+  transition:max-height .35s cubic-bezier(.4,0,.2,1),padding .35s ease;
+}
+.mobile-menu.open{display:block;max-height:450px;padding:20px 24px 28px}
+.mobile-menu-links{display:flex;flex-direction:column;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--border);padding-bottom:16px}
+.mobile-menu-links a{color:var(--text-muted);text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 14px;border-radius:4px;transition:all .2s;display:block}
+.mobile-menu-links a:hover{color:var(--gold);background:rgba(184,122,40,.07)}
+.mobile-menu-links a.nav-active{color:var(--gold);background:rgba(184,122,40,.1)}
+.mobile-menu-actions{display:flex;gap:10px;flex-wrap:wrap}
+.mobile-menu-actions a{flex:1;min-width:120px;text-align:center;justify-content:center}
+.mobile-menu-overlay{display:none;position:fixed;inset:0;z-index:280;background:rgba(37,28,14,.2)}
+.mobile-menu-overlay.open{display:block}
+
+@media(max-width:900px){
+  .nav-center{display:none}.nav-hamburger{display:flex}
+  .nav-right .nav-zalo{display:none}.nav-right .nav-cta{display:none}
+}
+@media(max-width:600px){.mobile-menu{top:60px}.mobile-menu-links a{font-size:.68rem;padding:11px 12px}}
+
+/* ── HERO ── */
+.hero{
+  height:75vh;min-height:480px;max-height:800px;
+  position:relative;overflow:hidden;
+  background:#251C0E;
+  display:flex;align-items:flex-end;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  width:100%;height:100%;object-fit:cover;object-position:center 40%;
+  display:block;
+  transform:scale(1.04);transition:transform 8s ease;
+}
+.hero:hover .hero-bg{transform:scale(1)}
+.hero::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(37,28,14,.96) 0%,
+    rgba(37,28,14,.72) 35%,
+    rgba(37,28,14,.28) 70%,
+    rgba(0,0,0,.04) 100%
+  );
+}
+.hero-content{
+  position:relative;z-index:2;
+  padding:80px 72px 88px;
+  max-width:850px;
+}
+.hero-tag{
+  font-family:'Montserrat',sans-serif;
+  font-size:.6rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  color:rgba(184,122,40,.85);
+  display:flex;align-items:center;gap:14px;margin-bottom:18px;
+}
+.hero-tag::before{content:'';width:36px;height:1px;background:rgba(184,122,40,.5);flex-shrink:0}
+.hero h1{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(2rem,4vw,4.2rem);
+  color:var(--cream);line-height:1.15;
+  font-weight:800;font-style:normal;
+  letter-spacing:.05em;text-transform:uppercase;
+  margin-bottom:18px;
+}
+.hero h1 em{color:var(--gold-light);font-style:normal}
+.hero-sub{
+  font-family:'Space Mono',monospace;
+  color:rgba(253,251,247,.7);font-size:.9rem;
+  line-height:1.8;letter-spacing:-0.07em;
+  max-width:580px;
+}
+
+/* ── MISSION INTRO QUOTE ── */
+.quote-banner{
+  background:var(--bg-aged);
+  border-bottom:3px solid rgba(184,122,40,.3);
+  padding:48px 24px;
+  text-align:center;
+}
+.quote-text{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(1.1rem, 2vw, 1.6rem);
+  font-style:italic;
+  color:var(--forest);
+  max-width:900px;
+  margin:0 auto;
+  line-height:1.6;
+}
+.quote-author{
+  font-size:.78rem;
+  color:var(--text-muted);
+  margin-top:14px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+/* ── SECTIONS COMMON ── */
+.section{padding:80px 48px}
+.container{max-width:1200px;margin:0 auto}
+.section-label{
+  font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:10px;
+  display:flex;align-items:center;gap:10px;
+}
+.section-label::before{content:'——';letter-spacing:-.1em;color:rgba(184,122,40,.4)}
+.section-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(1.6rem,2.8vw,2.4rem);
+  color:var(--text);line-height:1.2;margin-bottom:20px;
+}
+.section-title em{color:var(--gold);font-style:normal}
+
+/* ── STORYTELLING GRID ── */
+.story-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:64px;align-items:center;margin-bottom:80px;
+}
+.story-grid.reverse{
+  direction:rtl;
+}
+.story-grid.reverse > * {
+  direction:ltr;
+}
+.story-img{
+  width:100%;aspect-ratio:4/3;
+  object-fit:cover;border-radius:20px;
+  box-shadow:0 12px 40px rgba(37,28,14,.12);
+}
+.story-desc{font-size:.92rem;color:var(--text-muted);line-height:1.8;margin-bottom:20px}
+.story-desc p {margin-bottom:16px}
+.story-desc p:last-child {margin-bottom:0}
+.story-desc strong {color:var(--text);font-weight:700}
+
+/* ── CORE VALUES BLOCK ── */
+.core-values{
+  background:var(--bg-warm);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.values-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+  margin-top:40px;
+}
+.value-card{
+  background:var(--off-white);
+  border:1.5px solid var(--border);
+  border-radius:18px;
+  padding:32px 28px;
+  transition:all .25s ease;
+  box-shadow:0 4px 12px rgba(37,28,14,.03);
+}
+.value-card:hover{
+  border-color:rgba(184,122,40,.35);
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(37,28,14,.07);
+}
+.value-icon{
+  font-size:2rem;
+  margin-bottom:16px;
+  display:inline-block;
+}
+.value-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:.95rem;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:12px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+.value-text{
+  font-size:.84rem;
+  color:var(--text-muted);
+  line-height:1.65;
+}
+
+/* ── CHRONOLOGY SECTION ── */
+.timeline-section{
+  background:var(--off-white);
+}
+.timeline{
+  position:relative;
+  max-width:850px;
+  margin:48px auto 0;
+  padding-left:32px;
+  border-left:2px solid var(--border);
+}
+.timeline-item{
+  position:relative;
+  margin-bottom:48px;
+}
+.timeline-item:last-child{
+  margin-bottom:0;
+}
+.timeline-marker{
+  position:absolute;
+  left:-41px;
+  top:4px;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:var(--gold);
+  border:3px solid var(--off-white);
+  box-shadow:0 0 0 2px var(--gold);
+}
+.timeline-year{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.3rem;
+  font-weight:800;
+  color:var(--gold);
+  line-height:1;
+  margin-bottom:8px;
+}
+.timeline-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:.95rem;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:8px;
+  text-transform:uppercase;
+}
+.timeline-desc{
+  font-size:.86rem;
+  color:var(--text-muted);
+  line-height:1.7;
+}
+
+/* ── STATEMENT SECTION (DARK BANNER) ── */
+.statement-banner{
+  background:#2C1E0E;
+  padding:80px 48px;
+  color:var(--cream);
+  text-align:center;
+}
+.statement-inner{
+  max-width:760px;
+  margin:0 auto;
+}
+.statement-title{
+  color:var(--gold-light);
+  font-family:'Montserrat',sans-serif;
+  font-size:1.6rem;
+  margin-bottom:20px;
+}
+.statement-desc{
+  color:rgba(253,251,247,.7);
+  font-size:.92rem;
+  line-height:1.85;
+  margin-bottom:32px;
+}
+.btn-primary{
+  background:var(--gold-light);color:var(--text);
+  padding:14px 32px;border-radius:4px;text-decoration:none;
+  font-family:'Montserrat',sans-serif;
+  font-weight:700;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+  transition:all .22s;display:inline-flex;align-items:center;gap:8px;
+  position:relative;overflow:hidden;white-space:nowrap;
+}
+.btn-primary:hover{background:var(--gold);color:var(--off-white);transform:translateY(-1px);box-shadow:0 6px 20px rgba(184,122,40,.35)}
+
+/* ── CONTACT SECTION ── */
+.contact{
+  background:#2C1E0E;
+  padding:56px 48px;text-align:center;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+.contact-label{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(184,122,40,.65);margin-bottom:10px}
+.contact-title{
+  font-family:'Montserrat',sans-serif;
+  font-size:clamp(1.8rem,3vw,2.4rem);
+  color:var(--cream);margin-bottom:12px;font-style:italic;
+}
+.contact-sub{color:rgba(253,251,247,.6);font-size:.9rem;margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto}
+.contact-actions{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.contact-phone{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.08);
+  border:1.5px solid rgba(255,255,255,.2);
+  color:var(--cream);padding:12px 24px;border-radius:100px;
+  font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s;
+}
+.contact-phone:hover{background:rgba(255,255,255,.14)}
+.contact-zalo{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#0068FF;color:#fff;
+  padding:12px 24px;border-radius:100px;
+  font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s;
+}
+.contact-zalo:hover{background:#0055CC;transform:translateY(-1px)}
+
+/* ── FOOTER ── */
+footer {
+  background:#1A130A;
+  padding:48px 48px 24px;
+  border-top:1px solid rgba(184,122,40,.1);
+}
+.footer-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;flex-wrap:wrap;
+}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{color:rgba(253,251,247,.5);text-decoration:none;font-size:.8rem;transition:color .2s}
+.footer-links a:hover{color:var(--gold-light)}
+.footer-copy{color:rgba(253,251,247,.3);font-size:.75rem}
+
+/* ── FLOATING BUTTONS ── */
+.floating-zalo{
+  position:fixed;bottom:88px;right:18px;z-index:450;
+  width:50px;height:50px;border-radius:50%;
+  background:#0068FF;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 18px rgba(0,104,255,.38);
+  text-decoration:none;transition:transform .2s,box-shadow .2s;
+}
+.floating-zalo:hover{transform:scale(1.08);box-shadow:0 6px 26px rgba(0,104,255,.5)}
+.floating-zalo-pulse{
+  position:absolute;inset:0;border-radius:50%;
+  background:rgba(0,104,255,.22);
+  animation:zpulse 2.2s ease-out infinite;
+}
+@keyframes zpulse{
+  0%{transform:scale(1);opacity:.8}
+  100%{transform:scale(2.1);opacity:0}
+}
+.floating-messenger{
+  position:fixed;bottom:148px;right:18px;z-index:450;
+  width:50px;height:50px;border-radius:50%;
+  background:linear-gradient(135deg,#0099FF 0%,#A033FF 100%);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 18px rgba(160,51,255,.35);
+  text-decoration:none;transition:transform .2s,box-shadow .2s;
+}
+.floating-messenger:hover{transform:scale(1.08);box-shadow:0 6px 26px rgba(160,51,255,.5)}
+
+@media(max-width:600px){
+  .floating-messenger{bottom:170px;right:14px;width:46px;height:46px}
+  .floating-zalo{bottom:116px;right:14px !important;width:46px;height:46px}
+}
+
+/* ── ANIMATIONS ── */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
+.fade-up.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .hero-content{padding:88px 24px 56px}
+  .section{padding:56px 24px}
+  .story-grid{grid-template-columns:1fr;gap:36px}
+  .story-grid.reverse{direction:ltr}
+  .values-grid{grid-template-columns:1fr;gap:20px}
+  .contact{padding:48px 24px}
+}
+@media(max-width:600px){
+  nav{height:60px;padding:0 16px}
+  .mobile-menu{top:60px}
+  .hero-content{padding:80px 20px 48px}
+  .hero h1{font-size:2.2rem}
+  .timeline{padding-left:24px}
+  .timeline-marker{left:-33px;width:14px;height:14px}
+  .contact-actions{flex-direction:column;align-items:stretch}
+  .contact-phone,.contact-zalo{text-align:center;justify-content:center}
+  .footer-inner{flex-direction:column;gap:16px}
+}
+@media(max-width:375px){
+  nav{padding:0 12px}
+  .hero-content{padding:72px 16px 40px}
+  .section{padding:44px 16px}
+}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="tinh-dau.html" class="nav-brand">
+    <img src="assets/logo TTX-01.png" alt="Nhà Của Thời Thanh Xuân" style="height:80px;width:auto;object-fit:contain;mix-blend-mode:multiply;">
+  </a>
+  <div class="nav-center">
+    <a href="tinh-dau.html">Sản Phẩm</a>
+    <span class="nav-sep">·</span>
+    <a href="tinh-dau-1ml.html">Tinh Dầu 1ml</a>
+    <span class="nav-sep">·</span>
+    <a href="workshop.html">Workshop</a>
+    <span class="nav-sep">·</span>
+    <a href="elixir-da-lat-ben-hien-nha.html">Elixir 50ml</a>
+    <span class="nav-sep">·</span>
+    <a href="su-menh.html" class="nav-active">Sứ Mệnh</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:0946816647" class="nav-zalo">📞 0946 816 647</a>
+    <a href="https://zalo.me/+84946816647" target="_blank" class="nav-cta">Liên hệ Zalo →</a>
+    <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-links">
+    <a href="tinh-dau.html">Sản Phẩm</a>
+    <a href="tinh-dau-1ml.html">Tinh Dầu 1ml</a>
+    <a href="workshop.html">Workshop</a>
+    <a href="elixir-da-lat-ben-hien-nha.html">Elixir 50ml</a>
+    <a href="su-menh.html" class="nav-active">Sứ Mệnh</a>
+  </div>
+  <div class="mobile-menu-actions">
+    <a href="tel:0946816647" class="nav-zalo">📞 0946 816 647</a>
+    <a href="https://zalo.me/+84946816647" target="_blank" class="nav-cta">Liên hệ Zalo →</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="assets/img-workshop-story.png" alt="Nhà Của Thời Thanh Xuân câu chuyện sứ mệnh" class="hero-bg">
+  <div class="hero-content fade-up">
+    <div class="hero-tag">Câu Chuyện & Sứ Mệnh</div>
+    <h1>Nhà Của<br><em>Thời Thanh Xuân</em></h1>
+    <p class="hero-sub">Hành trình 10 năm của những đôi tay khiếm thính kiên cường, giữ gìn màu xanh của đất rừng Đà Lạt và khẳng định giá trị lao động chân chính.</p>
+  </div>
+</section>
+
+<!-- QUOTE BANNER -->
+<div class="quote-banner">
+  <div class="quote-text">"Khi không có âm thanh, yêu thương trở thành ngôn ngữ."</div>
+  <div class="quote-author">— Trích câu chuyện Nhà Của Thời Thanh Xuân</div>
+</div>
+
+<!-- SECTION 1: KHI GIÓ CUỐN ĐI -->
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="story-grid">
+      <div>
+        <div class="section-label">01. Khởi nguồn từ bão táp</div>
+        <h2 class="section-title">Khi gió cuốn đi mọi điều<br><em>tưởng là chắc chắn</em></h2>
+        <div class="story-desc">
+          <p>Năm 2013, khi đang du học ngành Tâm lý học tại Philippines, <strong>Võ Thành Luân</strong> – chàng trai sinh năm 1987 – bất ngờ đối diện với siêu bão Haiyan tàn khốc. Cơn bão ấy đã cuốn đi nhà cửa và cướp đi sinh mạng người thân của bao đứa trẻ.</p>
+          <p>Giữa biển nước đổ nát, nhìn ánh mắt trống rỗng của những đứa trẻ mồ côi, Luân nhận ra rằng có những nỗi đau không thể đong đếm bằng tiền, và có những cuộc đời cần nâng đỡ hơn là thương hại. Anh quyết định trở về Việt Nam, chọn <strong>Đà Lạt</strong> – vùng đất bình yên và đầy tình người – để bắt đầu hành trình mới.</p>
+        </div>
+      </div>
+      <img src="assets/1ml-lifestyle-cam-tay.png" alt="Khởi đầu hành trình tại Đà Lạt" class="story-img fade-up d1">
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: BÁNH XÀ PHÒNG & PHẨM GIÁ LAO ĐỘNG -->
+<section class="section" style="background:var(--bg-warm)">
+  <div class="container">
+    <div class="story-grid reverse">
+      <div>
+        <div class="section-label">02. Bánh xà phòng tử tế</div>
+        <h2 class="section-title">Nhà ra đời từ những điều<br><em>nghèo nhưng tử tế</em></h2>
+        <div class="story-desc">
+          <p>Những ngày đầu (2013–2014), hành trang của Luân chỉ có duy nhất nghề nấu xà phòng thủ công do bố dượng truyền lại, một chiếc nồi cũ và chú chó Múp nhỏ xíu. Tối tối, anh lặng lẽ nấu từng mẻ xà phòng; sáng sớm lại đạp xe chở Múp đi khắp các con dốc Đà Lạt bán hàng để duy trì căn nhà chung của người Nói và người Điếc.</p>
+          <p>Anh chủ động giữ <strong>kích thước bánh xà phòng nhỏ</strong> – size nhỏ ấy vẫn được giữ đến ngày hôm nay. Bởi mỗi bánh xà phòng nhỏ sẽ cần nhiều công đoạn làm tay hơn: cắt, gói giấy, buộc dây, dán nhãn. Càng chia nhỏ, Nhà càng có cơ hội nhận thêm nhiều bạn Điếc vào làm, giúp các em có thêm việc làm, kỹ năng và quan trọng nhất là cảm giác mình hữu ích.</p>
+        </div>
+      </div>
+      <img src="assets/img-soap-collection.jpg" alt="Những bánh xà phòng làm thủ công bởi các bạn Điếc" class="story-img fade-up d1">
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="section core-values">
+  <div class="container">
+    <div class="section-label" style="justify-content: center;">Giá Trị Cốt Lõi</div>
+    <h2 class="section-title" style="text-align: center;">Ba trụ cột hành trình của <em>Nhà</em></h2>
+    <div class="values-grid">
+      <div class="value-card fade-up d1">
+        <span class="value-icon">🤟</span>
+        <h3 class="value-title">Phẩm giá lao động</h3>
+        <p class="value-text">Không nuôi dưỡng sự phụ thuộc, không xây dựng trên sự thương hại. Các bạn Điếc tự làm việc, tự kiếm sống và tự hào về thành quả từ đôi tay của chính mình.</p>
+      </div>
+      <div class="value-card fade-up d2">
+        <span class="value-icon">🌿</span>
+        <h3 class="value-title">Bảo tồn thiên nhiên</h3>
+        <p class="value-text">Trân trọng thiên nhiên như một người bạn cũ. Chọn trồng Sả Java phủ xanh đồi trọc, kiên quyết bảo vệ hệ sinh thái rừng thông cổ bản địa Đà Lạt.</p>
+      </div>
+      <div class="value-card fade-up d3">
+        <span class="value-icon">🏡</span>
+        <h3 class="value-title">Một ngôi nhà ấm áp</h3>
+        <p class="value-text">Nơi người Nói và người Điếc sống chung dưới một mái nhà, cùng chia sẻ thức ăn, công việc, niềm vui và cùng nhau lớn lên chậm rãi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: CHƯNG CẤT TINH DẦU & BẢO VỆ ĐẤT RỪNG -->
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="story-grid">
+      <div>
+        <div class="section-label">03. Khi đất hồi sinh</div>
+        <h2 class="section-title">Hương bắt đầu lên tiếng &<br><em>mẻ dầu đầu tiên</em></h2>
+        <div class="story-desc">
+          <p>Năm 2017, dưới sự hướng dẫn của <strong>thầy Lê Quế</strong> – một bậc tiền bối lão luyện trong làng tinh dầu Việt Nam mà các bạn gọi là "Bố" – lò chưng cất đầu tiên đã rền vang. Mẻ dầu sả đầu tiên chảy ra chỉ được 60ml, nằm gọn trong lòng bàn tay nhưng thắp lên một niềm tin mãnh liệt.</p>
+          <p>Để tự chủ nguồn nguyên liệu và bảo vệ môi trường, Nhà mang sả Java về trồng phủ xanh các vùng đất xói mòn trơ trọi quanh nông trại, biến chúng thành những mảng rừng nhỏ. Nhà kiên quyết không khai thác gỗ thông tươi bừa bãi làm tinh dầu nhằm bảo tồn tài nguyên, chấp nhận sản xuất sả Java ổn định hơn để bảo vệ sinh thái Đà Lạt.</p>
+        </div>
+      </div>
+      <img src="assets/img-distillation-process.png" alt="Quá trình chưng cất tinh dầu thiên nhiên" class="story-img fade-up d1">
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: TỪ CÀ PHÊ ĐẾN TỰ LẬP TÀI CHÍNH -->
+<section class="section" style="background:var(--bg-warm)">
+  <div class="container">
+    <div class="story-grid reverse">
+      <div>
+        <div class="section-label">04. Phẩm giá độc lập</div>
+        <h2 class="section-title">Từ chiếc cốc tùy tâm đến<br><em>sự tự lập của các bạn Điếc</em></h2>
+        <div class="story-desc">
+          <p>Để tạo cơ hội phát triển nghề nghiệp lâu dài cho các em, Nhà chuyển đổi mô hình từ quán trà sang quán cà phê và học thêm nghề làm bánh (cookie muối, cookie ngũ cốc). Nhà đầu tư máy pha cà phê chuyên nghiệp, kiên trì cả năm trời cầm tay chỉ việc cho các em.</p>
+          <p>Quyết định dũng cảm nhất là <strong>xóa bỏ thùng tiền tùy tâm</strong> để tránh sự hiểu lầm về "quyên góp từ thiện" hay "thương hại". Các bạn Điếc trở thành nhân viên thực thụ, có lương ổn định và khoản tiết kiệm đàng hoàng. Các em tự mua điện thoại, đóng học phí các lớp học mong ước, tự tin đứng vững trên đôi chân của mình.</p>
+        </div>
+      </div>
+      <img src="assets/img-b2b-spa-ambiance.png" alt="Không gian sống lành và chuyên nghiệp tại quán" class="story-img fade-up d1">
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE OF 10 YEARS -->
+<section class="section timeline-section">
+  <div class="container">
+    <div class="section-label" style="justify-content: center;">Hành Trình Thời Gian</div>
+    <h2 class="section-title" style="text-align: center;">Mốc Lịch Sử <em>10 Năm</em> Qua</h2>
+    <div class="timeline">
+      <div class="timeline-item fade-up d1">
+        <div class="timeline-marker"></div>
+        <div class="timeline-year">2013 - 2014</div>
+        <h3 class="timeline-title">Bão táp và Khởi đầu</h3>
+        <p class="timeline-desc">Võ Thành Luân trở về từ siêu bão Haiyan. Dựng căn nhà gỗ nhỏ, nấu xà phòng thủ công dạo quanh Đà Lạt nuôi dưỡng những bạn khiếm thính đầu tiên.</p>
+      </div>
+      <div class="timeline-item fade-up d2">
+        <div class="timeline-marker"></div>
+        <div class="timeline-year">2017</div>
+        <h3 class="timeline-title">Mẻ tinh dầu 60ml đầu tiên</h3>
+        <p class="timeline-desc">Cùng Bố Lê Quế chưng cất thành công mẻ tinh dầu sả Java đầu tiên. Trồng sả cải tạo đất xói mòn, bảo tồn thiên nhiên xung quanh trang trại.</p>
+      </div>
+      <div class="timeline-item fade-up d3">
+        <div class="timeline-marker"></div>
+        <div class="timeline-year">2019</div>
+        <h3 class="timeline-title">Cà Phê Chuyên Nghiệp & Xóa Bỏ tùy tâm</h3>
+        <p class="timeline-desc">Mở quán cà phê và tiệm bánh tại Triệu Việt Vương. Bỏ thùng tiền tùy tâm để tôn vinh lao động của các bạn Điếc, nâng cao mức lương và giúp các em tự lập tài chính.</p>
+      </div>
+      <div class="timeline-item fade-up d1">
+        <div class="timeline-marker"></div>
+        <div class="timeline-year">2020 - 2023</div>
+        <h3 class="timeline-title">Vượt qua dịch bệnh & Tập trung cốt lõi</h3>
+        <p class="timeline-desc">Khép lại các chi nhánh TP.HCM, Hội An sau dịch. Tập trung toàn lực tối ưu hóa không gian số 9 Triệu Việt Vương, chuyên nghiệp hóa các sản phẩm tinh dầu chuẩn chỉnh, có giấy kiểm nghiệm đầy đủ.</p>
+      </div>
+      <div class="timeline-item fade-up d2">
+        <div class="timeline-marker"></div>
+        <div class="timeline-year">2023 - 2025</div>
+        <h3 class="timeline-title">Lan tỏa thương hiệu Việt</h3>
+        <p class="timeline-desc">Mang hương thơm của rừng núi Đà Lạt đến khắp Việt Nam thông qua các kênh e-commerce. Bức tường note đầy ắp kỷ niệm của hàng vạn du khách trở thành linh hồn của Nhà.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATEMENT BANNER -->
+<section class="statement-banner">
+  <div class="statement-inner fade-up">
+    <h2 class="statement-title">"Mong muốn cuối cùng là trao đến các em một cuộc đời yên bình, tự do, hạnh phúc."</h2>
+    <p class="statement-desc">Hành trình 10 năm không phẳng phiu, có những lúc phải đổ bỏ hàng nghìn bánh xà phòng quá hạn, phải đối mặt với thử thách đóng cửa chi nhánh sau dịch. Nhưng thành quả lớn nhất của Nhà là sự tự tin đứng quầy, pha những ly Latte đẹp mắt, làm những khay cookie thơm giòn và sống một cuộc đời có phẩm giá của các bạn khiếm thính.</p>
+    <a href="tinh-dau.html" class="btn-primary">Ủng hộ sản phẩm thảo mộc →</a>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+  <div class="container">
+    <div class="contact-label">Kết nối với chúng mình</div>
+    <h2 class="contact-title">Chỉ mong một đời bình yên</h2>
+    <p class="contact-sub">Hãy ghé chơi số 9 Triệu Việt Vương để ngửi hương tinh dầu vừa chưng cất, dạo quanh gốc thông cổ thụ bản địa và nhấp ly cà phê được pha chế từ trái tim.</p>
+    <div class="contact-actions">
+      <a href="tel:0946816647" class="contact-phone">📞 0946 816 647</a>
+      <a href="https://zalo.me/+84946816647" target="_blank" class="contact-zalo">Liên hệ qua Zalo</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="tinh-dau.html">Sản Phẩm</a>
+      <a href="tinh-dau-1ml.html">Tinh Dầu 1ml</a>
+      <a href="workshop.html">Workshop</a>
+      <a href="elixir-da-lat-ben-hien-nha.html">Elixir 50ml</a>
+      <a href="su-menh.html">Sứ Mệnh</a>
+    </div>
+    <div class="footer-copy">© 2026 NHÀ CỦA THỜI THANH XUÂN. ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<!-- FLOATING MESSENGER -->
+<a href="https://m.me/418293931859105" target="_blank" class="floating-messenger" aria-label="Nhắn Facebook Messenger">
+  <img src="assets/icon/Facebook_Messenger_logo_2025.png" alt="Messenger" style="width:28px;height:28px;object-fit:contain">
+</a>
+
+<!-- FLOATING ZALO -->
+<a href="https://zalo.me/+84946816647" target="_blank" class="floating-zalo" aria-label="Nhắn Zalo tư vấn">
+  <div class="floating-zalo-pulse"></div>
+  <img src="assets/icon/Icon_of_Zalo.svg.png" alt="Zalo" style="width:30px;height:30px;object-fit:contain">
+</a>
+
+</div><!-- /.page-wrap -->
+
+<script>
+// ── FADE-UP OBSERVER ──
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') });
+}, { threshold:0.08, rootMargin:'0px 0px -32px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+// ── NAV SCROLL ──
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+
+// ── HAMBURGER MENU ──
+(function(){
+  const btn=document.getElementById('hamburgerBtn');
+  const menu=document.getElementById('mobileMenu');
+  const overlay=document.getElementById('mobileOverlay');
+  if(!btn||!menu) return;
+  function toggle(open){btn.classList.toggle('open',open);menu.classList.toggle('open',open);overlay.classList.toggle('open',open);document.body.style.overflow=open?'hidden':'';}
+  btn.addEventListener('click',()=>toggle(!menu.classList.contains('open')));
+  overlay.addEventListener('click',()=>toggle(false));
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggle(false)));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<svg viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grain" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.9" fill="#C9A84C" opacity="0.12"/>
+    </pattern>
+    <linearGradient id="woodGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6914" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#5C3D10" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="100%" stop-color="#BC8A5A"/>
+    </linearGradient>
+    <linearGradient id="bottleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5C9E7A" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#C9A84C" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#5C9E7A" stop-opacity="0.45"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#3D2B1F" flood-opacity="0.15"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background: warm cream workshop atmosphere -->
+  <rect width="640" height="480" fill="#F0EBE0"/>
+  <rect width="640" height="480" fill="url(#grain)"/>
+
+  <!-- Warm ambient light from upper left -->
+  <ellipse cx="80" cy="60" rx="220" ry="160" fill="#C9A84C" opacity="0.06"/>
+
+  <!-- ── WOODEN WORKBENCH (bottom 40%) ── -->
+  <rect x="0" y="288" width="640" height="192" fill="#7A5520"/>
+  <rect x="0" y="288" width="640" height="192" fill="url(#woodGrad)"/>
+  <!-- Wood grain lines -->
+  <line x1="0" y1="310" x2="640" y2="314" stroke="#6B4A18" stroke-width="1.2" opacity="0.4"/>
+  <line x1="0" y1="340" x2="640" y2="337" stroke="#6B4A18" stroke-width="0.8" opacity="0.3"/>
+  <line x1="0" y1="368" x2="640" y2="372" stroke="#8B6220" stroke-width="0.6" opacity="0.25"/>
+  <line x1="0" y1="400" x2="640" y2="398" stroke="#6B4A18" stroke-width="1" opacity="0.3"/>
+  <!-- Bench edge highlight -->
+  <rect x="0" y="288" width="640" height="4" fill="#A07830" opacity="0.5"/>
+  <!-- Bench shadow -->
+  <rect x="0" y="285" width="640" height="6" fill="#3D2B1F" opacity="0.18"/>
+
+  <!-- ── DRIED BOTANICAL BUNDLE (left side) ── -->
+  <g opacity="0.85" filter="url(#softShadow)">
+    <!-- stems tied together -->
+    <line x1="95" y1="240" x2="88" y2="330" stroke="#8B6914" stroke-width="1.8"/>
+    <line x1="100" y1="238" x2="94" y2="332" stroke="#8B6914" stroke-width="1.5"/>
+    <line x1="106" y1="236" x2="100" y2="334" stroke="#7A5914" stroke-width="1.4"/>
+    <line x1="112" y1="238" x2="106" y2="330" stroke="#8B6914" stroke-width="1.6"/>
+    <line x1="118" y1="242" x2="112" y2="328" stroke="#8B6914" stroke-width="1.3"/>
+    <!-- twine knot -->
+    <ellipse cx="102" cy="300" rx="14" ry="5" fill="none" stroke="#C9A84C" stroke-width="2" opacity="0.7"/>
+    <ellipse cx="102" cy="305" rx="12" ry="4" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.5"/>
+    <!-- lavender sprigs -->
+    <g fill="#9B89B8">
+      <ellipse cx="85" cy="220" rx="5" ry="8" transform="rotate(-10 85 220)" opacity="0.8"/>
+      <ellipse cx="91" cy="215" rx="4" ry="7" transform="rotate(-5 91 215)" opacity="0.75"/>
+      <ellipse cx="97" cy="212" rx="4" ry="8" transform="rotate(0 97 212)" opacity="0.8"/>
+      <ellipse cx="103" cy="210" rx="4" ry="7" transform="rotate(5 103 210)" opacity="0.75"/>
+      <ellipse cx="109" cy="212" rx="5" ry="8" transform="rotate(8 109 212)" opacity="0.8"/>
+      <ellipse cx="115" cy="216" rx="4" ry="7" transform="rotate(12 115 216)" opacity="0.72"/>
+      <ellipse cx="120" cy="220" rx="4" ry="6" transform="rotate(15 120 220)" opacity="0.7"/>
+    </g>
+    <!-- leaves on stems -->
+    <ellipse cx="88" cy="260" rx="8" ry="4" fill="#4A7C59" transform="rotate(-35 88 260)" opacity="0.7"/>
+    <ellipse cx="105" cy="255" rx="7" ry="3" fill="#4A7C59" transform="rotate(20 105 255)" opacity="0.65"/>
+    <ellipse cx="118" cy="265" rx="6" ry="3" fill="#4A7C59" transform="rotate(30 118 265)" opacity="0.7"/>
+  </g>
+
+  <!-- ── HANDS (center — the craft action) ── -->
+  <g filter="url(#softShadow)">
+    <!-- Left hand holding dropper bottle -->
+    <!-- Palm/wrist -->
+    <path d="M238 310 C228 300 222 280 225 260 C228 240 240 230 252 232 C264 234 272 248 270 268 C268 285 260 300 252 312 Z" fill="url(#skinGrad)"/>
+    <!-- Thumb -->
+    <path d="M238 310 C230 305 224 292 228 278 C230 270 236 265 242 268 C248 272 248 282 244 292 Z" fill="#D4A574"/>
+    <!-- Fingers folded around bottle -->
+    <path d="M255 234 C265 232 272 240 270 252 C268 260 262 265 256 262 C250 260 246 252 248 244 Z" fill="#C4905A"/>
+    <path d="M252 312 L258 310 L264 308 L262 295 L256 298 L250 300 Z" fill="#C4905A"/>
+    <!-- Knuckle lines -->
+    <path d="M248 244 C252 240 258 242" stroke="#A07040" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+    <!-- Small dropper bottle in left hand -->
+    <rect x="256" y="230" width="18" height="68" rx="3" fill="url(#bottleGrad)" filter="url(#softShadow)"/>
+    <rect x="258" y="244" width="14" height="36" rx="2" fill="#FDFBF7" opacity="0.9"/>
+    <text x="265" y="256" text-anchor="middle" font-family="Georgia,serif" font-size="4" font-weight="700" fill="#2C4A2E">TINH DẦU</text>
+    <text x="265" y="265" text-anchor="middle" font-family="Georgia,serif" font-size="3.5" font-style="italic" fill="#A07830">Oải Hương</text>
+    <text x="265" y="274" text-anchor="middle" font-family="Arial,sans-serif" font-size="3.5" fill="#6B7B6E">10ml</text>
+    <rect x="260" y="220" width="10" height="12" rx="2" fill="#3D6640"/>
+    <rect x="258" y="210" width="14" height="12" rx="2" fill="#2C4A2E"/>
+    <!-- Dropper tip -->
+    <line x1="265" y1="210" x2="265" y2="200" stroke="#2C4A2E" stroke-width="2"/>
+    <ellipse cx="265" cy="198" rx="3" ry="2" fill="#2C4A2E"/>
+    <!-- Oil drop -->
+    <path d="M265 196 C265 192 261 188 265 184 C269 188 265 192 265 196Z" fill="#C9A84C" opacity="0.8" filter="url(#glow)"/>
+
+    <!-- Right hand (receiving / cupped) -->
+    <path d="M295 340 C285 335 278 318 280 300 C282 285 292 278 302 280 C312 282 320 295 318 310 C316 325 308 338 300 344 Z" fill="url(#skinGrad)"/>
+    <!-- Fingers extended -->
+    <path d="M302 280 C310 276 318 282 316 294 C314 302 308 308 302 306 C296 304 292 296 295 288 Z" fill="#D4A574"/>
+    <path d="M310 282 C318 278 326 285 324 297 C322 305 316 310 310 308 C304 306 300 298 303 290 Z" fill="#C89060"/>
+    <!-- Palm crease lines -->
+    <path d="M288 308 C294 305 300 307 305 310" stroke="#A07040" stroke-width="0.8" fill="none" opacity="0.4"/>
+    <path d="M284 318 C290 316 296 318 300 322" stroke="#A07040" stroke-width="0.8" fill="none" opacity="0.3"/>
+  </g>
+
+  <!-- ── MORTAR & PESTLE (right side) ── -->
+  <g filter="url(#softShadow)">
+    <!-- Mortar bowl -->
+    <path d="M430 295 C408 295 395 308 396 326 C397 344 410 358 432 360 C454 362 470 348 470 330 C470 312 456 295 430 295 Z" fill="#7A6A50"/>
+    <path d="M430 295 C408 295 395 308 396 326 C397 344 410 358 432 360 C454 362 470 348 470 330 C470 312 456 295 430 295 Z" fill="#9A8A68" opacity="0.4"/>
+    <!-- Inner bowl (darker) -->
+    <path d="M430 308 C415 308 406 318 407 330 C408 342 418 350 432 350 C446 350 456 342 456 330 C456 318 446 308 430 308 Z" fill="#5C4E38"/>
+    <!-- Herbs/material in bowl -->
+    <ellipse cx="430" cy="340" rx="20" ry="8" fill="#4A7C59" opacity="0.7"/>
+    <ellipse cx="435" cy="338" rx="6" ry="3" fill="#6B8F4E" opacity="0.6"/>
+    <ellipse cx="422" cy="342" rx="5" ry="2" fill="#4A7C59" opacity="0.8"/>
+    <!-- Pestle -->
+    <rect x="436" y="258" width="12" height="64" rx="6" fill="#8B7A5A" transform="rotate(25 442 290)"/>
+    <ellipse cx="446" cy="315" rx="9" ry="5" fill="#7A6A4A" transform="rotate(25 446 315)"/>
+    <!-- Pestle top knob -->
+    <ellipse cx="420" cy="262" rx="8" ry="5" fill="#8B7A5A" transform="rotate(25 420 262)"/>
+  </g>
+
+  <!-- ── SMALL JARS / INGREDIENTS (scattered on bench) ── -->
+  <!-- Jar 1 (far left on bench) -->
+  <g filter="url(#softShadow)" opacity="0.9">
+    <rect x="48" y="300" width="34" height="30" rx="3" fill="#A09078"/>
+    <rect x="48" y="300" width="34" height="30" rx="3" fill="#C8B898" opacity="0.3"/>
+    <rect x="50" y="296" width="30" height="6" rx="2" fill="#8B7A60"/>
+    <text x="65" y="318" text-anchor="middle" font-family="Arial,sans-serif" font-size="5" fill="#F5F0E8" opacity="0.8">Sả Java</text>
+  </g>
+  <!-- Jar 2 -->
+  <g filter="url(#softShadow)" opacity="0.9">
+    <rect x="148" y="304" width="28" height="24" rx="3" fill="#7A9A6B"/>
+    <rect x="148" y="304" width="28" height="24" rx="3" fill="#9ABB8B" opacity="0.3"/>
+    <rect x="150" y="300" width="24" height="6" rx="2" fill="#5C7A50"/>
+    <text x="162" y="319" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#F5F0E8" opacity="0.8">Bạc Hà</text>
+  </g>
+
+  <!-- ── PIPETTE / DROPPER (lying flat) ── -->
+  <g opacity="0.75" transform="rotate(-15 380 305)">
+    <rect x="354" y="300" width="52" height="6" rx="3" fill="#C8B898"/>
+    <ellipse cx="354" cy="303" rx="5" ry="4" fill="#D4C8A8"/>
+    <rect x="396" y="301" width="14" height="4" rx="2" fill="#C8B898"/>
+    <path d="M410 303 L420 303 L422 306 L420 303 Z" fill="#C8B898"/>
+  </g>
+
+  <!-- ── AMBER VIAL (tiny, spilled oil droplet effect) ── -->
+  <g filter="url(#softShadow)">
+    <rect x="502" y="294" width="10" height="28" rx="2" fill="#C9A84C" opacity="0.8"/>
+    <rect x="504" y="290" width="6" height="6" rx="1" fill="#A07830"/>
+    <!-- oil drip -->
+    <path d="M507 322 C507 326 505 330 507 334 C509 330 507 326 507 322Z" fill="#C9A84C" opacity="0.9"/>
+    <!-- glow -->
+    <ellipse cx="507" cy="310" rx="3" ry="6" fill="#FFD98A" opacity="0.25" filter="url(#glow)"/>
+  </g>
+
+  <!-- ── SCATTERED BOTANICAL ELEMENTS ON BENCH ── -->
+  <!-- Rosemary sprig -->
+  <g opacity="0.6">
+    <line x1="350" y1="296" x2="400" y2="302" stroke="#4A7C59" stroke-width="1.2"/>
+    <ellipse cx="355" cy="295" rx="4" ry="2" fill="#4A7C59" transform="rotate(-30 355 295)"/>
+    <ellipse cx="362" cy="295" rx="4" ry="2" fill="#4A7C59" transform="rotate(-25 362 295)"/>
+    <ellipse cx="370" cy="296" rx="4" ry="2" fill="#4A7C59" transform="rotate(-20 370 296)"/>
+    <ellipse cx="378" cy="297" rx="4" ry="2" fill="#5C9E7A" transform="rotate(-18 378 297)"/>
+    <ellipse cx="386" cy="298" rx="4" ry="2" fill="#4A7C59" transform="rotate(-15 386 298)"/>
+    <ellipse cx="394" cy="300" rx="4" ry="2" fill="#4A7C59" transform="rotate(-10 394 300)"/>
+  </g>
+  <!-- Leaf -->
+  <ellipse cx="330" cy="302" rx="10" ry="5" fill="#6B8F4E" transform="rotate(-20 330 302)" opacity="0.55"/>
+
+  <!-- ── LIGHT BEAM from upper right corner ── -->
+  <path d="M580 0 L640 0 L640 180 Z" fill="#C9A84C" opacity="0.04"/>
+  <path d="M520 0 L640 0 L640 120 Z" fill="#FDFBF7" opacity="0.05"/>
+
+  <!-- ── TEXT OVERLAY (subtle) ── -->
+  <text x="320" y="460" text-anchor="middle" font-family="Georgia,serif" font-size="10" letter-spacing="3" fill="#C9A84C" opacity="0.55">XỬ LÝ THỦ CÔNG · ĐÀ LẠT · TỪ 2013</text>
+
+  <!-- ── VERTICAL GRID LINES (subtle, upper half only) ── -->
+  <g opacity="0.06" stroke="#2C4A2E" stroke-width="0.5">
+    <line x1="160" y1="0" x2="160" y2="288"/>
+    <line x1="320" y1="0" x2="320" y2="288"/>
+    <line x1="480" y1="0" x2="480" y2="288"/>
+  </g>
+</svg>
